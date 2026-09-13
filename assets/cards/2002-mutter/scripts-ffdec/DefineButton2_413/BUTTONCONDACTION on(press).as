@@ -1,0 +1,26 @@
+on(press){
+   tellTarget("/send")
+   {
+      gotoAndStop(2);
+   }
+   tellTarget("/order")
+   {
+      gotoAndStop(1);
+   }
+   tellTarget("menu_inhalt")
+   {
+      gotoAndStop(30);
+   }
+   tellTarget("links")
+   {
+      gotoAndStop(1);
+   }
+   tellTarget("tour")
+   {
+      gotoAndStop(1);
+   }
+   tellTarget("video")
+   {
+      gotoAndStop(1);
+   }
+}

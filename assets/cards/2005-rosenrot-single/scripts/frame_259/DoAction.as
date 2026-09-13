@@ -1,0 +1,1 @@
+this.pix.gotoAndStop("stop");

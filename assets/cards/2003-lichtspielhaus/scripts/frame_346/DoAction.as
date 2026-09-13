@@ -1,0 +1,2 @@
+stopAllSounds();
+gotoAndPlay(56);

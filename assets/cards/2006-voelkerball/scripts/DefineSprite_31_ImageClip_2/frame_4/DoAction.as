@@ -1,0 +1,1 @@
+this._parent.deleteImage();

@@ -1,0 +1,13 @@
+select your language
+--- RECORDSEPARATOR ---
+/%zz
+--- RECORDSEPARATOR ---
+§
+--- RECORDSEPARATOR ---
+*+/
+--- RECORDSEPARATOR ---
+er
+--- RECORDSEPARATOR ---
+§
+--- RECORDSEPARATOR ---
+R$%

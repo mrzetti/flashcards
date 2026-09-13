@@ -1,0 +1,7 @@
+CD BESTELLEN
+--- RECORDSEPARATOR ---
+--> Shoplocator
+--- RECORDSEPARATOR ---
+DOWNLOAD
+--- RECORDSEPARATOR ---
+--> Shoplocator

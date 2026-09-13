@@ -1,0 +1,105 @@
+{
+  "cards": [
+    {
+      "id": "alpha",
+      "title": "Alpha Anthem",
+      "swf": "cards/alpha.swf",
+      "thumbnail": "thumbs/card.svg",
+      "width": 550,
+      "height": 400,
+      "year": 2001,
+      "description": "A simple fixture card that starts with a click in the mock player.",
+      "instructions": "Click the stage to begin.",
+      "controls": ["Mouse"],
+      "status": "Verified playback",
+      "notes": "Fixture used by the browser tests."
+    },
+    {
+      "id": "beta",
+      "title": "Beta Racer",
+      "swf": "cards/beta.swf",
+      "thumbnail": "thumbs/card.svg",
+      "width": 640,
+      "height": 480,
+      "year": 2002,
+      "description": "A fixture card driven with the arrow keys and the space bar.",
+      "instructions": "Steer with the arrow keys and press Space to jump.",
+      "controls": ["Arrow keys", "Space"],
+      "status": "Verified playback",
+      "notes": "Fixture used by the browser tests."
+    },
+    {
+      "id": "kbd",
+      "title": "Keyboard Quest",
+      "swf": "cards/kbd.swf",
+      "thumbnail": "thumbs/card.svg",
+      "width": 512,
+      "height": 384,
+      "year": null,
+      "description": "Only two keys are needed for this card.",
+      "instructions": "Move left and right.",
+      "controls": [
+        { "key": "ArrowLeft", "label": "Left" },
+        { "key": "ArrowRight", "label": "Right" }
+      ],
+      "status": "Partial — in-card navigation only",
+      "notes": ""
+    },
+    {
+      "id": "mouse",
+      "title": "Mouse Only",
+      "swf": "cards/mouse.swf",
+      "thumbnail": "thumbs/missing.png",
+      "width": 400,
+      "height": 300,
+      "year": 2003,
+      "description": "A mouse-only card whose thumbnail is missing, so the desktop must show a placeholder.",
+      "instructions": "Click the buttons on the stage.",
+      "controls": ["Mouse"],
+      "status": "Not runtime-verified",
+      "notes": "The missing thumbnail exercises the fallback tile."
+    },
+    {
+      "id": "broken",
+      "title": "Broken Demo",
+      "swf": "cards/broken.swf",
+      "thumbnail": "thumbs/card.svg",
+      "width": 600,
+      "height": 400,
+      "year": 2004,
+      "description": "The mock player rejects this card so the error state can be tested.",
+      "instructions": "Nothing to do here.",
+      "controls": ["Mouse"],
+      "status": "Unsupported — mock decode failure",
+      "notes": "Mock Ruffle refuses to load this fixture."
+    },
+    {
+      "id": "slow",
+      "title": "Slow Loader",
+      "swf": "cards/slow.swf",
+      "thumbnail": "thumbs/card.svg",
+      "width": 640,
+      "height": 480,
+      "year": null,
+      "description": "The mock player delays this card so the loading state stays visible.",
+      "instructions": "Wait for the card.",
+      "controls": ["Mouse"],
+      "status": "",
+      "notes": ""
+    },
+    {
+      "id": "nofile",
+      "title": "Missing File",
+      "swf": "",
+      "thumbnail": "thumbs/card.svg",
+      "width": 320,
+      "height": 240,
+      "year": 2005,
+      "description": "No SWF path is listed, so the Launch button must be disabled.",
+      "instructions": "",
+      "controls": [],
+      "status": "Unsupported — no SWF recovered",
+      "notes": "The original file could not be recovered."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+on(release){
+   tellTarget("/menu_inhalt")
+   {
+      gotoAndStop(30);
+   }
+   tellTarget("/order")
+   {
+      gotoAndStop(2);
+   }
+   tellTarget("send")
+   {
+      gotoAndStop(1);
+   }
+   tellTarget("links")
+   {
+      gotoAndStop(1);
+   }
+   tellTarget("tour")
+   {
+      gotoAndStop(1);
+   }
+   tellTarget("video")
+   {
+      gotoAndStop(1);
+   }
+}

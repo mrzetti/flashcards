@@ -1,0 +1,23 @@
+REPLAY VIDEO
+--- RECORDSEPARATOR ---
+Lorem ipsum dolor sit amet, consectetuer 
+--- RECORDSEPARATOR ---
+adipiscing elit, sed diam nonummy nibh euismod 
+--- RECORDSEPARATOR ---
+tincidunt ut laoreet dolore magna aliquam erat 
+--- RECORDSEPARATOR ---
+volutpat. Ut wisi enim ad minim veniam, quis nostrud 
+--- RECORDSEPARATOR ---
+exerci tation ullamcorper suscipit lobortis nisl ut 
+--- RECORDSEPARATOR ---
+aliquip ex ea commodo consequat. Duis autem vel 
+--- RECORDSEPARATOR ---
+eum iriure dolor in hendrerit in vulputate velit esse 
+--- RECORDSEPARATOR ---
+molestie consequat, vel illum dolore eu feugiat nulla 
+--- RECORDSEPARATOR ---
+facilisis at vero eros et accumsan et iusto odio 
+--- RECORDSEPARATOR ---
+dignissim qui blandit praesent luptatum zzril delenit 
+--- RECORDSEPARATOR ---
+augue duis dolore te feugait nulla facilisi.

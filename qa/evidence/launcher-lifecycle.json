@@ -1,0 +1,41 @@
+[
+  {
+    "mobile": false,
+    "pageErrors": [],
+    "checks": [
+      "Deep link selects without creating a player",
+      "Explicit launch creates one real Ruffle player",
+      "Minimize pauses actual Ruffle",
+      "Taskbar restores/resumes player",
+      "Maximize/restore and drag remain within desktop bounds",
+      "Close removes iframe and detaches execution context",
+      "Reopen creates a fresh execution context",
+      "Switch removes previous context; still exactly one player"
+    ],
+    "touchKeys": [
+      "ArrowUp",
+      "ArrowDown",
+      "ArrowLeft",
+      "ArrowRight"
+    ]
+  },
+  {
+    "mobile": true,
+    "pageErrors": [],
+    "checks": [
+      "Deep link selects without creating a player",
+      "Explicit launch creates one real Ruffle player",
+      "Minimize pauses actual Ruffle",
+      "Taskbar restores/resumes player",
+      "Close removes iframe and detaches execution context",
+      "Reopen creates a fresh execution context",
+      "Switch removes previous context; still exactly one player"
+    ],
+    "touchKeys": [
+      "ArrowUp",
+      "ArrowDown",
+      "ArrowLeft",
+      "ArrowRight"
+    ]
+  }
+]

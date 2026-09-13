@@ -1,0 +1,6 @@
+{
+  "name": "flashcards-runtime-qa",
+  "private": true,
+  "scripts": { "capture": "node capture.cjs" },
+  "devDependencies": { "playwright": "1.58.2" }
+}

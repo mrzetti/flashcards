@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Fixture card thumbnail">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4e8fe0"/>
+      <stop offset="100%" stop-color="#bfe0f7"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fca5c"/>
+      <stop offset="100%" stop-color="#4d8b26"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="240" fill="url(#sky)"/>
+  <circle cx="262" cy="48" r="26" fill="#fff7c9"/>
+  <ellipse cx="90" cy="70" rx="52" ry="20" fill="#fff" opacity="0.85"/>
+  <ellipse cx="130" cy="62" rx="34" ry="16" fill="#fff" opacity="0.85"/>
+  <path d="M0 170 Q80 120 160 168 T320 160 L320 240 L0 240 Z" fill="url(#ground)"/>
+  <rect x="34" y="96" width="92" height="62" rx="6" fill="#fff8d6" stroke="#b8860b" stroke-width="3"/>
+  <path d="M46 114 h68 M46 128 h68 M46 142 h44" stroke="#d3a72b" stroke-width="4"/>
+  <circle cx="228" cy="150" r="30" fill="#3f9e3f"/>
+  <path d="M218 136 l24 14-24 14z" fill="#fff"/>
+</svg>

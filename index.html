@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Browse and play the preserved RammWiki Flash cards in a Windows XP-inspired desktop, powered by a self-hosted copy of Ruffle.">
+  <meta name="color-scheme" content="light">
+  <title>Flashcards — RammWiki desktop</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='20' height='24' rx='2' fill='%23f5c542'/%3E%3Crect x='8' y='2' width='20' height='24' rx='2' fill='%23fff3c4' stroke='%23b8860b'/%3E%3Cpath d='M12 8h12M12 12h12M12 16h8' stroke='%23c8a03a' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="desktop-page">
+  <div id="wallpaper" class="wallpaper" aria-hidden="true">
+    <div class="wallpaper-sun"></div>
+    <div class="wallpaper-cloud cloud-a"></div>
+    <div class="wallpaper-cloud cloud-b"></div>
+    <div class="wallpaper-cloud cloud-c"></div>
+    <div class="wallpaper-hill hill-far"></div>
+    <div class="wallpaper-hill hill-left"></div>
+    <div class="wallpaper-hill hill-right"></div>
+    <div class="wallpaper-meadow"></div>
+  </div>
+
+  <div id="desktop" class="desktop">
+    <div id="desktop-icons" class="desktop-icons" role="list" aria-label="Desktop icons">
+      <button type="button" class="desktop-icon" role="listitem" data-action="all-cards" title="Open the card catalog">
+        <span class="desktop-icon-image icon-catalog" aria-hidden="true"></span>
+        <span class="desktop-icon-label">My Flashcards</span>
+      </button>
+      <button type="button" class="desktop-icon" role="listitem" data-action="help" title="Read about this desktop">
+        <span class="desktop-icon-image icon-help" aria-hidden="true"></span>
+        <span class="desktop-icon-label">Read Me</span>
+      </button>
+    </div>
+    <div id="window-layer" class="window-layer"></div>
+  </div>
+
+  <div id="taskbar" class="taskbar">
+    <button id="start-button" class="start-button" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="start-menu">
+      <span class="start-logo" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="start-label">Start</span>
+    </button>
+    <div class="quick-launch" aria-label="Quick Launch">
+      <button id="quick-cards" class="quick-button" type="button" title="Show all cards" aria-label="Show all cards">
+        <span class="quick-icon icon-catalog" aria-hidden="true"></span>
+      </button>
+      <button id="quick-help" class="quick-button" type="button" title="Help and About" aria-label="Help and About">
+        <span class="quick-icon icon-help" aria-hidden="true"></span>
+      </button>
+      <span class="quick-divider" aria-hidden="true"></span>
+    </div>
+    <div id="task-buttons" class="task-buttons" role="toolbar" aria-label="Open windows"></div>
+    <div class="tray">
+      <span class="tray-icon tray-volume" aria-hidden="true" title="Volume is controlled inside the player"></span>
+      <button id="clock" class="clock" type="button" title="Clock">--:--</button>
+    </div>
+  </div>
+
+  <div id="start-menu" class="start-menu" role="menu" aria-label="Start menu" hidden>
+    <header class="start-header">
+      <span class="start-avatar" aria-hidden="true"></span>
+      <span class="start-user">Flashcards</span>
+    </header>
+    <div class="start-body">
+      <div class="start-column start-left">
+        <button type="button" role="menuitem" class="start-item" data-action="all-cards">
+          <span class="start-item-icon icon-catalog" aria-hidden="true"></span>
+          <span class="start-item-text"><strong>All Cards</strong><small>Open the preserved catalog</small></span>
+        </button>
+        <button type="button" role="menuitem" class="start-item" data-action="search">
+          <span class="start-item-icon icon-search" aria-hidden="true"></span>
+          <span class="start-item-text"><strong>Search Cards</strong><small>Find a card by name or year</small></span>
+        </button>
+        <button type="button" role="menuitem" class="start-item" data-action="random">
+          <span class="start-item-icon icon-play" aria-hidden="true"></span>
+          <span class="start-item-text"><strong>Random Card</strong><small>Open a surprise card</small></span>
+        </button>
+        <div class="start-separator" role="separator"></div>
+        <button type="button" role="menuitem" class="start-item" data-action="help">
+          <span class="start-item-icon icon-help" aria-hidden="true"></span>
+          <span class="start-item-text"><strong>Help and About</strong><small>How the player and windows work</small></span>
+        </button>
+      </div>
+      <div class="start-column start-right">
+        <button type="button" role="menuitem" class="start-link" data-action="all-cards">My Flashcards</button>
+        <button type="button" role="menuitem" class="start-link" data-action="close-windows">Close all windows</button>
+        <button type="button" role="menuitem" class="start-link" data-action="help">Read Me</button>
+        <div class="start-separator" role="separator"></div>
+        <button type="button" role="menuitem" class="start-link" data-action="shutdown">Turn Off Computer…</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="shutdown" class="shutdown" role="dialog" aria-modal="true" aria-labelledby="shutdown-title" hidden>
+    <div class="shutdown-box">
+      <h2 id="shutdown-title">Turn off computer</h2>
+      <p>The desktop will close every open window, stop the player and reload. Your place in the catalog is kept in the address bar.</p>
+      <div class="shutdown-actions">
+        <button type="button" class="xp-button primary" id="shutdown-restart">Restart</button>
+        <button type="button" class="xp-button" id="shutdown-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <p id="announcer" class="sr-only" role="status" aria-live="polite"></p>
+
+  <noscript>
+    <div class="noscript">This desktop needs JavaScript to show the card catalog and start the Ruffle player.</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "rammwiki-flashcards",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Windows XP-inspired preservation browser for RammWiki Flash cards, powered by self-hosted Ruffle.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test \"tests/unit/*.test.mjs\" \"tests/browser/*.test.mjs\"",
+    "test:unit": "node --test \"tests/unit/*.test.mjs\"",
+    "test:browser": "node --test \"tests/browser/*.test.mjs\"",
+    "serve": "node tests/server.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

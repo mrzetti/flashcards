@@ -1,0 +1,7 @@
+select your 3
+--- RECORDSEPARATOR ---
+§
+--- RECORDSEPARATOR ---
+$fas345
+--- RECORDSEPARATOR ---
+/f$%gkk/
