@@ -523,7 +523,10 @@
       setStatus(state.muted ? 'Playing (muted)' : 'Playing');
       post('status', { state: 'ready', detail: '' });
       postState();
-      focusRuffle();
+      // Ruffle 0.6.0 is still initializing its keyboard listener while this
+      // metadata event is dispatched. Synchronous focus here leaves real keys
+      // disconnected even though the element appears focused (Benzin reproducer).
+      window.setTimeout(focusRuffle, 0);
     }
 
     function destroyElement() {
@@ -543,6 +546,9 @@
       var entry = state.touchKeys.find(function (item) { return item.code === code; }) || keyDefinition(code);
       var init = keyEventInit(entry);
       if (!init) return;
+      // Ruffle only processes synthetic key events while the player element
+      // has focus, so focus before dispatching a press.
+      if (down) focusRuffle();
       state.element.dispatchEvent(new KeyboardEvent(down ? 'keydown' : 'keyup', init));
     }
 
@@ -592,8 +598,6 @@
               state.held.set(entry.code, true);
               button.classList.add('held');
               sendKey(entry.code, true);
-              // Give Ruffle focus without losing the held touch key.
-              focusRuffle();
             }
           }
         });
@@ -608,12 +612,23 @@
           });
         });
         button.addEventListener('contextmenu', function (event) { event.preventDefault(); });
+        var keyboardHeld = false;
+        function releaseKeyboardKey(event) {
+          if (event.key !== ' ' && event.key !== 'Enter') return;
+          window.removeEventListener('keyup', releaseKeyboardKey, true);
+          keyboardHeld = false;
+          releaseTouchKey(entry.code);
+        }
         button.addEventListener('keydown', function (event) {
           if (event.key !== ' ' && event.key !== 'Enter') return;
           event.preventDefault();
           if (!state.held.has(entry.code)) {
             state.held.set(entry.code, true);
             button.classList.add('held');
+            keyboardHeld = true;
+            // sendKey() moves focus to the player, so release on a window
+            // keyup instead of relying on the button keeping focus.
+            window.addEventListener('keyup', releaseKeyboardKey, true);
             sendKey(entry.code, true);
           }
         });
@@ -623,8 +638,9 @@
           releaseTouchKey(entry.code);
         });
         button.addEventListener('blur', function () {
-          // A pointer hold owns the key until it is released (or cancelled):
-          // moving focus into Ruffle must not cut a held touch control short.
+          // A pointer or keyboard hold owns the key until it is released:
+          // moving focus into Ruffle must not cut a held control short.
+          if (keyboardHeld) return;
           if (Array.from(state.pointers.values()).indexOf(entry.code) !== -1) return;
           releaseTouchKey(entry.code);
         });
@@ -776,6 +792,9 @@
           unmuteOverlay: 'visible',
           backgroundColor: '#000000',
           letterbox: 'on',
+          // This card sets noScale internally, clipping its menus on small stages.
+          scale: 'showAll',
+          forceScale: card.id === '2005-keine-lust',
           allowScriptAccess: false,
           openUrlMode: 'confirm',
           upgradeToHttps: true,

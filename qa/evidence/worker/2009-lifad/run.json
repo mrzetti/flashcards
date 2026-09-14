@@ -1,0 +1,889 @@
+{
+  "cardId": "2009-lifad",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T23:02:56.929Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T23:02:57.258Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T23:02:57.683Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2009-lifad.swf",
+      "at": "2026-09-13T23:02:57.684Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T23:02:57.717Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T23:06:22.057Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T23:06:22.160Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2009-lifad.swf",
+      "at": "2026-09-13T23:06:22.161Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T23:06:22.177Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2009-lifad",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:56.996Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.047Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.047Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.048Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.091Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.100Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.123Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2009-lifad.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:57.687Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 631314,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2009-lifad.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:06:22.161Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 631314,
+      "contentType": "application/x-shockwave-flash"
+    }
+  ],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.rammstein.de/",
+      "at": "2026-09-13T23:04:09.764Z"
+    }
+  ],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 11260,
+        "hash": "5d71b65007ad6db10073dee01725f79b",
+        "buf": {
+          "omittedBinaryBytes": 516486,
+          "sha256": "db416ac610cb9cf7e1e32f13910341ea340162fed4d481e691dee0eee4bea99c"
+        }
+      },
+      "settledState": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "02",
+      "fx": 0.5,
+      "fy": 0.947,
+      "x": 640,
+      "y": 765,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:04:09.764Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 11221,
+        "hash": "4db4ce792071fc71ac4728f694255c47",
+        "buf": {
+          "omittedBinaryBytes": 518749,
+          "sha256": "3ef044e609666a8da234aaac010443e52af0db16132fb5c98fc2341f2e0b48e1"
+        }
+      },
+      "settledState": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "03",
+      "fx": 0.5,
+      "fy": 0.8,
+      "x": 640,
+      "y": 651,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:04:09.764Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 11251,
+        "hash": "5bbfaf9ada85aa67572aa5b6d8998017",
+        "buf": {
+          "omittedBinaryBytes": 516596,
+          "sha256": "03ac9fae2ef407acc11b646164875c36b9ab86d2e1bd6b9f3b116967908eb4df"
+        }
+      },
+      "settledState": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "04",
+      "fx": 0.3,
+      "fy": 0.8,
+      "x": 427,
+      "y": 651,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:04:09.764Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 11765,
+        "hash": "641c03cd8f855b748e45c6c87107e6e0",
+        "buf": {
+          "omittedBinaryBytes": 516444,
+          "sha256": "a1f92abf7ac723d3372a69a8ea712945003299c0be7189a1308f9ac9d8e5a0bc"
+        }
+      },
+      "settledState": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "05",
+      "fx": 0.7,
+      "fy": 0.8,
+      "x": 853,
+      "y": 651,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:04:09.764Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9148,
+        "hash": "25b3ac5d4780928f9931f6103ed454c6",
+        "buf": {
+          "omittedBinaryBytes": 516190,
+          "sha256": "61c2d7e14a2f28807aa747f693aaacd941ed9fe2c8a1d5b66f01fd3cabe37ce1"
+        }
+      },
+      "settledState": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    }
+  ],
+  "gridClicks": [],
+  "successes": [
+    "SWF metadata reported: 800x585, 202 frames @ 30 fps, SWF version 8, isActionScript3=false",
+    "SWF was still animating after 28286ms (9 unique frames)",
+    "menu click #01 at (fx=0.5, fy=0.5) changed the card view",
+    "menu click #02 at (fx=0.5, fy=0.947) changed the card view",
+    "menu click #03 at (fx=0.5, fy=0.8) changed the card view",
+    "menu click #04 at (fx=0.3, fy=0.8) changed the card view",
+    "menu click #05 at (fx=0.7, fy=0.8) changed the card view",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=false",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "grid-skipped",
+      "detail": "semantic candidates already changed the view; grid sweep skipped"
+    },
+    {
+      "severity": "note",
+      "kind": "dialogs",
+      "detail": "[{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.rammstein.de/\",\"at\":\"2026-09-13T23:04:09.764Z\"}]"
+    },
+    {
+      "severity": "note",
+      "kind": "audio-silent",
+      "detail": "No measurable Web Audio RMS during this run (card may be silent at these screens, or headless audio path produced no signal)"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "20-sem-01-changed.png",
+    "19-sem-01-hover.png",
+    "21-sem-01-settled.png",
+    "20-sem-02-changed.png",
+    "19-sem-02-hover.png",
+    "21-sem-02-settled.png",
+    "20-sem-03-changed.png",
+    "19-sem-03-hover.png",
+    "21-sem-03-settled.png",
+    "20-sem-04-changed.png",
+    "19-sem-04-hover.png",
+    "21-sem-04-settled.png",
+    "20-sem-05-changed.png",
+    "19-sem-05-hover.png",
+    "21-sem-05-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2009-lifad",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2009-lifad",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "LIFAD (2009)",
+    "year": "Year 2009",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 108.4401709401709,
+      "y": 29,
+      "width": 1063.1196581196582,
+      "height": 777.40625
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 800,
+      "height": 585,
+      "frameRate": 30,
+      "numFrames": 202,
+      "swfVersion": 8,
+      "backgroundColor": "#000000",
+      "isActionScript3": false,
+      "uncompressedLength": 644068
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 800,
+    "height": 585,
+    "frameRate": 30,
+    "numFrames": 202,
+    "swfVersion": 8,
+    "backgroundColor": "#000000",
+    "isActionScript3": false,
+    "uncompressedLength": 644068
+  },
+  "clip": {
+    "x": 108,
+    "y": 29,
+    "width": 1064,
+    "height": 778
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": false,
+    "elapsedMs": 28286,
+    "frames": 9,
+    "uniqueFrames": 9
+  },
+  "baselineHash": "434de99ca50338221b388b7f0d71a5c8",
+  "settledHash": "df37025cbecfb719354dfb796a534e59",
+  "semanticChanges": 5,
+  "baselineAfterSemantic": "837419233b98eda88bd34b49d85ae108",
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0,
+    "sessionHadSound": false
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 4,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2009-lifad",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 4,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2009-lifad",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 5,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2009-lifad",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2009-lifad",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 4,
+      "beforeRequests": 8,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "LIFAD (2009)",
+        "year": "Year 2009",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2009-lifad",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 10,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/originals/2009-lifad.swf",
+          "status": 200,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2009-lifad.swf"
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "757fadae21ac0edc64678f33da4adf5c",
+      "returnedToInitialFrame": false
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2009-lifad",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "LIFAD (2009)",
+      "year": "Year 2009",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [],
+  "consoleErrors": [],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

@@ -1,0 +1,1074 @@
+{
+  "cardId": "2005-keine-lust",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T22:53:42.241Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:53:42.601Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:53:43.104Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-keine-lust.swf",
+      "at": "2026-09-13T22:53:43.106Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:53:43.151Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "at": "2026-09-13T22:53:43.929Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c core/src/loader.rs:1110%c Error during LoadVars load of \"https://flashcards.rammwiki.mrzetti.com/player_txt.txt\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:53:43.929Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T22:56:33.886Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:56:33.998Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-keine-lust.swf",
+      "at": "2026-09-13T22:56:33.998Z"
+    },
+    {
+      "type": "warning",
+      "text": "Construction of AudioBufferSourceNode is not useful when context is closed.",
+      "at": "2026-09-13T22:56:34.016Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:56:34.016Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:56:34.016Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:56:34.028Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "at": "2026-09-13T22:56:34.461Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c core/src/loader.rs:1110%c Error during LoadVars load of \"https://flashcards.rammwiki.mrzetti.com/player_txt.txt\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:56:34.462Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-keine-lust",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.287Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.332Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.333Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.333Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.411Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.417Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:42.447Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-keine-lust.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:43.106Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 306317,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player_txt.txt",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:43.921Z",
+      "status": 404,
+      "failure": null,
+      "phase": "initial",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-keine-lust.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:34.005Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 306317,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player_txt.txt",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:34.458Z",
+      "status": 404,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": null,
+      "contentType": "text/html"
+    }
+  ],
+  "dialogs": [],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.211,
+      "fy": 0.816,
+      "x": 415,
+      "y": 663,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9125,
+        "hash": "9fba47b7ab9c60ad282fcb5ba73bc286",
+        "buf": {
+          "omittedBinaryBytes": 122500,
+          "sha256": "5f6eecd9bdd88d0f33d87357b1d1f0747d0bf4bb287379ffc53147a1bd8d7398"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "02",
+      "fx": 0.258,
+      "fy": 0.816,
+      "x": 452,
+      "y": 663,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10110,
+        "hash": "4923fd1c4f8bac3c9af02f33f78bc21b",
+        "buf": {
+          "omittedBinaryBytes": 120744,
+          "sha256": "b24bdba13df8c16d8ada7a46424484477d3fcdec05050eb18fe9974693b3b731"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "03",
+      "fx": 0.343,
+      "fy": 0.816,
+      "x": 518,
+      "y": 663,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10011,
+        "hash": "ba38d8fe9fc45a458018ce7402dba743",
+        "buf": {
+          "omittedBinaryBytes": 121309,
+          "sha256": "99ac0b6cd944ac0d432c9af5933e987a4950a23637dd16b3810d1a9af07e3e3b"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "04",
+      "fx": 0.392,
+      "fy": 0.816,
+      "x": 556,
+      "y": 663,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10095,
+        "hash": "636d056ddf46e929047d7ba065c80587",
+        "buf": {
+          "omittedBinaryBytes": 121288,
+          "sha256": "4175cf52a7e98b93adc37abe518285e881119d69c6d71cfdc0e6dfe382c843b0"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "05",
+      "fx": 0.463,
+      "fy": 0.816,
+      "x": 611,
+      "y": 663,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9055,
+        "hash": "244b363318051d173bbad227b185b057",
+        "buf": {
+          "omittedBinaryBytes": 122755,
+          "sha256": "1e3b041de18b75a6b9a46d8d54f4f124ee6850c87454cfc50e580ebed85ace89"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "06",
+      "fx": 0.542,
+      "fy": 0.816,
+      "x": 673,
+      "y": 663,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10174,
+        "hash": "9bd1a153c9a0618aae9199cc1da56714",
+        "buf": {
+          "omittedBinaryBytes": 122098,
+          "sha256": "8da4cf13027e75f849b79269eb3507f61099d4e2624de40bf18756ed52202768"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "07",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10188,
+        "hash": "4cb63f9f427a8f217b3f2d7d26fd0a34",
+        "buf": {
+          "omittedBinaryBytes": 121668,
+          "sha256": "5adc5c6a0a898f72728306c726f3128e49849f688774f63b5345b925a8434cb3"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    }
+  ],
+  "gridClicks": [],
+  "successes": [
+    "SWF metadata reported: 520x520, 2 frames @ 25 fps, SWF version 6, isActionScript3=false",
+    "SWF was still animating after 34364ms (21 unique frames)",
+    "menu click #01 at (fx=0.211, fy=0.816) changed the card view",
+    "menu click #02 at (fx=0.258, fy=0.816) changed the card view",
+    "menu click #03 at (fx=0.343, fy=0.816) changed the card view",
+    "menu click #04 at (fx=0.392, fy=0.816) changed the card view",
+    "menu click #05 at (fx=0.463, fy=0.816) changed the card view",
+    "menu click #06 at (fx=0.542, fy=0.816) changed the card view",
+    "menu click #07 at (fx=0.5, fy=0.5) changed the card view",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=false",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "grid-skipped",
+      "detail": "semantic candidates already changed the view; grid sweep skipped"
+    },
+    {
+      "severity": "note",
+      "kind": "audio-silent",
+      "detail": "No measurable Web Audio RMS during this run (card may be silent at these screens, or headless audio path produced no signal)"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "20-sem-01-changed.png",
+    "19-sem-01-hover.png",
+    "21-sem-01-settled.png",
+    "20-sem-02-changed.png",
+    "19-sem-02-hover.png",
+    "21-sem-02-settled.png",
+    "20-sem-03-changed.png",
+    "19-sem-03-hover.png",
+    "21-sem-03-settled.png",
+    "20-sem-04-changed.png",
+    "19-sem-04-hover.png",
+    "21-sem-04-settled.png",
+    "20-sem-05-changed.png",
+    "19-sem-05-hover.png",
+    "21-sem-05-settled.png",
+    "20-sem-06-changed.png",
+    "19-sem-06-hover.png",
+    "21-sem-06-settled.png",
+    "20-sem-07-changed.png",
+    "19-sem-07-hover.png",
+    "21-sem-07-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-keine-lust",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2005-keine-lust",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "Keine Lust (2005)",
+    "year": "Year 2005",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 251.296875,
+      "y": 29,
+      "width": 777.40625,
+      "height": 777.40625
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 520,
+      "height": 520,
+      "frameRate": 25,
+      "numFrames": 2,
+      "swfVersion": 6,
+      "backgroundColor": "#FFFFFF",
+      "isActionScript3": false,
+      "uncompressedLength": 409234
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 520,
+    "height": 520,
+    "frameRate": 25,
+    "numFrames": 2,
+    "swfVersion": 6,
+    "backgroundColor": "#FFFFFF",
+    "isActionScript3": false,
+    "uncompressedLength": 409234
+  },
+  "clip": {
+    "x": 251,
+    "y": 29,
+    "width": 778,
+    "height": 778
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": false,
+    "elapsedMs": 34364,
+    "frames": 21,
+    "uniqueFrames": 21
+  },
+  "baselineHash": "6e4234e93ee99d77d5d114b4eacbffa4",
+  "settledHash": "8c920419fdd2445ae0063e84237eaa2a",
+  "semanticChanges": 7,
+  "baselineAfterSemantic": "b389ca89b60ed61555703aa173f07e86",
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0,
+    "sessionHadSound": false
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 7,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2005-keine-lust",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 8,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2005-keine-lust",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 5,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2005-keine-lust",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2005-keine-lust",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 6,
+      "beforeRequests": 9,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "Keine Lust (2005)",
+        "year": "Year 2005",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2005-keine-lust",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 10,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-keine-lust.swf",
+          "status": 200,
+          "failure": null
+        },
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/player_txt.txt",
+          "status": 404,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-keine-lust.swf"
+        },
+        {
+          "type": "warning",
+          "text": "Construction of AudioBufferSourceNode is not useful when context is closed."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c core/src/loader.rs:1110%c Error during LoadVars load of \"https://flashcards.rammwiki.mrzetti.com/player_txt.txt\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "c7b56e6838cd9b8f6ffe16b8146c72b5",
+      "returnedToInitialFrame": false
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2005-keine-lust",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Keine Lust (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player_txt.txt",
+      "status": 404,
+      "failure": null,
+      "type": "fetch",
+      "phase": "initial"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player_txt.txt",
+      "status": 404,
+      "failure": null,
+      "type": "fetch",
+      "phase": "controls"
+    }
+  ],
+  "consoleErrors": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "at": "2026-09-13T22:53:43.929Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "at": "2026-09-13T22:56:34.461Z"
+    }
+  ],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

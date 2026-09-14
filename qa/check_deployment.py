@@ -25,11 +25,18 @@ def fetch(relative, expected_type=None):
 
 
 fetch("index.html", "text/html")
+fetch("player.html", "text/html")
+fetch("styles.css", "text/css")
+fetch("app.js", "application/javascript")
+fetch("player.js", "application/javascript")
+fetch("originals/player_txt.txt", "text/plain")
 catalog = json.loads(fetch("catalog.json", "application/json"))
 for card in catalog["cards"]:
-    fetch(card["swf"])
+    fetch(card["swf"], "application/x-shockwave-flash")
     fetch(card["thumbnail"])
 fetch("assets/ruffle/ruffle.js", "application/javascript")
+for core in (ROOT / "assets/ruffle").glob("core.ruffle.*.js"):
+    fetch(core.relative_to(ROOT).as_posix(), "application/javascript")
 for wasm in (ROOT / "assets/ruffle").glob("*.wasm"):
     fetch(wasm.relative_to(ROOT).as_posix(), "application/wasm")
 print("Deployment content and MIME checks passed.")

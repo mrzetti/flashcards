@@ -109,6 +109,11 @@
     if (/(unverified|not\s+runtime[\s-]*verified|not\s+verified|runtime[\s-]*verification\s+pending|nicht\s+verifiziert)/.test(lower)) {
       return { key: 'unverified', label: 'Unverified', tone: 'unverified', raw: value };
     }
+    // A declared partial result often explains a missing companion afterwards.
+    // That explanation must not turn the entire card into Unsupported.
+    if (/^partial\b/.test(lower)) {
+      return { key: 'partial', label: 'Partial', tone: 'partial', raw: value };
+    }
     if (/(unsupported|broken|does\s+not\s+(run|work)|fails|fail|error|missing|removed|unavailable|incompatible)/.test(lower)) {
       return { key: 'unsupported', label: 'Unsupported', tone: 'unsupported', raw: value };
     }

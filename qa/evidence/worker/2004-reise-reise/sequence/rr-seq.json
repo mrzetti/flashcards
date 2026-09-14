@@ -1,0 +1,194 @@
+{
+  "card": "2004-reise-reise",
+  "tag": "rr-seq",
+  "steps": [
+    {
+      "index": 1,
+      "label": "deutsch",
+      "fx": 0.127,
+      "fy": 0.364,
+      "point": {
+        "x": 205,
+        "y": 312
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.02816590081564472,
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 2,
+      "label": "START",
+      "fx": 0.05,
+      "fy": 0.051,
+      "point": {
+        "x": 115,
+        "y": 69
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.11861610036901574,
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 3,
+      "label": "SOUND-SNIPPETS",
+      "fx": 0.21,
+      "fy": 0.051,
+      "point": {
+        "x": 302,
+        "y": 69
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.10043370206186568,
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 4,
+      "label": "INFO",
+      "fx": 0.357,
+      "fy": 0.051,
+      "point": {
+        "x": 473,
+        "y": 69
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.00927994703701178,
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    }
+  ],
+  "dialogs": [],
+  "popups": [],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2004-reise-reise",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf",
+      "external": false,
+      "status": 200,
+      "failure": null
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x8a40014ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x8a40014ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x8a40014ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x8a40014ce00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "failedRequests": [],
+  "externalRequests": []
+}

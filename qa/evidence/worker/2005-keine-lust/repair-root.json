@@ -1,0 +1,236 @@
+{
+  "variant": "root",
+  "swf": "/originals/2005-keine-lust.swf",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:37421/player.html?card=2005-keine-lust",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/styles.css",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/assets/ruffle/ruffle.js",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/player.js",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/catalog.json",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/originals/2005-keine-lust.swf",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/player_txt.txt",
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:37421/audio/track1.mp3",
+      "status": 404,
+      "method": "GET"
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file http://127.0.0.1:37421/originals/2005-keine-lust.swf"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x84c00137600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x84c00137600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x84c00137600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x84c00137600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "dialogs": [
+    "The SWF file wants to open the website http://www.universalbuybutton.com/site.php?k=M7780S7810V7820"
+  ],
+  "steps": [
+    {
+      "name": "INTRO",
+      "x": 418,
+      "y": 641,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [],
+      "audio": [
+        {
+          "state": "running",
+          "time": 12.26013605442177,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "INFO",
+      "x": 460,
+      "y": 638,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [],
+      "audio": [
+        {
+          "state": "running",
+          "time": 16.24235827664399,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "WIN",
+      "x": 498,
+      "y": 641,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [],
+      "audio": [
+        {
+          "state": "running",
+          "time": 20.050430839002267,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "x": 538,
+      "y": 640,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [],
+      "audio": [
+        {
+          "state": "running",
+          "time": 23.99201814058957,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "TOUR",
+      "x": 582,
+      "y": 639,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [],
+      "audio": [
+        {
+          "state": "running",
+          "time": 27.930702947845806,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "SCREENSAVER",
+      "x": 650,
+      "y": 640,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [],
+      "audio": [
+        {
+          "state": "running",
+          "time": 31.950657596371883,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "BUY",
+      "x": 709,
+      "y": 641,
+      "changed": true,
+      "newRequests": [],
+      "dialogs": [
+        "The SWF file wants to open the website http://www.universalbuybutton.com/site.php?k=M7780S7810V7820"
+      ],
+      "audio": [
+        {
+          "state": "running",
+          "time": 35.851609977324266,
+          "peak": 0,
+          "rms": 0
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "ox": 380,
+    "oy": 157.703125,
+    "meta": {
+      "w": 520,
+      "h": 520
+    }
+  },
+  "playerTxt": [
+    {
+      "url": "http://127.0.0.1:37421/player_txt.txt",
+      "status": 200,
+      "method": "GET"
+    }
+  ],
+  "trackRequests": [
+    {
+      "url": "http://127.0.0.1:37421/audio/track1.mp3",
+      "status": 404,
+      "method": "GET"
+    }
+  ],
+  "failed": []
+}

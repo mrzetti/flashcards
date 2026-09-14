@@ -1,0 +1,477 @@
+[
+  {
+    "card": "2005-keine-lust",
+    "label": "Keine Lust",
+    "mode": "embedded",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2005-keine-lust&instance=1",
+    "launchedCard": "2005-keine-lust",
+    "metrics": {
+      "viewport": {
+        "w": 388,
+        "h": 697
+      },
+      "scroll": {
+        "w": 388,
+        "h": 697
+      },
+      "metadata": {
+        "w": 520,
+        "h": 520
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 388,
+        "h": 492
+      },
+      "canvas": {
+        "attrW": 776,
+        "attrH": 984,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 388,
+          "h": 492
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/originals/2005-keine-lust.swf",
+        "base": "http://127.0.0.1:19325/originals/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2005-keine-lust",
+    "label": "Keine Lust",
+    "mode": "embedded",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2005-keine-lust&instance=1",
+    "launchedCard": "2005-keine-lust",
+    "metrics": {
+      "viewport": {
+        "w": 818,
+        "h": 527
+      },
+      "scroll": {
+        "w": 818,
+        "h": 527
+      },
+      "metadata": {
+        "w": 520,
+        "h": 520
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 818,
+        "h": 382
+      },
+      "canvas": {
+        "attrW": 818,
+        "attrH": 382,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 818,
+          "h": 382
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/originals/2005-keine-lust.swf",
+        "base": "http://127.0.0.1:19325/originals/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2004-reise-reise",
+    "label": "Reise, Reise",
+    "mode": "embedded",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2004-reise-reise&instance=1",
+    "launchedCard": "2004-reise-reise",
+    "metrics": {
+      "viewport": {
+        "w": 388,
+        "h": 697
+      },
+      "scroll": {
+        "w": 388,
+        "h": 697
+      },
+      "metadata": {
+        "w": 600,
+        "h": 400
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 388,
+        "h": 492
+      },
+      "canvas": {
+        "attrW": 776,
+        "attrH": 984,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 388,
+          "h": 492
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/assets/cards/2004-reise-reise/player.swf",
+        "base": "http://127.0.0.1:19325/assets/cards/2004-reise-reise/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2004-reise-reise",
+    "label": "Reise, Reise",
+    "mode": "embedded",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2004-reise-reise&instance=1",
+    "launchedCard": "2004-reise-reise",
+    "metrics": {
+      "viewport": {
+        "w": 818,
+        "h": 527
+      },
+      "scroll": {
+        "w": 818,
+        "h": 527
+      },
+      "metadata": {
+        "w": 600,
+        "h": 400
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 818,
+        "h": 382
+      },
+      "canvas": {
+        "attrW": 818,
+        "attrH": 382,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 818,
+          "h": 382
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/assets/cards/2004-reise-reise/player.swf",
+        "base": "http://127.0.0.1:19325/assets/cards/2004-reise-reise/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2005-rosenrot",
+    "label": "Rosenrot",
+    "mode": "embedded",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2005-rosenrot&instance=1",
+    "launchedCard": "2005-rosenrot",
+    "metrics": {
+      "viewport": {
+        "w": 388,
+        "h": 697
+      },
+      "scroll": {
+        "w": 388,
+        "h": 697
+      },
+      "metadata": {
+        "w": 628,
+        "h": 471
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 388,
+        "h": 492
+      },
+      "canvas": {
+        "attrW": 776,
+        "attrH": 984,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 388,
+          "h": 492
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/assets/cards/2005-rosenrot/player.swf",
+        "base": "http://127.0.0.1:19325/assets/cards/2005-rosenrot/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2005-rosenrot",
+    "label": "Rosenrot",
+    "mode": "embedded",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2005-rosenrot&instance=1",
+    "launchedCard": "2005-rosenrot",
+    "metrics": {
+      "viewport": {
+        "w": 818,
+        "h": 527
+      },
+      "scroll": {
+        "w": 818,
+        "h": 527
+      },
+      "metadata": {
+        "w": 628,
+        "h": 471
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 818,
+        "h": 382
+      },
+      "canvas": {
+        "attrW": 818,
+        "attrH": 382,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 818,
+          "h": 382
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/assets/cards/2005-rosenrot/player.swf",
+        "base": "http://127.0.0.1:19325/assets/cards/2005-rosenrot/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2005-mann-gegen-mann",
+    "label": "Mann gegen Mann",
+    "mode": "embedded",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2005-mann-gegen-mann&instance=1",
+    "launchedCard": "2005-mann-gegen-mann",
+    "metrics": {
+      "viewport": {
+        "w": 388,
+        "h": 697
+      },
+      "scroll": {
+        "w": 388,
+        "h": 697
+      },
+      "metadata": {
+        "w": 500,
+        "h": 630
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 388,
+        "h": 492
+      },
+      "canvas": {
+        "attrW": 776,
+        "attrH": 984,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 388,
+          "h": 492
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/originals/2005-mann-gegen-mann.swf",
+        "base": "http://127.0.0.1:19325/originals/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2005-mann-gegen-mann",
+    "label": "Mann gegen Mann",
+    "mode": "embedded",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "variant": "actual",
+    "frameUrl": "http://127.0.0.1:19325/player.html?card=2005-mann-gegen-mann&instance=1",
+    "launchedCard": "2005-mann-gegen-mann",
+    "metrics": {
+      "viewport": {
+        "w": 818,
+        "h": 527
+      },
+      "scroll": {
+        "w": 818,
+        "h": 527
+      },
+      "metadata": {
+        "w": 500,
+        "h": 630
+      },
+      "readyState": 2,
+      "playerRect": {
+        "x": 0,
+        "y": 29,
+        "w": 818,
+        "h": 382
+      },
+      "canvas": {
+        "attrW": 818,
+        "attrH": 382,
+        "rect": {
+          "x": 0,
+          "y": 29,
+          "w": 818,
+          "h": 382
+        }
+      },
+      "clipped": false,
+      "overflowX": 0,
+      "overflowY": 0,
+      "loadOptions": {
+        "url": "http://127.0.0.1:19325/originals/2005-mann-gegen-mann.swf",
+        "base": "http://127.0.0.1:19325/originals/",
+        "autoplay": "on",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "#000000",
+        "letterbox": "on",
+        "allowScriptAccess": false,
+        "openUrlMode": "confirm",
+        "upgradeToHttps": true,
+        "warnOnUnsupportedContent": true
+      }
+    }
+  },
+  {
+    "card": "2005-keine-lust",
+    "label": "Keine Lust",
+    "mode": "standalone-gate",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "variant": "actual",
+    "error": "page.waitForFunction: Timeout 90000ms exceeded."
+  }
+]

@@ -1,0 +1,876 @@
+{
+  "cardId": "2004-reise-reise",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T22:52:04.275Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:52:04.484Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:52:04.823Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf",
+      "at": "2026-09-13T22:52:04.823Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:52:04.873Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T22:53:36.437Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:53:36.539Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf",
+      "at": "2026-09-13T22:53:36.539Z"
+    },
+    {
+      "type": "warning",
+      "text": "Construction of AudioBufferSourceNode is not useful when context is closed.",
+      "at": "2026-09-13T22:53:36.554Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:53:36.554Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:53:36.554Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:53:36.579Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2004-reise-reise",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.301Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.325Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.325Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.325Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.354Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.362Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.380Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:52:04.826Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 2164414,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:53:36.540Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 2164414,
+      "contentType": "application/x-shockwave-flash"
+    }
+  ],
+  "dialogs": [],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.127,
+      "fy": 0.364,
+      "x": 205,
+      "y": 312,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.025452502513851564,
+        "maxPeak": 0.07427172362804413,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9595,
+        "hash": "c6ace3c4d43c85423c02dc7bc89fbbbe",
+        "buf": {
+          "omittedBinaryBytes": 340307,
+          "sha256": "09d4639464b46cb6fcecdec76c3a373593f0efeb6f5d0b3601702c74d94fe284"
+        }
+      },
+      "settledState": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "02",
+      "fx": 0.122,
+      "fy": 0.427,
+      "x": 199,
+      "y": 361,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.09743154235856541,
+        "maxPeak": 0.33936426043510437,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10116,
+        "hash": "9f384a9c87fb9c1f07a91f3e477b5bba",
+        "buf": {
+          "omittedBinaryBytes": 311766,
+          "sha256": "012aa310506bf144868520832c5f315f739b75b98908e98bc1983a82c9a5fee2"
+        }
+      },
+      "settledState": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "03",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 2122,
+        "hash": "8bb3a4566d814f296dfee2cef57b6876",
+        "buf": {
+          "omittedBinaryBytes": 329057,
+          "sha256": "ed15d45739497dd1848bef7606400eb5c4903efb2b9e9417aff76b995f74e453"
+        }
+      },
+      "settledState": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "04",
+      "fx": 0.5,
+      "fy": 0.8,
+      "x": 640,
+      "y": 651,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9636,
+        "hash": "4dbd5d6cbadb16a4e04daf73170e3c65",
+        "buf": {
+          "omittedBinaryBytes": 311355,
+          "sha256": "2d140e7471100104adc6637aad6c1cef9089f019aeec198c4a1880480fe0b442"
+        }
+      },
+      "settledState": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "05",
+      "fx": 0.2,
+      "fy": 0.85,
+      "x": 290,
+      "y": 690,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9730,
+        "hash": "5f911f89baa0daea77a971f7f93d0bc0",
+        "buf": {
+          "omittedBinaryBytes": 312816,
+          "sha256": "d9965fa2f4febf60b8f8c1a44183d9138118bdfe83dda1cc70022edbd326b4d3"
+        }
+      },
+      "settledState": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    }
+  ],
+  "gridClicks": [],
+  "successes": [
+    "SWF metadata reported: 600x400, 1107 frames @ 31 fps, SWF version 6, isActionScript3=false",
+    "SWF settled into a static frame after 2364ms (1 unique frames)",
+    "menu click #01 at (fx=0.127, fy=0.364) changed the card view",
+    "menu click #02 at (fx=0.122, fy=0.427) changed the card view",
+    "menu click #03 at (fx=0.5, fy=0.5) changed the card view",
+    "menu click #04 at (fx=0.5, fy=0.8) changed the card view",
+    "menu click #05 at (fx=0.2, fy=0.85) changed the card view",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=true",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "grid-skipped",
+      "detail": "semantic candidates already changed the view; grid sweep skipped"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "20-sem-01-changed.png",
+    "19-sem-01-hover.png",
+    "21-sem-01-settled.png",
+    "20-sem-02-changed.png",
+    "19-sem-02-hover.png",
+    "21-sem-02-settled.png",
+    "20-sem-03-changed.png",
+    "19-sem-03-hover.png",
+    "21-sem-03-settled.png",
+    "20-sem-04-changed.png",
+    "19-sem-04-hover.png",
+    "21-sem-04-settled.png",
+    "20-sem-05-changed.png",
+    "19-sem-05-hover.png",
+    "21-sem-05-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2004-reise-reise",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2004-reise-reise",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "Reise, Reise (2004)",
+    "year": "Year 2004",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 56.9453125,
+      "y": 29,
+      "width": 1166.109375,
+      "height": 777.40625
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 600,
+      "height": 400,
+      "frameRate": 31,
+      "numFrames": 1107,
+      "swfVersion": 6,
+      "backgroundColor": "#000000",
+      "isActionScript3": false,
+      "uncompressedLength": 2459541
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 600,
+    "height": 400,
+    "frameRate": 31,
+    "numFrames": 1107,
+    "swfVersion": 6,
+    "backgroundColor": "#000000",
+    "isActionScript3": false,
+    "uncompressedLength": 2459541
+  },
+  "clip": {
+    "x": 56,
+    "y": 29,
+    "width": 1167,
+    "height": 778
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": true,
+    "elapsedMs": 2364,
+    "frames": 3,
+    "uniqueFrames": 1
+  },
+  "baselineHash": "58038ce950ece2c53beb27ec09f8178e",
+  "settledHash": "58038ce950ece2c53beb27ec09f8178e",
+  "semanticChanges": 5,
+  "baselineAfterSemantic": "6f4b673a9f130dc7468d9f3dc62522e7",
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0,
+    "sessionHadSound": true
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 7,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2004-reise-reise",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 7,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2004-reise-reise",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 5,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2004-reise-reise",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2004-reise-reise",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 4,
+      "beforeRequests": 8,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "Reise, Reise (2004)",
+        "year": "Year 2004",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2004-reise-reise",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 12,
+        "maxRms": 0.012178803243279924,
+        "maxPeak": 0.06478545814752579,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf",
+          "status": 200,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2004-reise-reise/player.swf"
+        },
+        {
+          "type": "warning",
+          "text": "Construction of AudioBufferSourceNode is not useful when context is closed."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "58038ce950ece2c53beb27ec09f8178e",
+      "returnedToInitialFrame": true
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2004-reise-reise",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Reise, Reise (2004)",
+      "year": "Year 2004",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [],
+  "consoleErrors": [],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

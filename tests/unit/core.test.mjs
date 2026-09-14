@@ -252,3 +252,6 @@ test('validatePlayerMessage requires the card id when the host knows it', () => 
   assert.equal(core.validatePlayerMessage({ channel: 'flashcards-player', type: 'status', state: 'loading', instance: 1, cardId: 'alpha' }, context).state, 'loading');
   assert.equal(core.validatePlayerMessage({ channel: 'flashcards-player', type: 'status', state: 'loading', instance: 1 }, context), null);
 });
+test('Explicit Partial status wins over a missing companion in its explanation', () => {
+  assert.equal(core.normalizeStatus('Partial — e-card works; external trailer is missing').key, 'partial');
+});

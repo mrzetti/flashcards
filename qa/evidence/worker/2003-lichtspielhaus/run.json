@@ -1,0 +1,1170 @@
+{
+  "cardId": "2003-lichtspielhaus",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T22:50:49.978Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:50:50.290Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:50:50.782Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf",
+      "at": "2026-09-13T22:50:50.782Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:50:50.839Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xfe400149400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "at": "2026-09-13T22:50:50.956Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xfe400149400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "at": "2026-09-13T22:50:51.138Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xfe400149400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "at": "2026-09-13T22:50:51.171Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xfe400149400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "at": "2026-09-13T22:50:51.221Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T22:51:57.404Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:51:57.512Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf",
+      "at": "2026-09-13T22:51:57.513Z"
+    },
+    {
+      "type": "warning",
+      "text": "Construction of AudioBufferSourceNode is not useful when context is closed.",
+      "at": "2026-09-13T22:51:57.529Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:51:57.534Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:51:57.534Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:51:57.549Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2003-lichtspielhaus",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.043Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.078Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.079Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.079Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.125Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.138Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.160Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:50:50.787Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 1203021,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:51:57.514Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 1203021,
+      "contentType": "application/x-shockwave-flash"
+    }
+  ],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+      "at": "2026-09-13T22:51:13.550Z"
+    },
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+      "at": "2026-09-13T22:51:21.516Z"
+    },
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html",
+      "at": "2026-09-13T22:51:26.707Z"
+    },
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+      "at": "2026-09-13T22:51:37.796Z"
+    },
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+      "at": "2026-09-13T22:51:43.677Z"
+    }
+  ],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.08060996143610627,
+        "maxPeak": 0.19429412484169006,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "02",
+      "fx": 0.5,
+      "fy": 0.85,
+      "x": 640,
+      "y": 687,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.08317689068382898,
+        "maxPeak": 0.2005249410867691,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 1003,
+        "hash": "7ec036e9bd3046bb0a2b64dec7e94694",
+        "buf": {
+          "omittedBinaryBytes": 24851,
+          "sha256": "215f4e991fb5f65b2eea571fb08a42150a8c16824d229667f86bf9cbac82a4a9"
+        }
+      },
+      "settledState": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "03",
+      "fx": 0.25,
+      "fy": 0.85,
+      "x": 320,
+      "y": 687,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.08565527588015923,
+        "maxPeak": 0.22235456109046936,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "04",
+      "fx": 0.75,
+      "fy": 0.85,
+      "x": 960,
+      "y": 687,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.07910715094215702,
+        "maxPeak": 0.19095152616500854,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:21.516Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 1033,
+        "hash": "6b0b5c2d28d7ea753c66ea41794600f9",
+        "buf": {
+          "omittedBinaryBytes": 24830,
+          "sha256": "6f1ab227c1d2cc7cbeb54582784104c82e7295da61d4dd84fba4eb3d5dacb3d5"
+        }
+      },
+      "settledState": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "05",
+      "fx": 0.5,
+      "fy": 0.15,
+      "x": 640,
+      "y": 149,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.07501892761039328,
+        "maxPeak": 0.2308448851108551,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:21.516Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html",
+          "at": "2026-09-13T22:51:26.707Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 1047,
+        "hash": "13eab6aec094da71284a0fd308889459",
+        "buf": {
+          "omittedBinaryBytes": 24909,
+          "sha256": "b519fd6e7bebca334855710274b1b98b3f9d63ad9416172619f5e77c631aa778"
+        }
+      },
+      "settledState": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "06",
+      "fx": 0.15,
+      "fy": 0.5,
+      "x": 192,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.0758731938619475,
+        "maxPeak": 0.19697070121765137,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:21.516Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html",
+          "at": "2026-09-13T22:51:26.707Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "07",
+      "fx": 0.85,
+      "fy": 0.5,
+      "x": 1088,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.07734039576766463,
+        "maxPeak": 0.23042161762714386,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:21.516Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html",
+          "at": "2026-09-13T22:51:26.707Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "08",
+      "fx": 0.35,
+      "fy": 0.7,
+      "x": 448,
+      "y": 571,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.08117184398669387,
+        "maxPeak": 0.19095152616500854,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:21.516Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html",
+          "at": "2026-09-13T22:51:26.707Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:37.796Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 1248,
+        "hash": "7ec036e9bd3046bb0a2b64dec7e94694",
+        "buf": {
+          "omittedBinaryBytes": 24851,
+          "sha256": "215f4e991fb5f65b2eea571fb08a42150a8c16824d229667f86bf9cbac82a4a9"
+        }
+      },
+      "settledState": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "09",
+      "fx": 0.65,
+      "fy": 0.7,
+      "x": 832,
+      "y": 571,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.0863745151987281,
+        "maxPeak": 0.2838285565376282,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:13.550Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:21.516Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html",
+          "at": "2026-09-13T22:51:26.707Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:37.796Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949",
+          "at": "2026-09-13T22:51:43.677Z"
+        }
+      ],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 1419,
+        "hash": "6b0b5c2d28d7ea753c66ea41794600f9",
+        "buf": {
+          "omittedBinaryBytes": 24830,
+          "sha256": "6f1ab227c1d2cc7cbeb54582784104c82e7295da61d4dd84fba4eb3d5dacb3d5"
+        }
+      },
+      "settledState": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    }
+  ],
+  "gridClicks": [],
+  "successes": [
+    "SWF metadata reported: 500x300, 498 frames @ 25 fps, SWF version 6, isActionScript3=false",
+    "SWF settled into a static frame after 14105ms (11 unique frames)",
+    "menu click #02 at (fx=0.5, fy=0.85) changed the card view",
+    "menu click #04 at (fx=0.75, fy=0.85) changed the card view",
+    "menu click #05 at (fx=0.5, fy=0.15) changed the card view",
+    "menu click #08 at (fx=0.35, fy=0.7) changed the card view",
+    "menu click #09 at (fx=0.65, fy=0.7) changed the card view",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Mute dropped measured Web Audio RMS from 0.0776 to 0.0000",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=false",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "grid-skipped",
+      "detail": "semantic candidates already changed the view; grid sweep skipped"
+    },
+    {
+      "severity": "note",
+      "kind": "dialogs",
+      "detail": "[{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949\",\"at\":\"2026-09-13T22:51:13.550Z\"},{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949\",\"at\":\"2026-09-13T22:51:21.516Z\"},{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.motor.de/rammstein_newsletter/lichtspielhaus1.html\",\"at\":\"2026-09-13T22:51:26.707Z\"},{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949\",\"at\":\"2026-09-13T22:51:37.796Z\"},{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949\",\"at\":\"2026-09-13T22:51:43.677Z\"}]"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "20-sem-02-changed.png",
+    "19-sem-02-hover.png",
+    "21-sem-02-settled.png",
+    "20-sem-04-changed.png",
+    "19-sem-04-hover.png",
+    "21-sem-04-settled.png",
+    "20-sem-05-changed.png",
+    "19-sem-05-hover.png",
+    "21-sem-05-settled.png",
+    "20-sem-08-changed.png",
+    "19-sem-08-hover.png",
+    "21-sem-08-settled.png",
+    "20-sem-09-changed.png",
+    "19-sem-09-hover.png",
+    "21-sem-09-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2003-lichtspielhaus",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2003-lichtspielhaus",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "Lichtspielhaus (2003)",
+    "year": "Year 2003",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 0,
+      "y": 33.703125,
+      "width": 1280,
+      "height": 768
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 500,
+      "height": 300,
+      "frameRate": 25,
+      "numFrames": 498,
+      "swfVersion": 6,
+      "backgroundColor": "#000000",
+      "isActionScript3": false,
+      "uncompressedLength": 1282417
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 500,
+    "height": 300,
+    "frameRate": 25,
+    "numFrames": 498,
+    "swfVersion": 6,
+    "backgroundColor": "#000000",
+    "isActionScript3": false,
+    "uncompressedLength": 1282417
+  },
+  "clip": {
+    "x": 0,
+    "y": 33,
+    "width": 1280,
+    "height": 768
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": true,
+    "elapsedMs": 14105,
+    "frames": 13,
+    "uniqueFrames": 11
+  },
+  "baselineHash": "de49aaf6f1986223f74d5b87f6899672",
+  "settledHash": "3cd8d0038a9356bd3e055d76b9828eed",
+  "semanticChanges": 5,
+  "baselineAfterSemantic": "a0eee7d76c6c923290e517ac0eb3a3f3",
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0.07760218296427487,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0.09265272847979947,
+    "sessionHadSound": true
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 8,
+      "maxRms": 0.07760218296427487,
+      "maxPeak": 0.2005249410867691,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2003-lichtspielhaus",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 8,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2003-lichtspielhaus",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 6,
+      "maxRms": 0.09265272847979947,
+      "maxPeak": 0.2838285565376282,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2003-lichtspielhaus",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2003-lichtspielhaus",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 8,
+      "beforeRequests": 8,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "Lichtspielhaus (2003)",
+        "year": "Year 2003",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 10,
+        "maxRms": 0.26417320806451744,
+        "maxPeak": 0.7419142723083496,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf",
+          "status": 200,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf"
+        },
+        {
+          "type": "warning",
+          "text": "Construction of AudioBufferSourceNode is not useful when context is closed."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "dd81fad8c3085ef4f1a39f6aab635ee0",
+      "returnedToInitialFrame": false
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2003-lichtspielhaus",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Lichtspielhaus (2003)",
+      "year": "Year 2003",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [],
+  "consoleErrors": [],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

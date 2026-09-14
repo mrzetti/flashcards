@@ -1,0 +1,1595 @@
+{
+  "cardId": "2006-voelkerball",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T22:59:50.808Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:59:51.161Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:59:51.712Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2006-voelkerball.swf",
+      "at": "2026-09-13T22:59:51.712Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:59:51.804Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T23:02:51.113Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T23:02:51.222Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2006-voelkerball.swf",
+      "at": "2026-09-13T23:02:51.222Z"
+    },
+    {
+      "type": "warning",
+      "text": "Construction of AudioBufferSourceNode is not useful when context is closed.",
+      "at": "2026-09-13T23:02:51.227Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T23:02:51.227Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T23:02:51.227Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T23:02:51.270Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2006-voelkerball",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:50.847Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:50.913Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:50.913Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:50.913Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:50.961Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:50.971Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:51.008Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2006-voelkerball.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:51.716Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 2854279,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2006-voelkerball.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T23:02:51.223Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 2854279,
+      "contentType": "application/x-shockwave-flash"
+    }
+  ],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.rammstein.de/",
+      "at": "2026-09-13T23:00:48.378Z"
+    },
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.rammsteinshop.de/",
+      "at": "2026-09-13T23:01:05.791Z"
+    }
+  ],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.042941891369709155,
+        "maxPeak": 0.13107727468013763,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "02",
+      "fx": 0.2,
+      "fy": 0.85,
+      "x": 335,
+      "y": 690,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.05539953740953472,
+        "maxPeak": 0.14366337656974792,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "03",
+      "fx": 0.5,
+      "fy": 0.85,
+      "x": 640,
+      "y": 690,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.051175777559178716,
+        "maxPeak": 0.13288240134716034,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "04",
+      "fx": 0.8,
+      "fy": 0.85,
+      "x": 945,
+      "y": 690,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.06750019069113343,
+        "maxPeak": 0.14080007374286652,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "05",
+      "fx": 0.35,
+      "fy": 0.85,
+      "x": 488,
+      "y": 690,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.05110951654192198,
+        "maxPeak": 0.1397418975830078,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "06",
+      "fx": 0.65,
+      "fy": 0.85,
+      "x": 792,
+      "y": 690,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.05696323949965896,
+        "maxPeak": 0.14128558337688446,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "07",
+      "fx": 0.5,
+      "fy": 0.15,
+      "x": 640,
+      "y": 146,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.05141405211072339,
+        "maxPeak": 0.12591086328029633,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "08",
+      "fx": 0.2,
+      "fy": 0.5,
+      "x": 335,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.07092346516640355,
+        "maxPeak": 0.14012780785560608,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammsteinshop.de/",
+          "at": "2026-09-13T23:01:05.791Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "09",
+      "fx": 0.8,
+      "fy": 0.5,
+      "x": 945,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.0488817974830755,
+        "maxPeak": 0.13440120220184326,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammsteinshop.de/",
+          "at": "2026-09-13T23:01:05.791Z"
+        }
+      ],
+      "popups": []
+    },
+    {
+      "step": "10",
+      "fx": 0.5,
+      "fy": 0.3,
+      "x": 640,
+      "y": 262,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.05643303663285389,
+        "maxPeak": 0.13080339133739471,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammstein.de/",
+          "at": "2026-09-13T23:00:48.378Z"
+        },
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.rammsteinshop.de/",
+          "at": "2026-09-13T23:01:05.791Z"
+        }
+      ],
+      "popups": []
+    }
+  ],
+  "gridClicks": [
+    {
+      "gx": 0,
+      "gy": 0,
+      "fx": 0.07,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 1,
+      "gy": 0,
+      "fx": 0.183,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 2,
+      "gy": 0,
+      "fx": 0.296,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 3,
+      "gy": 0,
+      "fx": 0.409,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 4,
+      "gy": 0,
+      "fx": 0.521,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 5,
+      "gy": 0,
+      "fx": 0.634,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 6,
+      "gy": 0,
+      "fx": 0.747,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 7,
+      "gy": 0,
+      "fx": 0.86,
+      "fy": 0.09,
+      "changed": false
+    },
+    {
+      "gx": 0,
+      "gy": 1,
+      "fx": 0.07,
+      "fy": 0.252,
+      "changed": false
+    },
+    {
+      "gx": 1,
+      "gy": 1,
+      "fx": 0.183,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.16332553443066522,
+        "maxPeak": 0.3967922627925873,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 2,
+      "gy": 1,
+      "fx": 0.296,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.08639337892504362,
+        "maxPeak": 0.26816749572753906,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 3,
+      "gy": 1,
+      "fx": 0.409,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.07670013527679938,
+        "maxPeak": 0.22992365062236786,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 4,
+      "gy": 1,
+      "fx": 0.521,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.10925245358180574,
+        "maxPeak": 0.3511660695075989,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 5,
+      "gy": 1,
+      "fx": 0.634,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.1546016364987554,
+        "maxPeak": 0.40792182087898254,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 6,
+      "gy": 1,
+      "fx": 0.747,
+      "fy": 0.252,
+      "changed": false
+    },
+    {
+      "gx": 7,
+      "gy": 1,
+      "fx": 0.86,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.12810743637711972,
+        "maxPeak": 0.3735745847225189,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 0,
+      "gy": 2,
+      "fx": 0.07,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.15431107415123388,
+        "maxPeak": 0.40458545088768005,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 1,
+      "gy": 2,
+      "fx": 0.183,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.17449508383954884,
+        "maxPeak": 0.4079342782497406,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 2,
+      "gy": 2,
+      "fx": 0.296,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.11176112405988783,
+        "maxPeak": 0.36300525069236755,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 3,
+      "gy": 2,
+      "fx": 0.409,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.08621461002559211,
+        "maxPeak": 0.2804921567440033,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 4,
+      "gy": 2,
+      "fx": 0.521,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.07216548549597687,
+        "maxPeak": 0.25085070729255676,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 5,
+      "gy": 2,
+      "fx": 0.634,
+      "fy": 0.414,
+      "changed": false
+    },
+    {
+      "gx": 6,
+      "gy": 2,
+      "fx": 0.747,
+      "fy": 0.414,
+      "changed": false
+    },
+    {
+      "gx": 7,
+      "gy": 2,
+      "fx": 0.86,
+      "fy": 0.414,
+      "changed": false
+    },
+    {
+      "gx": 0,
+      "gy": 3,
+      "fx": 0.07,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 1,
+      "gy": 3,
+      "fx": 0.183,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 2,
+      "gy": 3,
+      "fx": 0.296,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 3,
+      "gy": 3,
+      "fx": 0.409,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 4,
+      "gy": 3,
+      "fx": 0.521,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 5,
+      "gy": 3,
+      "fx": 0.634,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 6,
+      "gy": 3,
+      "fx": 0.747,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 7,
+      "gy": 3,
+      "fx": 0.86,
+      "fy": 0.576,
+      "changed": false
+    },
+    {
+      "gx": 0,
+      "gy": 4,
+      "fx": 0.07,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 1,
+      "gy": 4,
+      "fx": 0.183,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 2,
+      "gy": 4,
+      "fx": 0.296,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 3,
+      "gy": 4,
+      "fx": 0.409,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 4,
+      "gy": 4,
+      "fx": 0.521,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 5,
+      "gy": 4,
+      "fx": 0.634,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 6,
+      "gy": 4,
+      "fx": 0.747,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 7,
+      "gy": 4,
+      "fx": 0.86,
+      "fy": 0.738,
+      "changed": false
+    },
+    {
+      "gx": 0,
+      "gy": 5,
+      "fx": 0.07,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 1,
+      "gy": 5,
+      "fx": 0.183,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 2,
+      "gy": 5,
+      "fx": 0.296,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 3,
+      "gy": 5,
+      "fx": 0.409,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 4,
+      "gy": 5,
+      "fx": 0.521,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 5,
+      "gy": 5,
+      "fx": 0.634,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 6,
+      "gy": 5,
+      "fx": 0.747,
+      "fy": 0.9,
+      "changed": false
+    },
+    {
+      "gx": 7,
+      "gy": 5,
+      "fx": 0.86,
+      "fy": 0.9,
+      "changed": false
+    }
+  ],
+  "successes": [
+    "SWF metadata reported: 850x650, 899 frames @ 25 fps, SWF version 8, isActionScript3=false",
+    "SWF settled into a static frame after 36379ms (22 unique frames)",
+    "grid sweep found 11 clickable hotspot(s): (0.183,0.252) (0.296,0.252) (0.409,0.252) (0.521,0.252) (0.634,0.252) (0.86,0.252) (0.07,0.414) (0.183,0.414) (0.296,0.414) (0.409,0.414) (0.521,0.414)",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Mute dropped measured Web Audio RMS from 0.0581 to 0.0000",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=false",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "dialogs",
+      "detail": "[{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.rammstein.de/\",\"at\":\"2026-09-13T23:00:48.378Z\"},{\"type\":\"confirm\",\"message\":\"The SWF file wants to open the website https://www.rammsteinshop.de/\",\"at\":\"2026-09-13T23:01:05.791Z\"}]"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "30-grid-1-1.png",
+    "31-grid-1-1-settled.png",
+    "30-grid-2-1.png",
+    "31-grid-2-1-settled.png",
+    "30-grid-3-1.png",
+    "31-grid-3-1-settled.png",
+    "30-grid-4-1.png",
+    "31-grid-4-1-settled.png",
+    "30-grid-5-1.png",
+    "31-grid-5-1-settled.png",
+    "30-grid-7-1.png",
+    "31-grid-7-1-settled.png",
+    "30-grid-0-2.png",
+    "31-grid-0-2-settled.png",
+    "30-grid-1-2.png",
+    "31-grid-1-2-settled.png",
+    "30-grid-2-2.png",
+    "31-grid-2-2-settled.png",
+    "30-grid-3-2.png",
+    "31-grid-3-2-settled.png",
+    "30-grid-4-2.png",
+    "31-grid-4-2-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2006-voelkerball",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2006-voelkerball",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "V\u00f6lkerball (2006)",
+    "year": "Year 2006",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 131.69591346153845,
+      "y": 29,
+      "width": 1016.6081730769231,
+      "height": 777.40625
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 850,
+      "height": 650,
+      "frameRate": 25,
+      "numFrames": 899,
+      "swfVersion": 8,
+      "backgroundColor": "#000000",
+      "isActionScript3": false,
+      "uncompressedLength": 3114556
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 850,
+    "height": 650,
+    "frameRate": 25,
+    "numFrames": 899,
+    "swfVersion": 8,
+    "backgroundColor": "#000000",
+    "isActionScript3": false,
+    "uncompressedLength": 3114556
+  },
+  "clip": {
+    "x": 131,
+    "y": 29,
+    "width": 1017,
+    "height": 778
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": true,
+    "elapsedMs": 36379,
+    "frames": 29,
+    "uniqueFrames": 22
+  },
+  "baselineHash": "5ff0c67df983d1367339014da4e6424d",
+  "settledHash": "982100abbfec2ff4a92cb414c12e28ea",
+  "semanticChanges": 0,
+  "baselineAfterSemantic": "982100abbfec2ff4a92cb414c12e28ea",
+  "gridChangedCells": [
+    {
+      "gx": 1,
+      "gy": 1,
+      "fx": 0.183,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.16332553443066522,
+        "maxPeak": 0.3967922627925873,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 2,
+      "gy": 1,
+      "fx": 0.296,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.08639337892504362,
+        "maxPeak": 0.26816749572753906,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 3,
+      "gy": 1,
+      "fx": 0.409,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.07670013527679938,
+        "maxPeak": 0.22992365062236786,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 4,
+      "gy": 1,
+      "fx": 0.521,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.10925245358180574,
+        "maxPeak": 0.3511660695075989,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 5,
+      "gy": 1,
+      "fx": 0.634,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.1546016364987554,
+        "maxPeak": 0.40792182087898254,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 7,
+      "gy": 1,
+      "fx": 0.86,
+      "fy": 0.252,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.12810743637711972,
+        "maxPeak": 0.3735745847225189,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 0,
+      "gy": 2,
+      "fx": 0.07,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.15431107415123388,
+        "maxPeak": 0.40458545088768005,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 1,
+      "gy": 2,
+      "fx": 0.183,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.17449508383954884,
+        "maxPeak": 0.4079342782497406,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 2,
+      "gy": 2,
+      "fx": 0.296,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.11176112405988783,
+        "maxPeak": 0.36300525069236755,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 3,
+      "gy": 2,
+      "fx": 0.409,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0.08621461002559211,
+        "maxPeak": 0.2804921567440033,
+        "states": [
+          "running"
+        ]
+      }
+    },
+    {
+      "gx": 4,
+      "gy": 2,
+      "fx": 0.521,
+      "fy": 0.414,
+      "changed": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.07216548549597687,
+        "maxPeak": 0.25085070729255676,
+        "states": [
+          "running"
+        ]
+      }
+    }
+  ],
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0.05807253761354829,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0.05047704629729685,
+    "sessionHadSound": true
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 6,
+      "maxRms": 0.05807253761354829,
+      "maxPeak": 0.13300688564777374,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2006-voelkerball",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 7,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2006-voelkerball",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 5,
+      "maxRms": 0.05047704629729685,
+      "maxPeak": 0.12404349446296692,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2006-voelkerball",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2006-voelkerball",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 4,
+      "beforeRequests": 8,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "V\u00f6lkerball (2006)",
+        "year": "Year 2006",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2006-voelkerball",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 12,
+        "maxRms": 0.15197503972737825,
+        "maxPeak": 0.38558802008628845,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/originals/2006-voelkerball.swf",
+          "status": 200,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2006-voelkerball.swf"
+        },
+        {
+          "type": "warning",
+          "text": "Construction of AudioBufferSourceNode is not useful when context is closed."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "896e4e442404f526ce90f56c56bb5579",
+      "returnedToInitialFrame": false
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2006-voelkerball",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "V\u00f6lkerball (2006)",
+      "year": "Year 2006",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [],
+  "consoleErrors": [],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

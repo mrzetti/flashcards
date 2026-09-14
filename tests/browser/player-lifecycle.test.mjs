@@ -30,6 +30,23 @@ function callsOf(frame) {
   return frame.evaluate(() => (window.__ruffleMock ? window.__ruffleMock.calls : []));
 }
 
+test('Focus waits until Ruffle metadata initialization finishes on load and restart', async () => {
+  const page = await newPage(browser);
+  try {
+    await openDesktop(page, server.baseURL);
+    await launchCard(page, 'alpha');
+    const frame = await waitForFrame(page, 'alpha');
+    await frame.waitForFunction(() => window.__ruffleMock.calls.some(c => c.method === 'focus'));
+    assert.equal((await callsOf(frame)).some(c => c.method === 'focus' && c.duringMetadata), false);
+    await frame.evaluate(() => { window.__ruffleMock.calls.length = 0; });
+    await frame.locator('#restart-button').click();
+    await frame.waitForFunction(() => window.__ruffleMock.calls.some(c => c.method === 'focus'));
+    assert.equal((await callsOf(frame)).some(c => c.method === 'focus' && c.duringMetadata), false);
+  } finally {
+    await page.close();
+  }
+});
+
 test('Launch starts exactly one mocked Ruffle player with the card file and focuses it', async () => {
   const page = await newPage(browser, { viewport: { width: 1280, height: 860 } });
   try {

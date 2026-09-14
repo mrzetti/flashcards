@@ -268,6 +268,14 @@ otherwise.
 
 ## 9. Known dependencies and missing files
 
+Keine Lust's absent music-player companion `player_txt.txt` has a separately
+documented reconstruction in `patches/keine-lust/`, copied byte-for-byte to the
+SWF directory as `originals/player_txt.txt` for deployment. This added companion
+is reconstructed, unlike the 13 unchanged binaries in that directory.
+The track title comes from embedded text; a one-track
+count is an inference. No audio was recovered and no original SWF was changed.
+See `qa/KEINE-LUST-REPAIR.md` for menu verification and reconstruction evidence.
+
 | Card | Dependency | Status |
 | --- | --- | --- |
 | 2005-benzin-game | `benzin1.flv` (relative, played via `NetStream`) | **Missing** from the archive; the video segment cannot load. `movies/254.flv` exported 0 bytes. |
@@ -330,7 +338,7 @@ Policy applied in `catalog.json`:
 | 2005-benzin-game | null | Archive label 2005; intro artwork announces `Nouvel album sortie le 28 octobre` without a year. |
 | 2005-keine-lust | null | Archive label 2005; form text says `OUT 28TH FEBRUARY` with no year; UK tour dates carry no year. |
 | 2005-mann-gegen-mann | 2006 | Embedded `ab 03.03.06` (de) / `out 03.03.06` (en). |
-| 2005-rosenrot | 2005 | Embedded track listing cites live recordings from February, June and July 2005. |
+| 2005-rosenrot | null | Embedded track listing cites live recordings from February, June and July 2005, but recording dates do not independently establish this card's release year. |
 | 2005-rosenrot-single | 2005 | Embedded `Subscribe ... by 20 December 2005`. |
 | 2006-voelkerball | 2006 | Embedded `COPYRIGHT © 1997 - 2006 RAMMSTEIN & PILGRIM MANAGEMENT`; RDF metadata has no date. |
 | 2009-lifad | null | Archive label 2009; no date-bearing text found. |

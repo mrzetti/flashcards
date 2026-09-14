@@ -1,0 +1,265 @@
+{
+  "card": "2005-mann-gegen-mann",
+  "tag": "mgm-seq",
+  "steps": [
+    {
+      "index": 1,
+      "label": "deutsch",
+      "fx": 0.194,
+      "fy": 0.31,
+      "point": {
+        "x": 451,
+        "y": 270
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.044706688646321074,
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 2,
+      "label": "INFO",
+      "fx": 0.93,
+      "fy": 0.435,
+      "point": {
+        "x": 905,
+        "y": 367
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.044766120273943125,
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 3,
+      "label": "VIDEO",
+      "fx": 0.93,
+      "fy": 0.466,
+      "point": {
+        "x": 905,
+        "y": 391
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0,
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 4,
+      "label": "TRAILER-LINK",
+      "fx": 0.51,
+      "fy": 0.34,
+      "point": {
+        "x": 646,
+        "y": 293
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/SteelExternalAll.swf",
+          "status": 404,
+          "failure": null,
+          "external": false
+        },
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/originals/rammstein_22sec_clean.flv",
+          "status": 404,
+          "failure": null,
+          "external": false
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c core/src/loader.rs:853%c Error during movie loading of \"https://flashcards.rammwiki.mrzetti.com/SteelExternalAll.swf\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c core/src/loader.rs:1588%c Error during netstream load of \"https://flashcards.rammwiki.mrzetti.com/originals/rammstein_22sec_clean.flv\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "audioRms": 0,
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    }
+  ],
+  "dialogs": [],
+  "popups": [],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-mann-gegen-mann",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/SteelExternalAll.swf",
+      "external": false,
+      "status": 404,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/rammstein_22sec_clean.flv",
+      "external": false,
+      "status": 404,
+      "failure": null
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x141c00143600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x141c00143600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x141c00143600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x141c00143600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c core/src/loader.rs:853%c Error during movie loading of \"https://flashcards.rammwiki.mrzetti.com/SteelExternalAll.swf\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c core/src/loader.rs:1588%c Error during netstream load of \"https://flashcards.rammwiki.mrzetti.com/originals/rammstein_22sec_clean.flv\": HttpNotOk(\"Got \", 404, false, 0) color: red; background: #444 color: gray; font-style: italic color: inherit"
+    }
+  ],
+  "failedRequests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/SteelExternalAll.swf",
+      "external": false,
+      "status": 404,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/rammstein_22sec_clean.flv",
+      "external": false,
+      "status": 404,
+      "failure": null
+    }
+  ],
+  "externalRequests": []
+}

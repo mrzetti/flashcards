@@ -48,6 +48,14 @@
 
     var volume = 0.8;
     var loadedOptions = null;
+    var metadataDispatching = false;
+
+    function metadata() {
+      metadataDispatching = true;
+      element.dispatchEvent(new CustomEvent('loadedmetadata'));
+      element.dispatchEvent(new CustomEvent('loadeddata'));
+      metadataDispatching = false;
+    }
 
     var api = {
       readyState: 0,
@@ -68,8 +76,7 @@
             api.isPlaying = true;
             resolve();
             window.setTimeout(function () {
-              element.dispatchEvent(new CustomEvent('loadedmetadata'));
-              element.dispatchEvent(new CustomEvent('loadeddata'));
+              metadata();
             }, card === 'slow' ? 900 : 10);
           }, 5);
         });
@@ -79,8 +86,7 @@
         return new Promise(function (resolve) {
           window.setTimeout(function () {
             api.isPlaying = true;
-            element.dispatchEvent(new CustomEvent('loadedmetadata'));
-            element.dispatchEvent(new CustomEvent('loadeddata'));
+            metadata();
             resolve();
           }, 10);
         });
@@ -121,7 +127,11 @@
 
     element.ruffle = function () { return api; };
     element.__api = api;
-    element.addEventListener('focus', function () { record({ method: 'focus' }); });
+    var nativeFocus = element.focus.bind(element);
+    element.focus = function (options) {
+      record({ method: 'focus', duringMetadata: metadataDispatching });
+      return nativeFocus(options);
+    };
     ['keydown', 'keyup'].forEach(function (type) {
       element.addEventListener(type, function (event) {
         record({

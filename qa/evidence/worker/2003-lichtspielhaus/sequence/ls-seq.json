@@ -1,0 +1,179 @@
+{
+  "card": "2003-lichtspielhaus",
+  "tag": "ls-seq",
+  "steps": [
+    {
+      "index": 1,
+      "label": "TRAILER",
+      "fx": 0.73,
+      "fy": 0.58,
+      "point": {
+        "x": 934,
+        "y": 479
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.163540568935985,
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 2,
+      "label": "WIN",
+      "fx": 0.81,
+      "fy": 0.39,
+      "point": {
+        "x": 1037,
+        "y": 333
+      },
+      "changed": true,
+      "dialogs": [],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.059002888074841796,
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    },
+    {
+      "index": 3,
+      "label": "ORDER",
+      "fx": 0.77,
+      "fy": 0.77,
+      "point": {
+        "x": 986,
+        "y": 625
+      },
+      "changed": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949"
+        }
+      ],
+      "newRequests": [],
+      "newConsole": [],
+      "audioRms": 0.07803881546854978,
+      "state": {
+        "cardId": "2003-lichtspielhaus",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      }
+    }
+  ],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "The SWF file wants to open the website https://www.motordiscs.de/detailanz/produktanzeige.rt?prid=346949"
+    }
+  ],
+  "popups": [],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2003-lichtspielhaus",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "external": false,
+      "status": 200,
+      "failure": null
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf",
+      "external": false,
+      "status": 200,
+      "failure": null
+    }
+  ],
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2003-lichtspielhaus/player.swf"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x172400151400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x172400151400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x172400151400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x172400151400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "failedRequests": [],
+  "externalRequests": []
+}

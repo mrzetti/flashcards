@@ -1,0 +1,838 @@
+{
+  "cardId": "2005-mann-gegen-mann",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T22:56:41.739Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:56:42.020Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:56:42.475Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf",
+      "at": "2026-09-13T22:56:42.475Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:56:42.535Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T22:57:49.446Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:57:49.542Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf",
+      "at": "2026-09-13T22:57:49.542Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:57:49.574Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-mann-gegen-mann",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.784Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.815Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.815Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.815Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.861Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.874Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:41.890Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:56:42.480Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 1091520,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:49.545Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 1091520,
+      "contentType": "application/x-shockwave-flash"
+    }
+  ],
+  "dialogs": [],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.194,
+      "fy": 0.31,
+      "x": 451,
+      "y": 270,
+      "hoverChanged": false,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.03689500147734155,
+        "maxPeak": 0.07715993374586105,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9081,
+        "hash": "e8e5287220d386d3388eb902e67b84cc",
+        "buf": {
+          "omittedBinaryBytes": 2927,
+          "sha256": "7452935bfb295d1317e3a65223ff70c9f4eb3445b8b527234c2cdaa84109560e"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "02",
+      "fx": 0.184,
+      "fy": 0.351,
+      "x": 445,
+      "y": 302,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": true,
+        "elapsedMs": 2162,
+        "hash": "fe45af3fb0cbd118d2c8d7f74e5f98db",
+        "buf": {
+          "omittedBinaryBytes": 359525,
+          "sha256": "5ea238dafd4f18e2d0cfd8db582cfe8a88062191c66c96bfb7ac44f9c943d1f7"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "03",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "04",
+      "fx": 0.5,
+      "fy": 0.8,
+      "x": 640,
+      "y": 651,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "05",
+      "fx": 0.2,
+      "fy": 0.8,
+      "x": 455,
+      "y": 651,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 3,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "06",
+      "fx": 0.8,
+      "fy": 0.8,
+      "x": 825,
+      "y": 651,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    },
+    {
+      "step": "07",
+      "fx": 0.5,
+      "fy": 0.2,
+      "x": 640,
+      "y": 184,
+      "hoverChanged": false,
+      "clickChanged": false,
+      "audio": {
+        "sampleCount": 4,
+        "maxRms": 0,
+        "maxPeak": 0,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": []
+    }
+  ],
+  "gridClicks": [],
+  "successes": [
+    "SWF metadata reported: 500x630, 541 frames @ 25 fps, SWF version 8, isActionScript3=false",
+    "SWF settled into a static frame after 2808ms (1 unique frames)",
+    "menu click #01 at (fx=0.194, fy=0.31) changed the card view",
+    "menu click #02 at (fx=0.184, fy=0.351) changed the card view",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=true",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "grid-skipped",
+      "detail": "semantic candidates already changed the view; grid sweep skipped"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "20-sem-01-changed.png",
+    "21-sem-01-settled.png",
+    "20-sem-02-changed.png",
+    "19-sem-02-hover.png",
+    "21-sem-02-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-mann-gegen-mann",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2005-mann-gegen-mann",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "Mann gegen Mann (2005)",
+    "year": "Year 2005",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 331.5054563492063,
+      "y": 29,
+      "width": 616.9890873015873,
+      "height": 777.40625
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 500,
+      "height": 630,
+      "frameRate": 25,
+      "numFrames": 541,
+      "swfVersion": 8,
+      "backgroundColor": "#000000",
+      "isActionScript3": false,
+      "uncompressedLength": 1335326
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 500,
+    "height": 630,
+    "frameRate": 25,
+    "numFrames": 541,
+    "swfVersion": 8,
+    "backgroundColor": "#000000",
+    "isActionScript3": false,
+    "uncompressedLength": 1335326
+  },
+  "clip": {
+    "x": 331,
+    "y": 29,
+    "width": 617,
+    "height": 778
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": true,
+    "elapsedMs": 2808,
+    "frames": 3,
+    "uniqueFrames": 1
+  },
+  "baselineHash": "9f17884ed6cba3c31c393b09e9b1637b",
+  "settledHash": "9f17884ed6cba3c31c393b09e9b1637b",
+  "semanticChanges": 2,
+  "baselineAfterSemantic": "fe45af3fb0cbd118d2c8d7f74e5f98db",
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0,
+    "sessionHadSound": true
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 6,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2005-mann-gegen-mann",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 7,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2005-mann-gegen-mann",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 5,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2005-mann-gegen-mann",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2005-mann-gegen-mann",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 4,
+      "beforeRequests": 8,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "Mann gegen Mann (2005)",
+        "year": "Year 2005",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2005-mann-gegen-mann",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 12,
+        "maxRms": 0.002288977025584971,
+        "maxPeak": 0.010307909920811653,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf",
+          "status": 200,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/originals/2005-mann-gegen-mann.swf"
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "9f17884ed6cba3c31c393b09e9b1637b",
+      "returnedToInitialFrame": true
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2005-mann-gegen-mann",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Mann gegen Mann (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [],
+  "consoleErrors": [],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

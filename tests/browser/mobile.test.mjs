@@ -156,13 +156,21 @@ test('Touch controls can be toggled off and release keys on page hide', async ()
     assert.equal(await frame.locator('#touch-controls').isVisible(), true);
     assert.equal(await frame.locator('#touch-toggle').getAttribute('aria-pressed'), 'true');
 
-    // Keyboard activation of a touch key releases when the button loses focus.
+    // Keyboard activation of a touch key holds until Space is released:
+    // focus moves into the player (required for Ruffle to receive keys) and
+    // must not cancel the hold.
     await frame.locator('[data-key="ArrowUp"]').focus();
     await page.keyboard.down(" ");
     assert.equal(await frame.locator('[data-key="ArrowUp"].held').count(), 1);
+    assert.equal(
+      await frame.evaluate(() => document.activeElement && document.activeElement.getAttribute('data-mock-player')),
+      'beta',
+      'focus moved to the player so Ruffle receives the synthetic key',
+    );
     await frame.evaluate(() => document.activeElement.blur());
-    assert.equal(await frame.locator('[data-key="ArrowUp"].held').count(), 0);
+    assert.equal(await frame.locator('[data-key="ArrowUp"].held').count(), 1, 'blur does not cancel a keyboard hold');
     await page.keyboard.up(" ");
+    assert.equal(await frame.locator('[data-key="ArrowUp"].held').count(), 0);
 
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchCancel', touchPoints: [] });
     assert.deepEqual(page.errors, []);

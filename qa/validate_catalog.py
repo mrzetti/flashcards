@@ -1,10 +1,11 @@
 """Check the portable catalog and binary assets before publication."""
 import json
+import hashlib
 import re
 import struct
 import zlib
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import unquote, urlsplit, parse_qs
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -21,6 +22,23 @@ def local_file(value):
 
 
 def main():
+    preserved = 0
+    for manifest, base in ((ROOT / "originals/SHA256SUMS", ROOT / "originals"),
+                           (ROOT / "assets/cards/SHA256SUMS", ROOT)):
+        for line in manifest.read_text().splitlines():
+            if not line.strip() or line.startswith("#"):
+                continue
+            expected, filename = line.split(maxsplit=1)
+            original = (base / filename.lstrip("*")).resolve()
+            assert original.is_relative_to(ROOT), f"Hash path escapes project: {filename}"
+            actual = hashlib.sha256(original.read_bytes()).hexdigest()
+            assert actual == expected, f"Preserved-file checksum mismatch: {filename}"
+            preserved += 1
+    print(f"Verified {preserved} preserved original/extracted asset hashes.")
+    companion = (ROOT / "patches/keine-lust/player_txt.txt").read_bytes()
+    assert (ROOT / "originals/player_txt.txt").read_bytes() == companion, "Deployed companion differs from documented reconstruction"
+    fields = parse_qs(companion.decode().strip())
+    assert fields == {"numTracks": ["1"], "trackTitle1": ["01: KEINE LUST"]}, "Invalid Keine Lust LoadVars data"
     cards = json.loads((ROOT / "catalog.json").read_text())["cards"]
     assert cards, "Empty collection"
     ids = set()

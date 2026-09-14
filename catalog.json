@@ -2,17 +2,17 @@
   "cards": [
     {
       "id": "2001-mutter",
-      "title": "Mutter — archive 2001",
+      "title": "Mutter — Intro",
       "swf": "originals/2001-mutter.swf",
       "thumbnail": "assets/thumbnails/2001-mutter.jpg",
       "width": 650,
       "height": 400,
       "year": null,
-      "description": "Flash animation for Mutter: a 2,260-frame intro animates the Rammstein logo and cross in green light, with a SKIP button.",
-      "instructions": "Mouse: click SKIP to leave the intro. No keyboard input is used (FFDec 26.2.1 full script export; scripts only contain the loading loop and an on(release) getURL to index.html).",
+      "description": "A green-lit animated Rammstein emblem from the Mutter-era website.",
+      "instructions": "Watch the intro. SKIP and ENTER HERE belong to the original website navigation; that destination is not included. Use Restart to replay.",
       "controls": ["Mouse (click)"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "Original file '2001 - Mutter.swf' (uncompressed FWS v4, 146,580 bytes); '2001' is the archive filename label, not a verified year, and no release date is embedded in the movie. The archive's 'Mutter/' decompiled export has 2,260 frames at 651x401, matching the SWF timeline; texts, scripts and images are preserved in assets/cards/2001-mutter/. Not runtime-verified."
+      "status": "Partial — intro and audio work; original website destination is absent",
+      "notes": "Original SWF unchanged. Archive filename: '2001 - Mutter.swf'; that year is an archival label, not a verified release date. Animation, audio, mute, restart and fullscreen were checked in Chromium. Both in-card navigation buttons target the missing original index.html. See PROVENANCE.md and VERIFICATION.md."
     },
     {
       "id": "2001-ich-will",
@@ -22,25 +22,25 @@
       "width": 795,
       "height": 590,
       "year": 2001,
-      "description": "Interactive Ich will visualizer: 1,031 frames at 45 fps in which cursor movement drives generative line drawings ('woistdieMaus', 'mausdelta') and a light mask over video stills. A status line in the movie announces 'RELEASE 10_09_2001'.",
-      "instructions": "Mouse: move the cursor across the stage; the animation reacts to pointer distance and to holding still. Buttons link to the single's send-to-a-friend form and a RealMedia sound file on the historical rammstein.de host (availability not verified).",
+      "description": "An interactive scanning display: move across the video stills to draw lines and reveal the Ich will artwork.",
+      "instructions": "Let the intro finish, including its black interval. Move the pointer across the stage, then hold still to see the display react. On a touchscreen, drag a finger across the image.",
       "controls": ["Mouse"],
-      "status": "Playable extracted SWF (not runtime-verified)",
-      "notes": "Year 2001 is supported by the embedded text 'RELEASE 10_09_2001' (not by the archive filename label). The SWF was extracted byte-for-byte from the Flash projector '2001 - Ich will.exe' (uncompressed FWS v5 at offset 376,832; declared length 799,398 bytes); its 1,031 frames match the archive's 'Ich will/' export. The original EXE is preserved in originals/. Companion texts, scripts and images are in assets/cards/2001-ich-will/. Not runtime-verified."
+      "status": "Verified playback — pointer visualizer and audio",
+      "notes": "Unmodified movie extracted from the preserved Windows projector. Year supported by the embedded 'RELEASE 10_09_2001' text. Pointer movement/stillness, audio and player controls were checked in Chromium. Historical RealMedia, order and send-to-a-friend links are not restored. Physical touch-device interaction has not been verified."
     },
     {
       "id": "2002-mutter",
-      "title": "Mutter — archive 2002",
+      "title": "Mutter — E-card",
       "swf": "assets/cards/2002-mutter/player.swf",
       "thumbnail": "assets/thumbnails/2002-mutter.jpg",
       "width": 1024,
       "height": 768,
       "year": null,
-      "description": "German Mutter-era ecard/promo delivered inside a WinZip self-extracting EXE. The embedded projector SWF (1,077 frames, 12 fps) presents a specimen/DNA narrative (PRÄPARAT: CHRISTOPH S., TILL L., ...; DNA: XX00DRUMS/VOC; KODIERUNG: XXRAMM0.001; KONSERVIERUNG: JAN 2001), Mutter album/limited-edition panels, 2001 tour dates, an e-card form and links to the 'Sonne' video.",
-      "instructions": "Mouse: click the on-screen buttons; the full FFDec 26.2.1 script export contains only on(press), on(release) and on(rollOver) handlers and no key APIs. The 'Sonne' video was a RealMedia stream (rammstein.de/_mutter/sonne.ram and an rtsp:// URL) and the e-card form posted to php.rammstein.de; those historical endpoints are not verified.",
+      "description": "A German Mutter e-card with specimen and DNA imagery, album information and historical tour dates.",
+      "instructions": "Open MENU at the bottom left, then choose MUTTER or TOUR to explore the preserved panels. The original German interface is retained.",
       "controls": ["Mouse (click)"],
-      "status": "Playable extracted SWF (not runtime-verified)",
-      "notes": "'2002' is the archive filename label, not a verified year; embedded strings reference the 2001 Mutter album/tour, but no release date for the piece was found. The SWF was extracted from the inner ramm.exe (uncompressed FWS v5 at offset 376,832, 643,921 bytes) inside the outer WinZip SFX; the archive has no decompiled export, so 13 embedded JPEGs were recovered into assets/cards/2002-mutter/images/ and complete FFDec 26.2.1 script/text exports were added under scripts-ffdec/ and texts-ffdec/. Not runtime-verified."
+      "status": "Verified playback — intro, menu and tour panel",
+      "notes": "Unmodified movie extracted from the inner projector in '2002 - Mutter.exe'. The archive year is not a verified release date; the card refers to the 2001 album/tour. Menu and TOUR navigation, audio and player controls were checked. RealMedia/RTSP video and e-card delivery are not restored. Extraction details and corrected text-export encoding are documented in PROVENANCE.md."
     },
     {
       "id": "2003-lichtspielhaus",
@@ -50,11 +50,11 @@
       "width": 500,
       "height": 300,
       "year": null,
-      "description": "Lichtspielhaus DVD promo with an industrial console interface, trailer/video modules and a send-to-a-friend competition to win one of 20 original messenger bags.",
-      "instructions": "Mouse: navigate the console (trailer, back and module buttons). openvideo() expects extra modules in a relative flash/ directory (flash/trailer.swf, ...), which is not part of the supplied archive. Competition text is embedded ('DAS GEWINNSPIEL LÄUFT BIS ZUM 28.02.04'); no keyboard input is used.",
+      "description": "An industrial console promoting the Lichtspielhaus DVD, with an embedded trailer and original competition information.",
+      "instructions": "Let the intro play, then click INFO, WIN or TRAILER on the console. ORDER opens an external historical shop link.",
       "controls": ["Mouse (click)"],
-      "status": "Playable extracted SWF (not runtime-verified)",
-      "notes": "This movie is labelled 2003 in the archive filename, but no verified release year was found; the only embedded date is the competition deadline 28.02.04. The SWF was extracted from '2003 - Lichtspielhaus.exe' (zlib CWS appended at offset 819,200; declared 1,282,417 bytes); its 498 frames match the archive's 'Lichtspielhaus/' export. Historical links point at ginza.se, motordiscs.de, virginiarecords.com and a motor.de form; their availability is not verified. The original EXE is preserved in originals/. Not runtime-verified."
+      "status": "Verified playback — console and embedded trailer",
+      "notes": "Unmodified movie extracted from the preserved projector. Archive label 2003 is not treated as a verified year. Console interactions, embedded trailer/audio and player controls were checked. Some additional flash/*.swf modules mentioned in the code are absent, but the exercised trailer does not need them. Original competition and order services are not recreated."
     },
     {
       "id": "2004-reise-reise",
@@ -64,11 +64,11 @@
       "width": 600,
       "height": 400,
       "year": 2004,
-      "description": "Reise, Reise ecard: language selection, album information and a photo collage; frame 1 assigns a remote script path under universal-rock.de for the original ecard scripting.",
-      "instructions": "Mouse: choose a language, then use the on-screen navigation (START / AGB / IMP / FAQ / TOURDATES / SEND TO A FRIEND). No keyboard input is used.",
+      "description": "Explore Reise, Reise through its flight-recorder artwork, band photographs, album information and sound snippets.",
+      "instructions": "Click the small deutsch or english label on the left to begin. Then use START, SOUND SNIPPETS and INFO across the top. Fullscreen helps with the small original labels.",
       "controls": ["Mouse (click)"],
-      "status": "Playable extracted SWF (not runtime-verified)",
-      "notes": "Year 2004 is supported by embedded text: 'Das neue Album am 27. September 2004.' and the November/December 2004 tour-date lists. The SWF was extracted from '2004 - Reise, Reise.exe' (CWS appended at offset 819,200; declared 2,459,541 bytes); its 1,107 frames match the archive's 'Reise/' export. Embedded historical references include universal-rock.de ecard scripts and a frameloader URL; availability not verified. The original EXE is preserved in originals/. Not runtime-verified."
+      "status": "Verified playback — navigation and sound snippets",
+      "notes": "Unmodified projector movie. The embedded album announcement supplies the year 2004. Language selection, START, SOUND SNIPPETS, INFO, audio and player controls were checked. Historical universal-rock.de subscription/send-to-friend services are not recreated."
     },
     {
       "id": "2005-benzin-game",
@@ -78,8 +78,8 @@
       "width": 600,
       "height": 450,
       "year": null,
-      "description": "French-language promotional driving game tied to the Rosenrot-era 'Benzin' release: drive a souped-up fire truck for 90 seconds, cause damage, hit cows and sheep for points, then submit a score, invite a friend or sign up for the newsletter.",
-      "instructions": "In-card French instructions (text 401): 'Au volant d'un véhicule de pompier sur-vitaminé tu as 1minute 30 pour faire un max de dégâts et gagner le plus de points possible !!'. Controls (texts 404–407): Arrow Up = 'Accélerer' (accelerate), Arrow Down = 'Freiner' (brake), Arrow Left = 'Tourner à gauche', Arrow Right = 'Tourner à droite'. Mouse is used for menus and forms.",
+      "description": "Drive a fire truck through a field and score as much damage as possible in 90 seconds. The original French-language game is preserved.",
+      "instructions": "Click JOUER, then INSTRUCTIONS or JOUER. Arrow Up accelerates, Arrow Down brakes, and Left/Right steer. On mobile, hold Accelerate while using a Turn button. Scores work during the round; the old online scoreboard is not restored.",
       "controls": [
         { "key": "ArrowUp", "label": "Accelerate" },
         { "key": "ArrowDown", "label": "Brake" },
@@ -87,8 +87,8 @@
         { "key": "ArrowRight", "label": "Turn right" },
         "Mouse"
       ],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "Keyboard control is confirmed by the full FFDec 26.2.1 decompile (frame_10 sprite clip actions: Key.isDown(37/38/39/40)) and by the in-card control labels; the archive's own decompiled export was incomplete. '2005' is the archive filename label only: the intro artwork announces 'Nouvel album sortie le 28 octobre' without a year, so no verified year is claimed. Missing dependencies: relative benzin1.flv (NetStream video; movies/254.flv exported 0 bytes), listpays.xml and the acces/*.php score/form endpoints (historical, availability not verified); rammsteingame.artistes.universalmusic.fr/acces/hits.php is an embedded historical counter. An independent project in this workspace holds a byte-identical original.swf (SHA-256 d22a3d9f...1694249, retrieved from rammsteinworld.com with recorded checksum) and its reference decompile agrees with ours; no patched community SWF was copied over the original. Not runtime-verified."
+      "status": "Partial — driving and scoring work; video and online services are absent",
+      "notes": "Original SWF unchanged and byte-identical to the original in the independent Benzin project. Keyboard driving/scoring were verified with the wrapper metadata-focus fix; the on-screen controls also drive and score. Missing benzin1.flv, listpays.xml and historical score/form endpoints are not recreated. This site has no leaderboard backend. Archive label 2005 is not used as a verified year. See qa/BENZIN-VERIFICATION.md and patches/README.md."
     },
     {
       "id": "2005-keine-lust",
@@ -98,11 +98,11 @@
       "width": 520,
       "height": 520,
       "year": null,
-      "description": "Keine Lust menu card (2 timeline frames with most content in sprites): intro, info, win, video, tour, screensaver and buy sections, plus a mailing-list sign-up that unlocks the full-length video stream.",
+      "description": "The Keine Lust promotional microsite, with animated artwork, information, competition, video and screensaver panels.",
       "instructions": "Mouse: click the menu items (INTRO / INFO / WIN / VIDEO / TOUR / SCREENSAVER / BUY). The sign-up form's Flash components also accept keyboard input (text entry, Enter/Space, arrow-key list navigation). Video streams load from the historical exodus.interoutemediaservices.com host and audio tracks from relative audio/trackN.mp3 files; availability is not verified.",
       "controls": ["Mouse"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "'2005' is the archive filename label, not a verified year; no year-bearing embedded date was found. Full FFDec 26.2.1 export shows no gameplay keyboard use, but the generated Flash 6 form components (FComboBoxSymbol, FScrollSelectListSymbol, FRadioButtonSymbol, FCheckBoxSymbol, FUIComponentSymbol) handle Enter/Space/arrow keys inside the sign-up form. External dependencies include 12 exodus.interoutemediaservices.com video stream URLs and relative audio/trackN.mp3 files (not in the archive). Not runtime-verified."
+      "status": "Partial — menus work; external audio and video are absent",
+      "notes": "All seven menu items were verified with corrected click coordinates; the initial blocked verdict was a QA error. The music player's missing player_txt.txt is reconstructed from its embedded title with an inferred single-track count, separately documented under patches/keine-lust/. Original SWF unchanged. Audio files, external video streams and historical services are not restored. Archive label 2005 is not a verified year. See qa/KEINE-LUST-REPAIR.md."
     },
     {
       "id": "2005-mann-gegen-mann",
@@ -112,11 +112,11 @@
       "width": 500,
       "height": 630,
       "year": 2006,
-      "description": "Mann gegen Mann single promo (541 frames at 25 fps) with dark painting/video imagery, a trailer and order/download links; German and English text exports are present.",
-      "instructions": "Mouse: use the on-screen links (INFO / VIDEO / SEND A FRIEND / RAMMSTEIN SHOP). No keyboard input is used. The trailer player uses the FLVPlayback component with an external skin (SteelExternalAll.swf) that is not in the archive.",
+      "description": "The Mann gegen Mann single e-card, with striking artwork, album information and the original promotional links.",
+      "instructions": "Click the small deutsch or english label on the left. Use INFO and VIDEO to explore. The trailer link opens its original panel, but the external trailer file is missing.",
       "controls": ["Mouse (click)"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "Year 2006 is supported by embedded text: 'ab 03.03.06' (German) and 'out 03.03.06' (English); the archive filename label 2005 is not treated as a date. Missing dependencies: SteelExternalAll.swf (player skin), rammstein_22sec_clean.flv, and historical send-a-friend/newsletter endpoints under universal-rock.de and myprofile.universal-music.de; availability not verified. The original SWF is preserved in originals/. Not runtime-verified."
+      "status": "Partial — e-card works; external trailer is missing",
+      "notes": "Original SWF unchanged. Its embedded 'out 03.03.06' text corrects the archive's 2005 filename label. Language selection, INFO/VIDEO, intro audio and player controls were checked. Trailer requests for SteelExternalAll.swf and rammstein_22sec_clean.flv returned 404. Historical newsletter/send services are not recreated."
     },
     {
       "id": "2005-rosenrot",
@@ -125,12 +125,12 @@
       "thumbnail": "assets/thumbnails/2005-rosenrot.jpg",
       "width": 628,
       "height": 471,
-      "year": 2005,
-      "description": "Rosenrot ecard/promo built on the album's ship-in-ice imagery (297 frames at 31 fps) with a language-selection flow, wind ambience, sound loops and a link that loads the external rammstein_benzin.swf game.",
-      "instructions": "Mouse: choose a language and follow the on-screen controls; frame actions attach the 'windloop' and 'manngegemann' sounds. No keyboard input is used. The embedded 'Benzin' game link points at universal-rock.de and is not present in the archive.",
+      "year": null,
+      "description": "A journey around Rosenrot's ship-in-ice artwork, with album panels, wind ambience and music.",
+      "instructions": "Click the small deutsch or english label to begin, then explore the ship and album panels. Fullscreen helps with the small language labels.",
       "controls": ["Mouse (click)"],
-      "status": "Playable extracted SWF (not runtime-verified)",
-      "notes": "Year 2005 is supported by embedded text describing live recordings from February, June and July 2005 (Rosenrot single track listing). The SWF was extracted from '2005 - Rosenrot.exe' (CWS appended at offset 819,200; declared 1,697,900 bytes); its 297 frames match the archive's 'Rosenrot/' export. External references include rammstein_benzin.swf, send2Friend/sendCoremailer scripts under universal-rock.de; availability not verified. The original EXE is preserved in originals/. Not runtime-verified."
+      "status": "Verified playback — ship, album views and audio",
+      "notes": "Unmodified movie extracted from the preserved projector. Language selection, ship/album/send views, audio, mute and player controls were checked. Historical email services and the in-card remote Benzin link are not restored; launch Benzin separately from this collection. Dates of 2005 live recordings in the text do not independently establish the card's release year."
     },
     {
       "id": "2005-rosenrot-single",
@@ -140,11 +140,11 @@
       "width": 620,
       "height": 390,
       "year": 2005,
-      "description": "Rosenrot (Single) ecard (475 frames): preloader, uncensored-video announcement and an email form. The text promises video links to newsletter subscribers who signed up by 20 December 2005.",
-      "instructions": "Mouse: watch/click through; the send form (Email / send) posts to the historical coremailer.universal-music-group.com servlet. No keyboard input is used beyond form text entry.",
+      "description": "Animated Rosenrot single artwork and a preserved announcement for the original video premiere campaign.",
+      "instructions": "Watch the animated sequence through to the newsletter panel. The panel is historical: subscription and video-link delivery are not available here.",
       "controls": ["Mouse (click)"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "Year 2005 is supported by embedded text: 'Subscribe to the Rammstein newsletter by 20 December 2005 and the links to the clip will be sent to you at once.' Embedded historical URLs include coremailer.universal-music-group.com and www.rammstein.de (content references, not provenance); availability not verified. The original SWF is preserved in originals/. Not runtime-verified."
+      "status": "Partial — animation and audio work; newsletter delivery is not restored",
+      "notes": "Original SWF unchanged. The embedded subscription deadline supplies the year 2005. Animation/audio and progression to the newsletter form were checked, along with restart and fullscreen. The historical mail servlet has not been recreated; no subscription was submitted during testing."
     },
     {
       "id": "2006-voelkerball",
@@ -154,11 +154,11 @@
       "width": 850,
       "height": 650,
       "year": 2006,
-      "description": "Völkerball DVD microsite (899 frames): gold logo intro, gallery, password-protected preview, send-to-a-friend, contest and an edition overview (Standard / Special / Limited).",
-      "instructions": "Mouse: use the navigation (Replay / Info / Preview / Send / Win / Gallery / Download); gallery items load through switchGallery(). No keyboard input is used. The preview loads getFile.php?PW=<code> and the gallery expects relative wallpaper files (rst_voelkerball_wallpaper_*.jpg) that are not in the archive.",
+      "description": "A gold-and-black Völkerball microsite with concert photographs, a gallery and an overview of the DVD editions.",
+      "instructions": "Let the intro finish, then explore INFO and the gallery thumbnails. PREVIEW, SEND and DOWNLOAD depend on original online services or files that are not included.",
       "controls": ["Mouse (click)"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "Year 2006 is supported by the embedded copyright line 'COPYRIGHT © 1997 - 2006 RAMMSTEIN & PILGRIM MANAGEMENT'; the SWF also carries RDF metadata with the title 'Rammstein - Völkerball' (no date). Historical endpoints include myprofile.universal-music.de and vertigo.fm (availability not verified). The original SWF is preserved in originals/. Not runtime-verified."
+      "status": "Partial — gallery and audio work; previews and downloads are absent",
+      "notes": "Original SWF unchanged. The embedded copyright line supplies 2006. Gallery/menu views, website/shop prompts, audio, mute and player controls were checked. Password previews, wallpaper files and historical send/competition services are not restored."
     },
     {
       "id": "2009-lifad",
@@ -168,11 +168,11 @@
       "width": 800,
       "height": 585,
       "year": null,
-      "description": "Liebe ist für alle da promo (202 frames at 30 fps) presenting the album artwork and a link to the band website, with an embedded video stream.",
-      "instructions": "Mouse: click through the intro and the 'ZUR WEBSITE' link. No keyboard input is used.",
+      "description": "A short Liebe ist für alle da promotional intro presenting the album artwork.",
+      "instructions": "Watch or click through the intro. ZUR WEBSITE opens the original link to the band website.",
       "controls": ["Mouse (click)"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "'2009' is the archive filename label, not a verified year; no date-bearing text was found in the full FFDec 26.2.1 export. The only embedded URL is www.rammstein.de. Embedded video was exported as movies/7.flv (570,970 bytes); it is not copied to the repo. The original SWF is preserved in originals/. Not runtime-verified."
+      "status": "Verified playback — animated artwork and website link",
+      "notes": "Original SWF unchanged. Intro progression, the ZUR WEBSITE prompt, restart and fullscreen were checked. No audio signal was observed in the exercised screens. The video stream is embedded in the movie; its decompiler-exported FLV is not a missing runtime companion. Archive label 2009 is not treated as a verified year."
     },
     {
       "id": "2009-pussy",
@@ -182,11 +182,11 @@
       "width": 1000,
       "height": 700,
       "year": 2009,
-      "description": "Pussy single promo (617 frames at 30 fps) with the single artwork and the video world premiere notice ('Video world premiere Pussy, Sep. 16th 2009 from 22:00 CET, exclusively on visit-x.net/rammstein'), plus Sound fade-in/out helpers.",
-      "instructions": "Mouse: click the on-screen prompts ('MORE', etc.). No keyboard input is used.",
+      "description": "The pink-and-black Pussy single announcement, with animated artwork and the original video premiere notice.",
+      "instructions": "Let the animation reach its final announcement screen, then click MORE for the original Rammstein blog link.",
       "controls": ["Mouse (click)"],
-      "status": "Playable original SWF (not runtime-verified)",
-      "notes": "Year 2009 is supported by the embedded premiere text 'SEP. 16TH 2009'. Embedded historical URLs: www.visit-x.net/rammstein and www.rammstein.de/blog/lang/en/ (availability not verified). The original SWF is preserved in originals/. Not runtime-verified."
+      "status": "Verified playback — animation, audio and MORE link",
+      "notes": "Original SWF unchanged. The embedded premiere notice supplies the year 2009. Animation, audio, mute, restart, fullscreen and the MORE URL prompt were checked. External video/blog destinations are not archived by this project."
     }
   ]
 }

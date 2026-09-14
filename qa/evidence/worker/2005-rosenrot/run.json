@@ -1,0 +1,876 @@
+{
+  "cardId": "2005-rosenrot",
+  "base": "https://flashcards.rammwiki.mrzetti.com",
+  "startedAt": "2026-09-13T22:57:55.937Z",
+  "console": [
+    {
+      "type": "log",
+      "text": "%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:57:56.236Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:57:56.669Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2005-rosenrot/player.swf",
+      "at": "2026-09-13T22:57:56.672Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:57:56.730Z"
+    },
+    {
+      "type": "log",
+      "text": "Ruffle instance destroyed.",
+      "at": "2026-09-13T22:59:44.135Z"
+    },
+    {
+      "type": "log",
+      "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "at": "2026-09-13T22:59:44.240Z"
+    },
+    {
+      "type": "log",
+      "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2005-rosenrot/player.swf",
+      "at": "2026-09-13T22:59:44.241Z"
+    },
+    {
+      "type": "warning",
+      "text": "Construction of AudioBufferSourceNode is not useful when context is closed.",
+      "at": "2026-09-13T22:59:44.248Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:59:44.248Z"
+    },
+    {
+      "type": "warning",
+      "text": "Connecting nodes after the context has been closed is not useful.",
+      "at": "2026-09-13T22:59:44.248Z"
+    },
+    {
+      "type": "log",
+      "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit",
+      "at": "2026-09-13T22:59:44.270Z"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-rosenrot",
+      "type": "document",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:55.974Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": null,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/styles.css",
+      "type": "stylesheet",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.011Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 37227,
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/ruffle.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.011Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 465076,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/player.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.011Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 30825,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/catalog.json",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.056Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 13516,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/core.ruffle.c80159b526e567babaf5.js",
+      "type": "script",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.070Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 108322,
+      "contentType": "application/javascript"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/ruffle/826bb0938097485a2c9d.wasm",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.090Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 14244515,
+      "contentType": "application/wasm"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2005-rosenrot/player.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:57:56.672Z",
+      "status": 200,
+      "failure": null,
+      "phase": "load",
+      "contentLength": 1454732,
+      "contentType": "application/x-shockwave-flash"
+    },
+    {
+      "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2005-rosenrot/player.swf",
+      "type": "fetch",
+      "method": "GET",
+      "external": false,
+      "at": "2026-09-13T22:59:44.241Z",
+      "status": 200,
+      "failure": null,
+      "phase": "controls",
+      "contentLength": 1454732,
+      "contentType": "application/x-shockwave-flash"
+    }
+  ],
+  "dialogs": [],
+  "popups": [],
+  "modalSeen": [],
+  "semanticClicks": [
+    {
+      "step": "01",
+      "fx": 0.139,
+      "fy": 0.605,
+      "x": 266,
+      "y": 499,
+      "hoverChanged": false,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.012389444259983009,
+        "maxPeak": 0.04021080583333969,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10175,
+        "hash": "a9d8281609941fe0101cc193b491b22b",
+        "buf": {
+          "omittedBinaryBytes": 288373,
+          "sha256": "d03a2dd6a706b376dfb8accc9a8c1c95239e5b5cebe91f851a387e9e8cbd2f24"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "02",
+      "fx": 0.134,
+      "fy": 0.659,
+      "x": 261,
+      "y": 541,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.017288311329403505,
+        "maxPeak": 0.051340363919734955,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9636,
+        "hash": "98a8a515c9347f2fc01242e1dbf5f0b6",
+        "buf": {
+          "omittedBinaryBytes": 282243,
+          "sha256": "58738243f8fd0a29b636194fafc9824e4fc83504f3bd88f66fab44420aed32f0"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "03",
+      "fx": 0.5,
+      "fy": 0.5,
+      "x": 640,
+      "y": 418,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 5,
+        "maxRms": 0.09244759132510588,
+        "maxPeak": 0.22074861824512482,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9143,
+        "hash": "c7bfcf9a05518e21e73b09207899007e",
+        "buf": {
+          "omittedBinaryBytes": 310074,
+          "sha256": "c77f02088f31fec6fa2fb6f408fcb702fb39bad6d25f48f80246834f4590bf7a"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "04",
+      "fx": 0.5,
+      "fy": 0.8,
+      "x": 640,
+      "y": 651,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.1262041493664368,
+        "maxPeak": 0.3321561813354492,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 10606,
+        "hash": "a6c36fa05fd46f0000684f0192c37e6a",
+        "buf": {
+          "omittedBinaryBytes": 328765,
+          "sha256": "f35cdc10f4e155584dd744633c36b1c2f40477668a0d9402e3f6527fb3b854ba"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    },
+    {
+      "step": "05",
+      "fx": 0.2,
+      "fy": 0.8,
+      "x": 329,
+      "y": 651,
+      "hoverChanged": true,
+      "clickChanged": true,
+      "audio": {
+        "sampleCount": 6,
+        "maxRms": 0.02516249695872042,
+        "maxPeak": 0.08984563499689102,
+        "states": [
+          "running"
+        ]
+      },
+      "state": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "newRequests": [],
+      "newConsole": [],
+      "dialogs": [],
+      "popups": [],
+      "stabilized": {
+        "stable": false,
+        "elapsedMs": 9290,
+        "hash": "9d967844dada2f3a7f95c5c3e86cac4e",
+        "buf": {
+          "omittedBinaryBytes": 280723,
+          "sha256": "963c93890e544db698de9075ae47382eef4561c320aa541712f94ff0b381f19e"
+        }
+      },
+      "settledState": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "modals": []
+    }
+  ],
+  "gridClicks": [],
+  "successes": [
+    "SWF metadata reported: 628x471, 297 frames @ 31 fps, SWF version 6, isActionScript3=false",
+    "SWF settled into a static frame after 3086ms (1 unique frames)",
+    "menu click #01 at (fx=0.139, fy=0.605) changed the card view",
+    "menu click #02 at (fx=0.134, fy=0.659) changed the card view",
+    "menu click #03 at (fx=0.5, fy=0.5) changed the card view",
+    "menu click #04 at (fx=0.5, fy=0.8) changed the card view",
+    "menu click #05 at (fx=0.2, fy=0.8) changed the card view",
+    "Mute toggle switched state muted=true -> false and aria-pressed/label followed",
+    "Mute dropped measured Web Audio RMS from 0.0342 to 0.0000",
+    "Volume slider set to 30% updated state.volume=0.3 and the output label",
+    "Volume slider restored to 80%",
+    "Restart completed: status \"Playing\" -> \"Playing\", SWF re-requested 1x, initial-frame-match=false",
+    "Fullscreen entered via toolbar button (document.fullscreenElement true)"
+  ],
+  "issues": [
+    {
+      "severity": "note",
+      "kind": "ruffle-cpu-warning",
+      "detail": "Ruffle showed hardware-acceleration warning (renderer adapter reports CPU, expected in headless SwiftShader): It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    {
+      "severity": "note",
+      "kind": "grid-skipped",
+      "detail": "semantic candidates already changed the view; grid sweep skipped"
+    }
+  ],
+  "screenshots": [
+    "00-loaded-stage.png",
+    "01-cpu-warning.png",
+    "05-settled-stage.png",
+    "20-sem-01-changed.png",
+    "21-sem-01-settled.png",
+    "20-sem-02-changed.png",
+    "19-sem-02-hover.png",
+    "21-sem-02-settled.png",
+    "20-sem-03-changed.png",
+    "19-sem-03-hover.png",
+    "21-sem-03-settled.png",
+    "20-sem-04-changed.png",
+    "19-sem-04-hover.png",
+    "21-sem-04-settled.png",
+    "20-sem-05-changed.png",
+    "19-sem-05-hover.png",
+    "21-sem-05-settled.png"
+  ],
+  "playerUrl": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-rosenrot",
+  "ready": {
+    "ready": true
+  },
+  "phase": "fullscreen",
+  "stateInitial": {
+    "cardId": "2005-rosenrot",
+    "playing": true,
+    "muted": false,
+    "volume": 0.8,
+    "metadataSeen": true,
+    "embedded": false,
+    "touchVisible": false,
+    "touchKeys": []
+  },
+  "panelsInitial": {
+    "status": "Playing",
+    "loadingHidden": true,
+    "errorHidden": true,
+    "errorTitle": "The card could not start",
+    "errorMessage": "Something went wrong.",
+    "unsupportedHidden": true,
+    "muteText": "Mute",
+    "mutePressed": "false",
+    "volumeValue": "80%",
+    "volumeInput": "80",
+    "restartDisabled": false,
+    "fullscreenText": "Fullscreen",
+    "fullscreenPressed": null,
+    "title": "Rosenrot (2005)",
+    "year": "Year 2005",
+    "fullscreenElement": false
+  },
+  "surface": {
+    "stage": {
+      "x": 121.72916666666663,
+      "y": 29,
+      "width": 1036.5416666666667,
+      "height": 777.40625
+    },
+    "canvasRect": {
+      "x": 0,
+      "y": 29,
+      "width": 1280,
+      "height": 777.40625
+    },
+    "meta": {
+      "width": 628,
+      "height": 471,
+      "frameRate": 31,
+      "numFrames": 297,
+      "swfVersion": 6,
+      "backgroundColor": "#FFFFFF",
+      "isActionScript3": false,
+      "uncompressedLength": 1697900
+    },
+    "state": {
+      "readyState": 2,
+      "isPlaying": true,
+      "volume": 0.800000011920929,
+      "fullscreenEnabled": true
+    }
+  },
+  "metadata": {
+    "width": 628,
+    "height": 471,
+    "frameRate": 31,
+    "numFrames": 297,
+    "swfVersion": 6,
+    "backgroundColor": "#FFFFFF",
+    "isActionScript3": false,
+    "uncompressedLength": 1697900
+  },
+  "clip": {
+    "x": 121,
+    "y": 29,
+    "width": 1037,
+    "height": 778
+  },
+  "initialFullShot": "00-loaded.png",
+  "cpuWarning": {
+    "hidden": false,
+    "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+  },
+  "cpuWarningHandling": {
+    "shown": {
+      "hidden": false,
+      "text": "It looks like hardware acceleration is disabled. While Ruffle may work, it could be very slow. You can find out how to enable hardware acceleration by following"
+    },
+    "dismissed": true
+  },
+  "settle": {
+    "stable": true,
+    "elapsedMs": 3086,
+    "frames": 3,
+    "uniqueFrames": 1
+  },
+  "baselineHash": "f25a78a7a41c37ca9143b54742d259f1",
+  "settledHash": "5b07cb31710c2fbe58c78e94d6eb4f34",
+  "semanticChanges": 5,
+  "baselineAfterSemantic": "038b78212bf248f8e68b5dd54bb81e9c",
+  "audioEvidence": {
+    "beforeMuteMaxRms": 0.0341686853638144,
+    "afterMuteMaxRms": 0,
+    "afterUnmuteMaxRms": 0.08834759490287034,
+    "sessionHadSound": true
+  },
+  "controls": {
+    "before": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "audioBefore": {
+      "sampleCount": 6,
+      "maxRms": 0.0341686853638144,
+      "maxPeak": 0.08133040368556976,
+      "states": [
+        "running"
+      ]
+    },
+    "afterMutePanels": {
+      "status": "Playing (muted)",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Unmute",
+      "mutePressed": "true",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "afterMuteState": {
+      "cardId": "2005-rosenrot",
+      "playing": true,
+      "muted": true,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterMuteAudio": {
+      "sampleCount": 7,
+      "maxRms": 0,
+      "maxPeak": 0,
+      "states": [
+        "running"
+      ]
+    },
+    "afterUnmutePanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "afterUnmuteState": {
+      "cardId": "2005-rosenrot",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "afterUnmuteAudio": {
+      "sampleCount": 5,
+      "maxRms": 0.08834759490287034,
+      "maxPeak": 0.18738484382629395,
+      "states": [
+        "running"
+      ]
+    },
+    "volume30Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "30%",
+      "volumeInput": "30",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "volume30State": {
+      "cardId": "2005-rosenrot",
+      "playing": true,
+      "muted": false,
+      "volume": 0.3,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "volume80Panels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Fullscreen",
+      "fullscreenPressed": null,
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": false
+    },
+    "volume80State": {
+      "cardId": "2005-rosenrot",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "restart": {
+      "beforeConsole": 4,
+      "beforeRequests": 8,
+      "statusAfterClick": "Playing",
+      "ready": {
+        "ready": true
+      },
+      "panels": {
+        "status": "Playing",
+        "loadingHidden": true,
+        "errorHidden": true,
+        "errorTitle": "The card could not start",
+        "errorMessage": "Something went wrong.",
+        "unsupportedHidden": true,
+        "muteText": "Mute",
+        "mutePressed": "false",
+        "volumeValue": "80%",
+        "volumeInput": "80",
+        "restartDisabled": false,
+        "fullscreenText": "Fullscreen",
+        "fullscreenPressed": null,
+        "title": "Rosenrot (2005)",
+        "year": "Year 2005",
+        "fullscreenElement": false
+      },
+      "state": {
+        "cardId": "2005-rosenrot",
+        "playing": true,
+        "muted": false,
+        "volume": 0.8,
+        "metadataSeen": true,
+        "embedded": false,
+        "touchVisible": false,
+        "touchKeys": []
+      },
+      "audio": {
+        "sampleCount": 12,
+        "maxRms": 0.017871135325577332,
+        "maxPeak": 0.054987967014312744,
+        "states": [
+          "closed",
+          "running"
+        ]
+      },
+      "newRequests": [
+        {
+          "url": "https://flashcards.rammwiki.mrzetti.com/assets/cards/2005-rosenrot/player.swf",
+          "status": 200,
+          "failure": null
+        }
+      ],
+      "newConsole": [
+        {
+          "type": "log",
+          "text": "Ruffle instance destroyed."
+        },
+        {
+          "type": "log",
+          "text": "%cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33"
+        },
+        {
+          "type": "log",
+          "text": "Loading SWF file https://flashcards.rammwiki.mrzetti.com/assets/cards/2005-rosenrot/player.swf"
+        },
+        {
+          "type": "warning",
+          "text": "Construction of AudioBufferSourceNode is not useful when context is closed."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "warning",
+          "text": "Connecting nodes after the context has been closed is not useful."
+        },
+        {
+          "type": "log",
+          "text": "%cERROR%c web/src/lib.rs:1053%c Unable to borrow Ruffle instance color: red; background: #444 color: gray; font-style: italic color: inherit"
+        }
+      ],
+      "stageHash": "525110f0268ab5854212b0fe11444bae",
+      "returnedToInitialFrame": false
+    },
+    "fullscreenState": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": true
+    },
+    "finalState": {
+      "cardId": "2005-rosenrot",
+      "playing": true,
+      "muted": false,
+      "volume": 0.8,
+      "metadataSeen": true,
+      "embedded": false,
+      "touchVisible": false,
+      "touchKeys": []
+    },
+    "finalPanels": {
+      "status": "Playing",
+      "loadingHidden": true,
+      "errorHidden": true,
+      "errorTitle": "The card could not start",
+      "errorMessage": "Something went wrong.",
+      "unsupportedHidden": true,
+      "muteText": "Mute",
+      "mutePressed": "false",
+      "volumeValue": "80%",
+      "volumeInput": "80",
+      "restartDisabled": false,
+      "fullscreenText": "Exit fullscreen",
+      "fullscreenPressed": "true",
+      "title": "Rosenrot (2005)",
+      "year": "Year 2005",
+      "fullscreenElement": true
+    }
+  },
+  "externalRequests": [],
+  "failedRequests": [],
+  "consoleErrors": [],
+  "publicationNote": "Inline PNG buffers replaced by length and SHA-256; full original run remains in qa/runtime-worker/out on the verification server."
+}

@@ -1,0 +1,239 @@
+{
+ "url": "https://flashcards.rammwiki.mrzetti.com/player.html?card=2005-benzin-game",
+ "results": [
+  {
+   "id": "mouse-hold",
+   "shots": {
+    "baseline": "/tmp/opencode/benzin-live-verify/mouse-hold-01-baseline.png",
+    "held": "/tmp/opencode/benzin-live-verify/mouse-hold-02-held.png",
+    "late": "/tmp/opencode/benzin-live-verify/mouse-hold-03-late.png",
+    "released": "/tmp/opencode/benzin-live-verify/mouse-hold-04-released.png"
+   },
+   "ptrs": [
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON#start-card-button"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON#start-card-button"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON#touch-toggle"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON#touch-toggle"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON[ArrowUp]"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON[ArrowUp]"
+    }
+   ],
+   "scores": {
+    "baseline": 0,
+    "held": 211,
+    "late": 211,
+    "released": 211
+   },
+   "movedFromBaseline": {
+    "held": 0.0891,
+    "late": 0.9039,
+    "released": 0.9077
+   },
+   "analysis": {
+    "scoreDelta": 211,
+    "movement": 0.9077,
+    "releasedHeld": true,
+    "gasPhaseOk": true
+   },
+   "pass": true
+  },
+  {
+   "id": "touch-two-finger",
+   "shots": {
+    "baseline": "/tmp/opencode/benzin-live-verify/touch-two-finger-01-baseline.png",
+    "gas": "/tmp/opencode/benzin-live-verify/touch-two-finger-02-gas.png",
+    "turn": "/tmp/opencode/benzin-live-verify/touch-two-finger-03-gas-turn.png",
+    "turnLate": "/tmp/opencode/benzin-live-verify/touch-two-finger-04-gas-turn-late.png",
+    "steerReleased": "/tmp/opencode/benzin-live-verify/touch-two-finger-05-steer-released.png",
+    "released": "/tmp/opencode/benzin-live-verify/touch-two-finger-06-released.png"
+   },
+   "ptrs": [
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON#start-card-button"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "BUTTON#start-card-button"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 1,
+     "pointerType": "mouse",
+     "target": "RUFFLE-PLAYER"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 2,
+     "pointerType": "touch",
+     "target": "BUTTON[ArrowUp]"
+    },
+    {
+     "type": "pointerdown",
+     "pointerId": 3,
+     "pointerType": "touch",
+     "target": "BUTTON[ArrowLeft]"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 2,
+     "pointerType": "touch",
+     "target": "BUTTON[ArrowUp]"
+    },
+    {
+     "type": "pointerup",
+     "pointerId": 3,
+     "pointerType": "touch",
+     "target": "BUTTON[ArrowLeft]"
+    }
+   ],
+   "scores": {
+    "baseline": 5,
+    "gas": 5,
+    "turn": 329,
+    "turnLate": 329,
+    "steerReleased": 329,
+    "released": 210
+   },
+   "movedFromBaseline": {
+    "gas": 0.0509,
+    "turn": 0.0764,
+    "turnLate": 0.0683,
+    "steerReleased": 0.0577,
+    "released": 0.0584
+   },
+   "analysis": {
+    "scoreDelta": 324,
+    "movement": 0.0764,
+    "releasedHeld": true,
+    "gasPhaseOk": true
+   },
+   "pass": true
+  },
+  {
+   "id": "keyboard-button",
+   "shots": {
+    "baseline": "/tmp/opencode/benzin-live-verify/keyboard-button-01-baseline.png",
+    "held": "/tmp/opencode/benzin-live-verify/keyboard-button-02-held.png",
+    "released": "/tmp/opencode/benzin-live-verify/keyboard-button-03-released.png"
+   },
+   "buttonsStillHeld": 0,
+   "scores": {
+    "baseline": 0,
+    "held": 211,
+    "released": 211
+   },
+   "movedFromBaseline": {
+    "held": 0.1011,
+    "released": 0.2318
+   },
+   "analysis": {
+    "scoreDelta": 211,
+    "movement": 0.2318,
+    "releasedHeld": true,
+    "gasPhaseOk": true
+   },
+   "pass": true
+  }
+ ],
+ "errors": []
+}
