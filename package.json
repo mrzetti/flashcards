@@ -2,7 +2,7 @@
   "name": "rammwiki-flashcards",
   "version": "1.0.0",
   "private": true,
-  "description": "Windows XP-inspired preservation browser for RammWiki Flash cards, powered by self-hosted Ruffle.",
+  "description": "Dark RammWiki-themed preservation desktop for RammWiki Flash cards, powered by self-hosted Ruffle.",
   "license": "MIT",
   "scripts": {
     "test": "node --test \"tests/unit/*.test.mjs\" \"tests/browser/*.test.mjs\"",

@@ -73,7 +73,7 @@ export async function focusWindow(page, id, title) {
 export async function launchCard(page, id) {
   // The player window may cover the catalog; focus the Explorer first the same
   // way a user would, then use the explicit Launch button on the tile.
-  await focusWindow(page, 'explorer', 'My Flashcards');
+  await focusWindow(page, 'explorer', 'RammWiki Flashcards');
   await page.click(`[data-card-id="${id}"] .tile-launch`);
 }
 

@@ -1,8 +1,8 @@
 # Rammstein Flashcards
 
 A browser home for a collection of original Rammstein Flashcards: promotional
-microsites, animations, and small interactive games, presented in a Windows
-XP–inspired desktop. Alongside the Flash cards it preserves the 1999
+microsites, animations, and small interactive games, presented in a dark
+RammWiki-branded desktop. Alongside the Flash cards it preserves the 1999
 **RAMMSTEIN Screensaver**, an archived Director 6/Windows artifact whose 103
 sprites ship with a browser preview and downloads.
 
@@ -16,7 +16,7 @@ controls. See the card's instructions and compatibility notes before playing.
 
 ## Using the desktop
 
-- Click a tile to inspect it, or its green play button to launch it.
+- Click a tile to inspect it, or its play button to launch it.
 - Use the title-bar buttons to minimize, maximize/restore or close. Drag the
   title bar to move a window; use the taskbar to bring it back.
 - Only one Flashcard plays at a time. Opening another replaces the player;
@@ -29,7 +29,7 @@ controls. See the card's instructions and compatibility notes before playing.
 - On mobile, windows fill the desktop. Benzin gets its own accelerate, brake,
   left and right touch buttons; pointer-driven cards do not get a generic keypad.
 - **Archived artifacts** (like the 1999 screensaver) do not run in Ruffle. Their
-  green button opens one files-and-preview window: a sprite animation rebuilt
+  play button opens one files-and-preview window: a sprite animation rebuilt
   from the extracted original bitmaps, the download list, and a gallery of the
   extracted images. The original Windows executable and the Director movie are
   downloads, not browser plugins.

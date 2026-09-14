@@ -1043,7 +1043,7 @@
       var addressField = element('span', 'address-field');
       var addressIcon = element('span', 'address-icon icon-catalog');
       addressIcon.setAttribute('aria-hidden', 'true');
-      var addressText = element('span', 'address-text', 'My Computer \\ Flashcards');
+      var addressText = element('span', 'address-text', 'RammWiki \\ Flashcards');
       addressField.append(addressIcon, addressText);
       address.append(addressLabel, addressField);
 
@@ -1370,7 +1370,7 @@
 
       var actions = element('div', 'details-actions');
       var artifact = card.kind === 'artifact';
-      var launch = element('button', 'xp-button primary', artifact ? 'Open files & preview' : 'Launch card');
+      var launch = element('button', 'rw-button primary', artifact ? 'Open files & preview' : 'Launch card');
       launch.type = 'button';
       launch.disabled = !artifact && !card.swf;
       launch.setAttribute('aria-label', artifact ? 'Open files and preview for ' + card.title : 'Launch ' + card.title);
@@ -1493,7 +1493,7 @@
         id: 'explorer',
         kind: 'explorer',
         icon: 'icon-catalog',
-        title: 'My Flashcards',
+        title: 'RammWiki Flashcards',
         // Centre the catalog on large desktops (about 1100x720) while keeping
         // the desktop icon column clear; smaller screens stay responsive.
         bounds: explorerBounds(desktopArea()),
@@ -1539,7 +1539,7 @@
       handleDeepLink();
       updateExplorerPlayerStatus();
       if (state.catalog.status === 'error') {
-        var retry = element('button', 'xp-button', 'Retry');
+        var retry = element('button', 'rw-button', 'Retry');
         retry.type = 'button';
         retry.addEventListener('click', function () { loadCatalog(); });
         var statusEl = state.explorer.els && state.explorer.els.status;
@@ -1674,7 +1674,7 @@
           id: 'player',
           kind: 'player',
           icon: 'icon-play',
-          title: card.title + ' \u2014 Flashcards Player',
+          title: card.title + ' \u2014 RammWiki Player',
           bounds: {
             width: width,
             height: height,
@@ -1709,7 +1709,7 @@
         player.windowId = record.id;
       } else {
         restoreWindow(record);
-        setWindowTitle(record, card.title + ' \u2014 Flashcards Player');
+        setWindowTitle(record, card.title + ' \u2014 RammWiki Player');
         record.options.icon = 'icon-play';
       }
       if (player.cardEl) player.cardEl.textContent = card.year ? 'Year ' + card.year : '';
@@ -1937,7 +1937,7 @@
       var content = element('div', 'help-content');
       content.innerHTML =
         '<h3>Play cards safely</h3>' +
-        '<p>Cards only start when you choose <strong>Launch card</strong> (or the green play button on a tile). Links such as <code>?card=id</code> select a card and show its details, but they never autoplay. This keeps surprise audio away and gives you control.</p>' +
+        '<p>Cards only start when you choose <strong>Launch card</strong> (or the play button on a tile). Links such as <code>?card=id</code> select a card and show its details, but they never autoplay. This keeps surprise audio away and gives you control.</p>' +
         '<p>Only one player runs at a time. Launching another card closes the previous player completely, which stops its sound and frees its memory. Closing the player window does the same.</p>' +
         '<h3>Windows</h3>' +
         '<ul>' +
@@ -1959,7 +1959,7 @@
         '<li>An <strong>unsupported</strong> panel appears when Ruffle cannot run in this browser, for example if the self-hosted files are missing or WebAssembly is disabled.</li>' +
         '</ul>' +
         '<h3>Preservation notes</h3>' +
-        '<p>The catalog, thumbnails and SWF files stay in their original form. Ruffle is the open-source Flash player and is self-hosted next to these pages, so no plugin and no third-party service is required.</p>';
+        '<p>The catalog, thumbnails and SWF files stay in their original form. Ruffle is the open-source Flash player and is self-hosted next to these pages for RammWiki, so no plugin and no third-party service is required.</p>';
       var record = createWindow({
         id: 'help',
         kind: 'help',

@@ -535,3 +535,18 @@ original asset.
 5. Decode `BITD-*.bin` with the ScummVM `BITDDecoder` algorithm and the movie's
    system palette; match cast members through the `KEY*` child table.
 6. Compare every output against `assets/cards/SHA256SUMS`.
+
+## 14. Launcher branding
+
+The desktop chrome, wallpaper and icons are original CSS/SVG work for this
+launcher; no Microsoft or third-party theme files are bundled. The only branded
+asset is the RammWiki wordmark in `assets/brand/rammwiki-wordmark.svg`, fetched
+2026-09-14 from https://ramm.wiki/w/rammwiki.svg and kept byte-for-byte:
+
+| File | SHA-256 |
+| --- | --- |
+| `assets/brand/rammwiki-wordmark.svg` | `9c891808b241d5d9658fed10c71da1ab97dd96f10a11704c5c53894dda62b5b9` |
+
+It is not part of the preserved card collection. It is used to identify the
+RammWiki project this desktop belongs to and remains RammWiki property; see
+`THIRD_PARTY.md`.

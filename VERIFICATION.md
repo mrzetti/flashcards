@@ -93,6 +93,25 @@ colour-faithful reproduction of the 1999 display pipeline. The browser preview
 is a rebuild from extracted sprites, not a Director runtime; `PROVENANCE.md`
 section 13 lists the exact derived artifacts and hashes.
 
+## Desktop theme
+
+On 14 September 2026 the launcher was reskinned from the earlier Windows
+XP–inspired shell to a dark Citizen-style desktop with the RammWiki olive accent
+(`#ae9d75`) and an olive wordmark on the wallpaper. Window management, the
+player, the artifact preview and all touch controls were kept as they were; the
+change is CSS plus launcher wording and the `assets/brand/rammwiki-wordmark.svg`
+brand asset.
+
+- The full **55-test unit/mock-browser suite** passed against the theme alone,
+  and the real-catalog pages render without page errors.
+- Desktop, Start menu, Help, standalone player (mocked Ruffle), screensaver
+  preview, mobile 390×844 and the empty wallpaper were captured headlessly and
+  reviewed visually.
+- Card compatibility and Ruffle behavior were not changed and are unaffected by
+  the reskin.
+- The wordmark is fetched from https://ramm.wiki/w/rammwiki.svg and documented in
+  `PROVENANCE.md` section 14; the theme uses no Microsoft assets.
+
 ## Reproduce
 
 ### Final public deployment check
