@@ -1,0 +1,40 @@
+[
+  {
+    "variant": "original",
+    "swf": "/originals/2009-lifad.swf",
+    "status": "loaded",
+    "expect": "blocky",
+    "width": 800,
+    "height": 585,
+    "goldRatio": 0.6754,
+    "darkPixels": 19737,
+    "enclosedDark": 0,
+    "logs": [
+      "log: %cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "warning: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio",
+      "warning: The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio",
+      "log: %cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "log: Loading SWF file /originals/2009-lifad.swf",
+      "warning: [.WebGL-0xd8400147c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0xd8400147c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0xd8400147c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0xd8400147c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    ]
+  },
+  {
+    "variant": "patched",
+    "swf": "/assets/cards/2009-lifad/2009-lifad-ruffle-compat.swf",
+    "status": "loaded",
+    "expect": "glyphs",
+    "width": 800,
+    "height": 585,
+    "goldRatio": 0.567,
+    "darkPixels": 26326,
+    "enclosedDark": 952,
+    "logs": [
+      "log: %cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit",
+      "log: %cNew Ruffle instance created (Version: 0.6.0 | WebAssembly extensions: ON | Used renderer: wgpu-webgl) background: #37528C; color: #FFAD33",
+      "log: Loading SWF file /assets/cards/2009-lifad/2009-lifad-ruffle-compat.swf"
+    ]
+  }
+]

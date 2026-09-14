@@ -1,0 +1,6 @@
+7f88d332193381f8a370202a24ca15e7f000978e218cb02b9a97b2624fab94bc  originals/2009-lifad.swf
+22d2f6a80b447ecf9e7a2d013c03ca7fbaac28e776f0eb5fabca5c6961a3c766  assets/cards/2009-lifad/2009-lifad-ruffle-compat.swf
+22d2f6a80b447ecf9e7a2d013c03ca7fbaac28e776f0eb5fabca5c6961a3c766  patches/lifad/2009-lifad-ruffle-compat.swf
+4ff306eca7e65cd79812d8f67dd7d9bba846c8407aab4ee68972d09ed5330bf3  patches/lifad/build-compat.py
+1ded3e74f0abd533c34d258740592d2abdb30c7f1f2a9e25dc0e93d63e758913  patches/lifad/harness.html
+945dbb738ea834337e6708d117628ba115a24ccae6089c5022798f07b86889f9  qa/lifad-render-test.cjs

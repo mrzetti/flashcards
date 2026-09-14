@@ -36,7 +36,12 @@ compared against the ZIP central directory during the build (all matched), and
 SHA-256 sums are stored in [`originals/SHA256SUMS`](originals/SHA256SUMS).
 
 Original filenames were mapped to stable ASCII slugs (for URLs); the bytes are
-unchanged. No SWF, EXE or projector was patched or recompressed.
+unchanged. No original SWF, EXE or projector was patched or recompressed.
+A separate LIFAD compatibility copy under `assets/cards/2009-lifad/` replaces
+the wordmark's clip-depth masking with equivalent ActionScript `setMask` calls.
+It retains the original letter shapes and gradients. See `patches/lifad/README.md`
+for the reproducible build, hashes, and exact tag changes; the catalog uses this
+copy to work around Ruffle's block-letter rendering defect.
 
 | id | Original ZIP name | Repo file | Bytes | SHA-256 |
 | --- | --- | --- | ---: | --- |

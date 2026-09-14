@@ -163,7 +163,7 @@
     {
       "id": "2009-lifad",
       "title": "LIFAD",
-      "swf": "originals/2009-lifad.swf",
+      "swf": "assets/cards/2009-lifad/2009-lifad-ruffle-compat.swf",
       "thumbnail": "assets/thumbnails/2009-lifad.jpg",
       "width": 800,
       "height": 585,
@@ -172,7 +172,7 @@
       "instructions": "Watch or click through the intro. ZUR WEBSITE opens the original link to the band website.",
       "controls": ["Mouse (click)"],
       "status": "Verified playback — animated artwork and website link",
-      "notes": "Original SWF unchanged. Intro progression, the ZUR WEBSITE prompt, restart and fullscreen were checked. No audio signal was observed in the exercised screens. The video stream is embedded in the movie; its decompiler-exported FLV is not a missing runtime companion. Archive label 2009 is not treated as a verified year."
+      "notes": "Uses a separately documented compatibility copy that restores the original wordmark masks in Ruffle; the preserved original SWF is unchanged. See patches/lifad/README.md. Intro progression, the ZUR WEBSITE prompt, restart and fullscreen were checked. No audio signal was observed in the exercised screens. The video is embedded, not a missing companion. Archive label 2009 is not treated as a verified year."
     },
     {
       "id": "2009-pussy",

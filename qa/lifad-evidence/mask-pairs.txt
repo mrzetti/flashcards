@@ -1,0 +1,24 @@
+# 2009-lifad.swf — clip-depth mask pairs inside DefineSprite 48 (character 48)
+# analyzed with FFDec 26.2.1 -swf2xml / -dumpSWF
+#
+# mask character 8 frames are letter shapes (sprites 30,33,35,37,39,41,43,45,47);
+# content character 31 is the animated gold gradient bar (shape 4) placed at
+# mask depth + 2. Ruffle 0.6.0 and nightly-2026-09-12 draw the content bars
+# unclipped -> solid gold rectangles. See ruffle-rs/ruffle#23630.
+#
+# sprite-48 frame : mask depth (character)  cdp -> content depth
+  2 : dpt 55 (chid 30, R)   cdp 59 -> dpt 57
+  8 : dpt 43 (chid 33)      cdp 47 -> dpt 45
+  8 : dpt 49 (chid 35)      cdp 53 -> dpt 51
+ 10 : dpt 13 (chid 37)      cdp 17 -> dpt 15
+ 10 : dpt 37 (chid 39)      cdp 41 -> dpt 39
+ 12 : dpt  7 (chid 41)      cdp 11 -> dpt  9
+ 12 : dpt 31 (chid 39)      cdp 35 -> dpt 33
+ 14 : dpt  1 (chid 43)      cdp  5 -> dpt  3
+ 14 : dpt 25 (chid 45)      cdp 29 -> dpt 27
+ 16 : dpt 19 (chid 47)      cdp 23 -> dpt 21
+#
+# Patch replaces each pair with, once both instances exist:
+#   c<depth+2>.setMask(m<depth>);
+#   m<depth>._visible = false;
+# via 6 DoAction tags inserted at sprite-48 frames 2,8,10,12,14,16.

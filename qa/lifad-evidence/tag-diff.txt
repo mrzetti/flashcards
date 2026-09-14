@@ -1,0 +1,17 @@
+# Tag-level diff: originals/2009-lifad.swf -> assets/cards/2009-lifad/2009-lifad-ruffle-compat.swf
+# Method: FFDec 26.2.1 -dumpSWF on both files, tag sequence compared.
+#
+# DoAction tag count:        9 -> 15   (+6 inserted setMask scripts)
+# All other tag counts unchanged (2181 vs 2175 tags total).
+#
+# Non-identical tags:
+#   PlaceObject2 x20 : the 10 mask placements lose clipDepth and gain
+#                      name="mDDD"; the 10 content placements gain name="cDDD".
+#                      (flags HasClipDepth true->false, HasName false->true)
+#   DefineSprite x1  : character 48 definition, grows because of the 6 DoActions
+#                      and the 20 names; internal timeline otherwise untouched.
+#   DefineShape4 x2  : characters 15 and 16 re-encoded by the FFDec XML
+#                      round-trip (len 112->111 and 66->66 bytes). Exported SVG
+#                      path data is byte-identical for both shapes, i.e. the
+#                      vector geometry is unchanged; only one trailing bit in
+#                      the record encoding differs.

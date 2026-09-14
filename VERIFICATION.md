@@ -35,7 +35,7 @@ Historical mailing lists and competition entries were not submitted.
 | Rosenrot Single | Animated imagery/audio progress to the newsletter panel; the form renders. Restart and fullscreen checked. | The newsletter/video-link delivery service is not recreated; this is an archived promotional card, not a functioning subscription service. |
 | Pussy | Animated single announcement reaches its final screen; MORE produces Ruffle's URL prompt for the historical Rammstein blog. Audio output, mute, volume, restart and fullscreen checked. | The destination website/video is external and is not preserved by this project. |
 | Völkerball | Gallery/menu hotspots reveal concert locations, LIVE DVD, world-tour and edition views. Website/shop prompts, audio, mute, volume, restart and fullscreen checked. | Password-preview, send and wallpaper-download services depend on missing historical files/endpoints. |
-| LIFAD | Animated artwork/intro reaches the album screen; ZUR WEBSITE produces the Rammstein URL prompt. Volume control, restart and fullscreen checked. | No audio signal was observed in the exercised screens. The external website is not archived here. |
+| LIFAD | Animated artwork/intro reaches the album screen; ZUR WEBSITE produces the Rammstein URL prompt. Volume control, restart and fullscreen checked. A separate compatibility copy restores the wordmark masks and readable lettering. | No audio signal was observed in the exercised screens. The external website is not archived here. See `qa/LIFAD-RENDERING.md` for the rendering fix. |
 
 Additional card results and Benzin's dedicated gameplay check are recorded in
 `qa/WORKER-VERIFICATION.md` and `qa/BENZIN-VERIFICATION.md`.

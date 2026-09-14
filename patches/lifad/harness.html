@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LIFAD isolated Ruffle harness</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #111; }
+    #player { width: 800px; height: 585px; display: block; }
+  </style>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var swf = params.get('swf') || '/originals/2009-lifad.swf';
+      var ruffleSrc = params.get('ruffle') || '/assets/ruffle/ruffle.js';
+      window.__status = 'loading-ruffle';
+      window.__swf = swf;
+      var s = document.createElement('script');
+      s.src = ruffleSrc;
+      s.onload = function () { init(swf); };
+      s.onerror = function () { window.__status = 'ruffle-script-error'; };
+      document.head.appendChild(s);
+
+      function init(swfUrl) {
+        try {
+          var ruffle = window.RufflePlayer.newest();
+          var player = ruffle.createPlayer();
+          player.style.width = '800px';
+          player.style.height = '585px';
+          document.getElementById('player').appendChild(player);
+          window.__player = player;
+          window.__status = 'loading-swf';
+          var res = player.ruffle().load({
+            url: swfUrl,
+            base: new URL('.', new URL(swfUrl, location.href)).href,
+            autoplay: 'on',
+            unmuteOverlay: 'visible',
+            backgroundColor: '#000000',
+            letterbox: 'on',
+            scale: 'showAll',
+            allowScriptAccess: false,
+            openUrlMode: 'confirm',
+            upgradeToHttps: true,
+            warnOnUnsupportedContent: true
+          });
+          Promise.resolve(res).then(function () {
+            window.__status = 'loaded';
+          }).catch(function (e) {
+            window.__status = 'load-error: ' + (e && e.message ? e.message : e);
+          });
+        } catch (e) {
+          window.__status = 'init-error: ' + (e && e.message ? e.message : e);
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
