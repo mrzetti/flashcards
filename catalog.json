@@ -65,6 +65,20 @@
       "notes": "Unmodified movie extracted from the inner projector in '2002 - Mutter.exe'. The archive year is not a verified release date; the card refers to the 2001 album/tour. Menu and TOUR navigation, audio and player controls were checked. RealMedia/RTSP video and e-card delivery are not restored. Extraction details and corrected text-export encoding are documented in PROVENANCE.md."
     },
     {
+      "id": "2002-xxx-soundtrack",
+      "title": "xXx — The Soundtrack",
+      "swf": "originals/2002-xxx-soundtrack.swf",
+      "thumbnail": "assets/thumbnails/2002-xxx-soundtrack.jpg",
+      "width": 450,
+      "height": 200,
+      "year": 2002,
+      "description": "The 2002 promotional e-card for the xXx soundtrack: a trailer intro, the animated xXx logo, both disc tracklists (RAMMSTEIN's FEUER FREI opens Disc 1), 4LYN's NEON panel and tour dates, historical links, a send-to-a-friend form and production credits.",
+      "instructions": "Watch the trailer, or click SKIP TRAILER to reach the tracklist screen sooner. The two disc tracklists render in the stage; the DATES, LINKS and SEND2FRIEND panels are driven by invisible controls placed outside the movie's 450×200 stage, so they may only be clickable in a tall player window. Track titles would request external preview files that no longer exist.",
+      "controls": ["Mouse (click)"],
+      "status": "Partial — trailer, tracklist, panels and audio work; the 14 external track previews are absent",
+      "notes": "Unmodified movie extracted byte-for-byte from the Windows projector inside the supplied self-extracting archive; the projector was unpacked without modification and no bytes were patched. The 450×200 movie places its navigation controls outside the stage, so the 4LYN panel button (stage x ≈ -49), the card's own sound ON/OFF widget and the 14 track-row buttons (x ≈ 509) could not be clicked in the tested layouts; Ruffle 0.6.0 still hit-tests off-stage positions, so DATES, LINKS and SEND2FRIEND were opened by clicking their documented coordinates in a tall window. All 14 track buttons request http://www.4lyn.de/e-card/triplex/trackN.swf; on 15 September 2026 every URL redirected to https and returned 404, so no track preview can load, and the browser never requested them. The SEND2FRIEND form posts to the historical motor.de mail script and the album popup requests the companion images/album2.jpg; neither the service nor the image is present. Browser-verified in Chromium with the project's Ruffle 0.6.0: trailer intro with audio, SKIP TRAILER reaching the same stopped frame, both disc tracklists, the looping sound cue, DATES/LINKS/SEND2FRIEND panels, wrapper mute, restart, close/reopen, fullscreen and the 390×844 layout. Year 2002 is supported by embedded dates ('IN CINEMAS ACROSS EUROPE: 17.10.02', 'in stores: 09.09.2002', 4LYN tour dates in September–October 2002). The archive was described by the user as coming from a 'Triple X movie CD'; that description was not verified. See PROVENANCE.md section 17 and VERIFICATION.md."
+    },
+    {
       "id": "2001-mutter-enhanced-cd",
       "title": "Mutter — Enhanced CD",
       "kind": "artifact",

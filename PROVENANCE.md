@@ -3,8 +3,9 @@
 This document records where the preserved Flash cards came from, what was
 extracted or derived, what was deliberately left out, and what has and has not
 been verified. Section 13 covers the separately supplied 1999 RAMMSTEIN
-screensaver and section 16 the separately supplied 2001 Mutter Enhanced CD;
-everything before section 13 covers the Flashcard archive. It distinguishes
+screensaver, section 16 the separately supplied 2001 Mutter Enhanced CD and
+section 17 the separately supplied 2002 xXx soundtrack e-card; everything
+before section 13 covers the Flashcard archive. It distinguishes
 the **source of this collection** (the archives below) from **URLs that appear
 inside the content** (historical captions, forms and scripts), which are *not*
 provenance.
@@ -190,9 +191,11 @@ not affected materially.
 
 ## 6. Thumbnails — `assets/thumbnails/<id>.jpg`
 
-All thumbnails are real exports from the archive, scaled to a maximum of 480 px
-and encoded as JPEG (plus one bitmap pulled from a SWF, because that card has no
-decompiled export). No thumbnail is an invented or AI-generated image.
+All thumbnails are real exports or renders derived from the archived movies,
+scaled to a maximum of 480 px and encoded as JPEG (plus one bitmap pulled from a
+SWF, because that card has no decompiled export). The separately supplied cards
+document their own thumbnail sources in sections 13, 16 and 17. No thumbnail is
+an invented or AI-generated image.
 
 | id | Source | Note |
 | --- | --- | --- |
@@ -200,6 +203,7 @@ decompiled export). No thumbnail is an invented or AI-generated image.
 | 2001-mutter | `Mutter/frames/1131.png` | Green cross/logo frame from the timeline. |
 | 2001-ich-will | `Ich will/images/110.jpg` | Bitmap export (Till Lindemann still). |
 | 2002-mutter | `assets/cards/2002-mutter/images/embedded_01.jpg`, pulled from the movie's `DefineBitsJPEG2` tags | Bitmap extracted from the movie itself (no decompiled export exists); all 13 recovered JPEGs are kept in `assets/cards/2002-mutter/images/` and their hashes are in `assets/cards/SHA256SUMS`. |
+| 2002-xxx-soundtrack | `originals/2002-xxx-soundtrack.swf`, FFDec 26.2.1 frame render (timeline frame 470) | The animated xXx logo on the card's red grid. The separately supplied movie has no decompiled export, so the frame was rendered from the SWF itself; 450×200, JPEG. |
 | 2003-lichtspielhaus | `Lichtspielhaus/frames/125.png` | Title screen. |
 | 2004-reise-reise | `Reise/images/126.jpg` | Bitmap export (band in the field). |
 | 2005-benzin-game | `Benzin/frames/11.png` | Gameplay frame. |
@@ -720,3 +724,158 @@ ffmpeg 6.1, and a browser for the preview checks.
 5. Extract the RTF text of `ReadThis.WRI`, skipping the embedded object group.
 6. Compare every output against `originals/SHA256SUMS` and
    `assets/cards/SHA256SUMS` with `python3 qa/validate_catalog.py`.
+
+## 17. xXx (Triple X) soundtrack e-card (2002) — separate source archive
+
+This card is **not** from `Flashcards.zip`. It comes from another user-supplied
+archive and follows the same rules as sections 13–16: originals are preserved
+byte-for-byte, derived artifacts are labelled, and nothing is claimed as verified
+that was not exercised. The user described the file as coming from a "Triple X
+movie CD"; that is user context, **not** a verified source, and no download URL,
+publisher page or disc release is claimed here.
+
+| Property | Value |
+| --- | --- |
+| File | `/home/mrzetti/downloads/xxx.exe` (user-supplied) |
+| Size | 1,150,564 bytes |
+| Modified | 2026-09-14 22:39:46 +0200 (20:39 UTC) |
+| SHA-256 | `5e948382d5934c2caafb2e72c4b14bb03f0bf37f5181e677f1e11699c8e62d73` |
+| Repo originals | `originals/2002-xxx-soundtrack-sfx.exe`, `originals/2002-xxx-soundtrack.exe`, `originals/2002-xxx-soundtrack.swf` |
+
+### 17.1 Wrapper and projector
+
+The supplied file is a 32-bit Windows (PE32, i386, four sections) self-extracting
+ZIP: an SFX stub carrying UPX 0.72 markers ("UPX 0.72 Copyright (C) 1996-1999
+Laszlo Molnar & Markus Oberhumer") and Gilles Vollant `unzip 0.15` strings, with
+a conventional ZIP central directory at the end. It contains exactly one entry.
+
+| Entry | Method | Compressed | Uncompressed | CRC-32 | SHA-256 | ZIP timestamp |
+| --- | --- | ---: | ---: | --- | --- | --- |
+| `xXx.exe` | deflate | 1,117,013 | 1,426,637 | `0x98d8ff40` | `467ab67569cb2b3c6efdf3ee160aac39ce3abe6d7494653b37e840ea7cc37f9f` | 2002-09-06 14:18:40 |
+
+`xXx.exe` is a 32-bit Windows Flash projector (PE32, i386, five sections, linker
+timestamp 2000-08-18 02:00:29 UTC) whose stub strings include `Shockwave Flash`,
+`ShockwaveFlash`, `FSCommand:`, `application/x-shockwave-flash` and `.swf`. The
+stub ends exactly at byte offset 376,832 and an uncompressed `FWS` movie follows
+(the same projector-stub size as the `2001-ich-will` and `2002-mutter`
+projectors in section 3). Eight trailing bytes follow the declared movie end:
+`56 34 12 fa c5 04 10 00` — the little-endian marker `0xfa123456` followed by
+the movie's declared length `0x001004C5`. They are part of the projector, not
+the movie, and were not copied into the preserved SWF.
+
+| File | Bytes | SHA-256 | How obtained |
+| --- | ---: | --- | --- |
+| `originals/2002-xxx-soundtrack-sfx.exe` | 1,150,564 | `5e948382d5934c2caafb2e72c4b14bb03f0bf37f5181e677f1e11699c8e62d73` | the supplied wrapper, byte-for-byte |
+| `originals/2002-xxx-soundtrack.exe` | 1,426,637 | `467ab67569cb2b3c6efdf3ee160aac39ce3abe6d7494653b37e840ea7cc37f9f` | the ZIP's single entry `xXx.exe`, byte-for-byte |
+| `originals/2002-xxx-soundtrack.swf` | 1,049,797 | `08fce3212e4a36b43dafa8ef1503acefd9dffe1f44538f3602200e24714eb69a` | the movie at inner offset 376,832, sliced to its declared length |
+
+### 17.2 The movie
+
+| Property | Value |
+| --- | --- |
+| Signature / version | `FWS` v5 (AVM1, Flash 5) |
+| Stage | 450 × 200 px |
+| Frame rate | 18 fps |
+| Timeline | 658 frames |
+| Protect tag | present but empty (no password); a separate `EnableDebugger` tag carries a hashed value |
+| Imports / video / metadata | no `ImportAssets`, `DefineVideoStream` or `Metadata` tags |
+| Trailer | frames 1–481: MPAA green card, Columbia, Revolution Studios, xXx footage, "MUSIC INSPIRED BY", "IN CINEMAS ACROSS EUROPE: 17.10.02" |
+| Menu | frame 482 jumps to 483 (logo sequence with the `meinSound` loop); the timeline stops at frame 501, labelled `xxx` |
+| Other labels | `4lyn` (506), `ntrack1`–`ntrack14` (510–523), `dates` (531), `links` (541), `send2` (551), `exit` (561) |
+| Projector commands | `fscommand("fullscreen","true")` and `allowscale("false")` at frames 1, 501 and 517; `fscommand("quit")` at frame 658 |
+
+The 43 text fields exported by FFDec 26.2.1 include "xXx - THE SOUNDTRACK",
+"MUSIC FROM AND INSPIRED BY THE MOTION PICTURE", "IN CINEMAS ACROSS EUROPE:
+17.10.02", "DISC 1" and "DISC 2 | \"THE XANDER XONE\"" with the full track
+lists. Disc 1 track 01 is `RAMMSTEIN | FEUER FREI (3:10)`; Disc 1 continues to
+`I.M.E. | JUICY (4:09)` and Disc 2 to `JOI | LICK (6:29)`. The panels carry
+`4LYN | "NEON"` and `in stores: 09.09.2002`, the 4LYN tour dates from
+07.09.2002 to 12.10.2002, `SEND THIS FLASH-CARD 2 YOUR FRIEND !!` with UR
+MAIL / FRIENDS MAIL / SEND, `STATUS` / `DATA TRANSFER COMLETE !!`, `Online
+Verbindung erforderlich!` and the closing `produced by webGROOVE
+_trend_media_productions` credit. The movie is German/European in flavour; its
+own artwork prints `xXx` / `XXX`, and the German release title "Triple X" comes
+from the supplied context and the `/e-card/triplex/` path used by its track
+URLs. The 2002 dates in the movie (17.10.02, 09.09.2002 and the September–October
+2002 tour list) support the card's `year: 2002`; the ZIP entry's 2002-09-06
+timestamp is container metadata and is not used as proof.
+
+The interactive controls are laid out **outside** the 450 × 200 stage (Ruffle
+still hit-tests them when the player element is taller than the stage; see
+VERIFICATION.md):
+
+| Control | Root placement (stage px) |
+| --- | ---: |
+| `xxx` menu button (frame 496, → 501) | (-143.7, 284.1) |
+| 4LYN button (→ 506) | (-48.6, 284.1) |
+| DATES button (→ 531) | (46.7, 284.1) |
+| LINKS button (→ 541) | (150.7, 284.1) |
+| SEND2FRIEND button (→ 551) | (249.7, 284.1) |
+| exit button (→ 561) | (596.4, -58.6) |
+| sound ON/OFF sprite `bsound` (buttons 339/341) | (-98.0, -83.4) |
+| 14 track rows (inside the 4LYN sprite) | x ≈ 509 |
+| SKIP TRAILER button (frame 1, → 366) | hit area x 361.5–411.5, y 192.5–210.5 (partly below the stage) |
+
+### 17.3 Audio
+
+| Sound | Where used | Format | Duration |
+| --- | --- | --- | ---: |
+| `meinSound` (DefineSound chid 1, exported; `start(0,999)`) | root frame 483, loops through the logo, menu and panels | MP3, 32 kbps, 22,050 Hz mono | 5.382 s |
+| timeline stream (SoundStreamHead + 576 SoundStreamBlock tags) | frame 1 onward, under the trailer | MP3, 32 kbps, 22,050 Hz mono | 31.798 s |
+| button sound (chid 318) | attached to the UI buttons | MP3, 32 kbps, 22,050 Hz mono | 0.910 s |
+
+All three decode to real signal (ffmpeg `volumedetect`: mean −15.6 / −15.4 /
+−28.3 dB). The trailer stream and the looping `meinSound` cue are audible in the
+browser check (VERIFICATION.md). No track was identified or recovered.
+
+### 17.4 Embedded URLs (content references, not provenance)
+
+| Key | References |
+| --- | --- |
+| track previews | `http://www.4lyn.de/e-card/triplex/track1.swf` … `track14.swf`, one per track frame, loaded with `loadMovieNum(...,10,"GET")` |
+| form | `http://www.motor.de/_scripts/mailform_xxx.php` (the SEND2FRIEND `getURL`) |
+| links | `http://www.amazon.de/exec/obidos/ASIN/B00006H1GH/...`, `http://www.universal-music.de`, `http://www.sonypictures.com/movies/triplex/`, `http://www.sonypictures.com`, `http://www.revolutionstudios.com/home.html`, `http://www.4lyn.de`, `http://www.motor.de`, `http://www.webgroove.de` |
+| popup | `javascript:Mitte2('images/album2.jpg',400,400)` |
+
+### 17.5 Missing dependencies and layout
+
+| Dependency | Status |
+| --- | --- |
+| 14 `trackN.swf` track previews | **Dead**: on 2026-09-15 every URL redirected from `http` to `https` and returned **404**. The Internet Archive was temporarily offline during the check (availability API HTTP 429; the site served a "Temporarily Offline" page), so no capture was retrieved and no recovery is claimed. |
+| `images/album2.jpg` (album popup companion) | **Absent** from the projector. |
+| `motor.de/_scripts/mailform_xxx.php` | Historical form endpoint; not contacted. |
+| The card's own sound ON/OFF control | Present in the movie but placed at stage (-98, -83), outside the stage; not reachable in Ruffle. |
+| The 14 track-row buttons | Present in the 4LYN screen but placed at stage x ≈ 509, outside the stage; not reachable in Ruffle. The browser therefore never requests the track previews. |
+
+The movie is the e-card's only container; no decompiled export, companion
+folder or README was supplied with it. `originals/2002-xxx-soundtrack.swf` is
+the unmodified movie; the projector and SFX wrapper are preserved only as
+originals and are downloads, not browser plugins.
+
+### 17.6 Verification
+
+Browser verification in the project's Ruffle 0.6.0/Chromium covers the trailer
+with audio, SKIP TRAILER, both disc tracklists, the DATES / LINKS / SEND2FRIEND
+panels, wrapper mute, restart, close/reopen, fullscreen and the 390 × 844
+layout, plus the dead track URLs checked over HTTP. The exact observations and
+their limits are recorded in [VERIFICATION.md](VERIFICATION.md); the original
+Windows projector was not executed.
+
+### 17.7 Reproduction
+
+Tools: Python 3 (stdlib `zipfile`, `struct`, `hashlib`), ffmpeg 6.1, JPEXS
+FFDec 26.2.1 and a Chromium browser for the Ruffle checks.
+
+1. Hash the supplied wrapper and confirm `5e9483…e62d73`.
+2. `zipfile.ZipFile(...).read('xXx.exe')`; confirm `467ab6…7cc37f9f`.
+3. Find `FWS` at offset 376,832, read the little-endian length at offset +4 and
+   slice exactly that many bytes; confirm `08fce3…14eb69a` and the header
+   (`FWS` v5, 450 × 200, 18 fps, 658 frames).
+4. Save the three files and append their SHA-256 sums to
+   [`originals/SHA256SUMS`](originals/SHA256SUMS).
+5. `java -jar ffdec.jar -export script,text,frame,sound,image,shape,
+   morphshape,button,sprite,movie <outdir> originals/2002-xxx-soundtrack.swf`
+   and `-swf2xml` for the tag-level structure used in this section.
+6. Derive the thumbnail (section 6) and run `python3 qa/validate_catalog.py`.
+
+No Windows executable was run at any point and no SWF byte was modified.

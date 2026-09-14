@@ -7,7 +7,9 @@ RammWiki-branded desktop. Alongside the Flash cards it preserves the 1999
 sprites ship with a browser preview and downloads, the 2001 **Mutter Enhanced
 CD** data session, whose Universal Media Player shell, Sonne music video and
 artwork ship with a browser preview, and embeds **Asche zu Asche**, the
-preserved 1997 browser game hosted in its own project.
+preserved 1997 browser game hosted in its own project. The separately supplied
+2002 **xXx (Triple X) soundtrack e-card** is kept as a Flash card: its trailer,
+disc tracklists and panels play from the original movie.
 
 **Play:** https://flashcards.rammwiki.mrzetti.com  
 **Source:** https://github.com/mrzetti/flashcards

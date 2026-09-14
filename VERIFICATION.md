@@ -1,6 +1,6 @@
 # Browser verification
 
-Verification was performed on 13–14 September 2026 using automated Chromium
+Verification was performed on 13–15 September 2026 using automated Chromium
 browsers on the server. The coordinator used Playwright 1.58.2 / Chromium 145
 for real-runtime checks, in addition to the launcher's mocked-browser suite.
 Screenshots were opened and visually reviewed. **Mobile checks use browser
@@ -36,6 +36,7 @@ Historical mailing lists and competition entries were not submitted.
 | Pussy | Animated single announcement reaches its final screen; MORE produces Ruffle's URL prompt for the historical Rammstein blog. Audio output, mute, volume, restart and fullscreen checked. | The destination website/video is external and is not preserved by this project. |
 | Völkerball | Gallery/menu hotspots reveal concert locations, LIVE DVD, world-tour and edition views. Website/shop prompts, audio, mute, volume, restart and fullscreen checked. | Password-preview, send and wallpaper-download services depend on missing historical files/endpoints. |
 | LIFAD | Animated artwork/intro reaches the album screen; ZUR WEBSITE produces the Rammstein URL prompt. Volume control, restart and fullscreen checked. A separate compatibility copy restores the wordmark masks and readable lettering. | No audio signal was observed in the exercised screens. The external website is not archived here. See `qa/LIFAD-RENDERING.md` for the rendering fix. |
+| xXx — The Soundtrack | Trailer with audio, SKIP TRAILER (reaches the same stopped frame in ~8.5 s instead of ~28 s), both disc tracklists and the DATES / LINKS / SEND2FRIEND panels; wrapper mute, restart, close/reopen, fullscreen and the 390×844 layout checked. | The movie's navigation controls sit outside its 450×200 stage, so the panels were opened by clicking off-stage positions in a tall window; the 4LYN panel, the card's own sound ON/OFF widget and the 14 track rows could not be reached, and all 14 track preview URLs are dead (404). See `PROVENANCE.md` section 17. |
 | RAMMSTEIN Screensaver (artifact) | The files window, download list and gallery render; the sprite preview loads `scene.json` and runs three sprite sequences (flames, green sparks, red crosses) over the original frame. Automated checks assert the preview reports ready and that launching the card never creates a Ruffle player. | The original Director 6 projector is **not run in the browser** and was not executed at all (16/32-bit Windows only). The preview is a rebuild from the extracted sprites, not a Director emulator; film-loop frame ordering was not recovered. See `PROVENANCE.md` section 13. |
 | Mutter — Enhanced CD (artifact) | The files window lists 8 downloads and 7 gallery images. The rebuilt Universal Media Player window loads the disc's `AUTORUN.INF` (album *Mutter*, artist Rammstein, 11 track entries, 3 historical links), pages the disc artwork with Last/Next image, plays the labelled Sonne transcode in Chromium (240.2 s, video past 1 s, preserved 352×240/SAR aspect) and loads the `ReadThis.WRI` extraction in Help/Prefs. Launching never creates a Ruffle player; the 390×844 preview has no horizontal overflow. | The original Windows 95-era player was **not executed** and the card does not emulate it; the preview is a rebuild from the preserved files. The CD audio tracks and the Mac/QuickTime installers referenced by `AUTORUN.INF` are not in the supplied archive. Historical links were not opened; the browser video is a labelled H.264 transcode of the original MPEG-1. See `PROVENANCE.md` section 16. |
 
@@ -136,6 +137,70 @@ plus QuickTime or Media Player), the CD audio session (not in the archive),
 the historical `umusic.com`/`rock.com` addresses, and the QuickTime/Mac
 installers that `AUTORUN.INF` references but the archive does not contain.
 
+## xXx soundtrack e-card
+
+The 2002 xXx soundtrack e-card (`2002-xxx-soundtrack`, extracted from the
+user-supplied Windows projector) was verified on 15 September 2026 in the same
+Playwright/Chromium environment against the local preview server (real catalog
+and assets) with the vendored Ruffle 0.6.0, plus direct HTTP checks.
+
+**Layout note.** The movie is 450 × 200 px but places its menu controls outside
+the stage. Ruffle 0.6.0 still hit-tests those positions when the player element
+is taller than the stage, so the panels below were opened by clicking their
+documented off-stage coordinates in an 1100 × 1300 browser window. In a typical
+wide window those positions fall below the player element and the panels cannot
+be opened.
+
+Observed:
+
+- The trailer intro plays with an audio signal (Web Audio analyser; MPAA green
+  card, Columbia, Revolution Studios, xXx footage) and the timeline stops on the
+  tracklist screen after the ~28 s trailer.
+- Clicking the SKIP TRAILER hit area early reached the **same** stopped frame
+  after ~8.5 s (full-page screenshots compared byte-for-byte for equality); the
+  skipped trailer scenes were not inspected.
+- Both disc tracklists render: Disc 1 starting with `RAMMSTEIN | FEUER FREI
+  (3:10)`, Disc 2 headed "THE XANDER XONE". The looping `meinSound` cue is
+  still audible at the menu after the 31.8 s trailer stream ends.
+- Clicking the DATES, LINKS and SEND2FRIEND positions opened their panels: the
+  4LYN tour list (September–October 2002), the credits/references panel and the
+  send form.
+- The LINKS panel renders its Motor / Revolution Studios / webGROOVE.de
+  credits. Clicking the visible logo and label positions did not activate the
+  historical external URLs in these checks, so the `amazon.de`,
+  `universal-music.de`, `sonypictures.com`, `revolutionstudios.com`, `4lyn.de`,
+  `motor.de` and `webgroove.de` links were not opened or contacted (their
+  handlers are documented in PROVENANCE.md section 17.4).
+- The SEND2FRIEND `UR MAIL` field accepted typed text; **SEND was not pressed**
+  and the historical `motor.de` endpoint was not contacted.
+- The wrapper's Mute suppressed the audio signal and Restart replayed the
+  trailer. The launcher lifecycle (launch, exactly one player, close, reopen
+  with a fresh context) and the player-toolbar fullscreen were exercised at
+  1440 × 1000 and in the 390 × 844 layout, which has no horizontal page
+  overflow (see the lifecycle run described below).
+
+Not verified / not reachable:
+
+- The 4LYN (NEON) panel button (stage x ≈ −49) and the card's own sound ON/OFF
+  widget (≈ −98, −83) lie left of the stage and could not be clicked in the
+  tested layouts; the in-card toggle was therefore not exercised, and the
+  wrapper Mute/volume were used instead.
+- The 14 track-row buttons (stage x ≈ 509) lie right of the stage and could not
+  be reached, so the browser never requested the track previews. All 14
+  `http://www.4lyn.de/e-card/triplex/trackN.swf` URLs were checked with direct
+  HTTP requests on 15 September 2026: each redirects to `https` and returns
+  **404**. The Internet Archive was temporarily offline during the check (its
+  availability API returned HTTP 429 and archive.org served a "Temporarily
+  Offline" page), so no archived copy was retrieved and no recovery is claimed.
+- The album popup's `images/album2.jpg` companion is not in the projector.
+- The original Windows projector (`xXx.exe`) was **not executed**; the movie is
+  played by the vendored Ruffle only.
+
+Screenshots and JSON evidence for these checks were kept under
+`/tmp/opencode/flashcards-xxx/` (local QA only, not part of the repo). The
+launcher lifecycle checks mirror `qa/launcher.cjs`; `qa/capture.cjs
+2002-xxx-soundtrack` captures the card's own screenshot and audio report.
+
 ## Desktop theme
 
 On 14 September 2026 the launcher was reskinned from the earlier Windows
@@ -224,7 +289,7 @@ Real-runtime maintenance tools:
 cd qa
 npm ci
 npx playwright install --with-deps chromium
-node capture.cjs 2001-mutter 2001-ich-will 2002-mutter 2005-rosenrot-single 2009-pussy
+node capture.cjs 2001-mutter 2001-ich-will 2002-mutter 2002-xxx-soundtrack 2005-rosenrot-single 2009-pussy
 node launcher.cjs
 FLASHCARDS_URL=http://127.0.0.1:4173/ node mutter-ecd-verify.cjs
 ```
