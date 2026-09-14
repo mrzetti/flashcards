@@ -27,12 +27,7 @@ test('Explorer renders the catalog, filters by search and shows placeholder thum
     await page.waitForSelector('[data-card-id="mouse"] .tile-fallback');
 
     assert.equal(await page.locator('.card-tile').count(), 7);
-    assert.equal(await page.locator('[data-count-for="all"]').textContent(), '7');
-    assert.equal(await page.locator('[data-count-for="playable"]').textContent(), '2');
-    assert.equal(await page.locator('[data-count-for="partial"]').textContent(), '1');
-    assert.equal(await page.locator('[data-count-for="unverified"]').textContent(), '1');
-    assert.equal(await page.locator('[data-count-for="unsupported"]').textContent(), '2');
-    assert.equal(await page.locator('[data-count-for="unknown"]').textContent(), '1');
+    assert.equal(await page.locator('.task-pane, [data-filter]').count(), 0);
     assert.match(await page.locator('#status-count').textContent(), /7 cards/);
     assert.match(await page.locator('#clock').textContent(), /^\d{1,2}:\d{2} (AM|PM)$/);
 
@@ -54,15 +49,6 @@ test('Explorer renders the catalog, filters by search and shows placeholder thum
     assert.match(await page.locator('#explorer .explorer-status').textContent(), /No cards match/);
 
     await page.fill('#card-search', '');
-    await page.click('[data-filter="playable"]');
-    assert.equal(await page.locator('.card-tile').count(), 2);
-    await page.click('[data-filter="partial"]');
-    assert.equal(await page.locator('.card-tile').count(), 1);
-    await page.click('[data-filter="unverified"]');
-    assert.equal(await page.locator('.card-tile').count(), 1);
-    await page.click('[data-filter="unsupported"]');
-    assert.equal(await page.locator('.card-tile').count(), 2);
-    await page.click('[data-filter="all"]');
     assert.equal(await page.locator('.card-tile').count(), 7);
 
     // The unverified card keeps its raw catalog detail in the pane.

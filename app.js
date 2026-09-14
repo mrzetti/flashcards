@@ -1015,48 +1015,6 @@
       toolbar.append(back, forward, up, address, searchBox);
 
       var main = element('div', 'explorer-main');
-      var taskPane = element('aside', 'task-pane');
-      taskPane.setAttribute('aria-label', 'Card tasks');
-      var tasksTitle = element('h3', '', 'Card Tasks');
-      var taskList = element('div', 'task-list');
-      taskList.setAttribute('role', 'group');
-      var filterSpecs = [
-        { key: 'all', label: 'All cards' },
-        { key: 'playable', label: 'Playable' },
-        { key: 'partial', label: 'Partial' },
-        { key: 'unverified', label: 'Unverified' },
-        { key: 'unsupported', label: 'Unsupported' },
-        { key: 'unknown', label: 'Unknown status' },
-      ];
-      var filterButtons = {};
-      filterSpecs.forEach(function (spec) {
-        var button = element('button', 'task-link');
-        button.type = 'button';
-        button.dataset.filter = spec.key;
-        button.setAttribute('aria-pressed', 'false');
-        var text = element('span', '', spec.label);
-        var count = element('span', 'task-count', '0');
-        count.dataset.countFor = spec.key;
-        button.append(text, count);
-        button.addEventListener('click', function () {
-          state.explorer.filter = spec.key;
-          renderExplorer();
-        });
-        filterButtons[spec.key] = button;
-        taskList.append(button);
-      });
-      var separator = element('div', 'task-separator');
-      var selectedTitle = element('h3', '', 'Selected card');
-      var paneLaunch = element('button', 'xp-button pane-launch', 'Launch selected card');
-      paneLaunch.type = 'button';
-      paneLaunch.disabled = true;
-      paneLaunch.addEventListener('click', function () {
-        var card = findCard(state.explorer.selectedId);
-        if (card) launchCard(card);
-      });
-      var paneHint = element('p', 'hint', 'Cards start only when you choose Launch. Closing the player stops its audio.');
-      taskPane.append(tasksTitle, taskList, separator, selectedTitle, paneLaunch, paneHint);
-
       var content = element('section', 'explorer-content');
       content.setAttribute('aria-label', 'Card catalog');
       var grid = element('div', 'cards-grid');
@@ -1082,7 +1040,7 @@
       playerEl.id = 'status-player';
       statusbar.append(countEl, selectionEl, playerEl);
 
-      main.append(taskPane, content, details);
+      main.append(content, details);
       root.append(toolbar, main, statusbar);
 
       var explorer = {
@@ -1091,11 +1049,9 @@
         status: explorerStatus,
         details: detailsContent,
         search: search,
-        filterButtons: filterButtons,
         countEl: countEl,
         selectionEl: selectionEl,
         playerEl: playerEl,
-        paneLaunch: paneLaunch,
         back: back,
         forward: forward,
         up: up,
@@ -1253,14 +1209,6 @@
 
     function renderCounts() {
       if (!state.explorer.els) return;
-      var specs = ['all', 'playable', 'partial', 'unverified', 'unsupported', 'unknown'];
-      specs.forEach(function (key) {
-        var count = filterCards(state.catalog.cards, { query: '', filter: key }).length;
-        var target = state.explorer.els.root.querySelector('[data-count-for="' + key + '"]');
-        if (target) target.textContent = String(count);
-        var button = state.explorer.els.filterButtons[key];
-        if (button) button.setAttribute('aria-pressed', String(state.explorer.filter === key));
-      });
       state.explorer.els.countEl.textContent = state.catalog.cards.length + (state.catalog.cards.length === 1 ? ' card' : ' cards');
     }
 
@@ -1276,7 +1224,6 @@
       var container = state.explorer.els.details;
       var card = findCard(state.explorer.selectedId);
       container.replaceChildren();
-      state.explorer.els.paneLaunch.disabled = !card || !card.swf;
       state.explorer.els.selectionEl.textContent = card ? 'Selected: ' + card.title : 'No card selected';
 
       if (!card) {

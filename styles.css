@@ -587,7 +587,7 @@ button {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: 178px minmax(0, 1fr) 264px;
+  grid-template-columns: minmax(0, 1fr) 264px;
   background: #fff;
 }
 
