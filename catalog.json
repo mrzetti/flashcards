@@ -10,7 +10,7 @@
       "height": 480,
       "year": 1997,
       "description": "Rammstein's original 1997 Windows game, preserved for the browser: guide the figure through three cavern, concert and beach levels, shooting the floating band-member faces that open the way forward.",
-      "instructions": "Choose Load game in the Asche window and wait for the title screen \u2014 the first run downloads about 40 MB \u2014 then click the title screen to start. Hold Left/Right to move, Up to jump and Space to fire; Escape quits. On touch devices the game shows its own on-screen buttons. If the last life is lost, the wrapper shows a Game over overlay and restarts the game automatically after a short countdown; Play again now skips the wait.",
+      "instructions": "Choose Load game in the Asche window and wait for the title screen \u2014 the first run downloads about 40 MB \u2014 then click the title screen to start. Hold Left/Right to move, Up to jump and Space to fire; Escape quits. On touch devices the game shows its own on-screen buttons. In level 3 the aggressive clone attacks while invisible: jump over it, then hold the opposite arrow briefly (~150 ms) to turn and fire \u2014 a quick tap can be missed by the game's keyboard polling, and jumping alone does not stop it. If the last life is lost, the wrapper shows a Game over overlay and restarts the game automatically after a short countdown; Play again now skips the wait.",
       "controls": [
         { "key": "ArrowLeft", "label": "Move left" },
         { "key": "ArrowRight", "label": "Move right" },
