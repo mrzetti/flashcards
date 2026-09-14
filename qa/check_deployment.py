@@ -17,6 +17,8 @@ def fetch(relative, expected_type=None):
         if expected_type:
             assert response.headers.get_content_type() == expected_type, (
                 relative, response.headers.get_content_type())
+        cache_control = response.headers.get("Cache-Control") or ""
+        assert "no-cache" in cache_control, (relative, cache_control)
         data = response.read()
     expected = (ROOT / relative).read_bytes()
     assert hashlib.sha256(data).digest() == hashlib.sha256(expected).digest(), relative

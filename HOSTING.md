@@ -43,6 +43,12 @@ certificate configuration. Serve the public deployment directory, not the Git
 checkout. Keep a previous checkout/commit available for rollback; check out that
 commit and run the same deployment command.
 
+The shipped nginx template sends `Cache-Control: no-cache` for every response:
+filenames are not content-hashed, so browsers must revalidate with ETag /
+If-Modified-Since after a deploy instead of reusing a stale launcher or catalog
+(mobile browsers are the usual victims). `qa/check_deployment.py` asserts the
+header on every checked URL.
+
 The script validates catalog paths and SWF integrity before copying. Updates are
 in-place; use a maintenance window if replacing a large collection. All card
 assets must be under `assets/` or `originals/`, the two synchronized trees.
