@@ -137,6 +137,7 @@
       if (entry && entry.code) parts.push(entry.code);
     });
     if (card.kind === 'artifact') parts.push('artifact download preservation');
+    if (card.kind === 'embed') parts.push('browser game embedded emulator');
     (card.downloads || []).forEach(function (entry) {
       if (entry && entry.label) parts.push(entry.label);
       if (entry && entry.meta) parts.push(entry.meta);
@@ -353,12 +354,14 @@
     var controls = expandControls(raw.controls);
     var status = normalizeStatus(raw.status);
     var swf = asTrimmedString(raw.swf);
-    var kind = asTrimmedString(raw.kind) === 'artifact' ? 'artifact' : 'flash';
+    var rawKind = asTrimmedString(raw.kind);
+    var kind = rawKind === 'artifact' || rawKind === 'embed' ? rawKind : 'flash';
     return {
       id: id,
       title: asTrimmedString(raw.title) || id,
       kind: kind,
       swf: swf,
+      url: kind === 'embed' ? asTrimmedString(raw.url || raw.embed) : '',
       preview: asTrimmedString(raw.preview),
       downloads: sanitizeDownloadList(raw.downloads),
       gallery: sanitizeGallery(raw.gallery),
@@ -373,7 +376,7 @@
       keyboardControls: keyboardControls(controls),
       status: status,
       notes: asTrimmedString(raw.notes),
-      fileMissing: kind !== 'artifact' && !swf,
+      fileMissing: kind === 'flash' && !swf,
     };
   }
 
@@ -402,6 +405,23 @@
       if (opts.allowData) allowed.push('data:');
       if (allowed.indexOf(url.protocol) === -1) return '';
       return url.href;
+    } catch (error) {
+      return '';
+    }
+  }
+
+  /**
+   * Resolve an embedded browser-game URL. Unlike ordinary assets, an embed
+   * must be an absolute or page-relative http(s) address: file:// and data:
+   * pages cannot be framed or cross-origin isolated.
+   */
+  function resolveEmbedUrl(value, base) {
+    var url = resolveUrl(value, base, { allowFile: false });
+    if (!url) return '';
+    try {
+      var protocol = new URL(url).protocol;
+      if (protocol !== 'http:' && protocol !== 'https:') return '';
+      return url;
     } catch (error) {
       return '';
     }
@@ -538,6 +558,7 @@
       sanitizeDownloadList: sanitizeDownloadList,
       sanitizeGallery: sanitizeGallery,
       resolveUrl: resolveUrl,
+      resolveEmbedUrl: resolveEmbedUrl,
       validatePlayerMessage: validatePlayerMessage,
       cardAssetUrl: cardAssetUrl,
       explorerBounds: explorerBounds,
@@ -1213,6 +1234,7 @@
       body.append(element('span', 'tile-title', card.title));
       var metaBits = [];
       if (card.kind === 'artifact') metaBits.push('Archived artifact');
+      else if (card.kind === 'embed') metaBits.push('Browser game');
       if (card.year) metaBits.push(card.year);
       if (card.width && card.height) metaBits.push(card.width + '\u00d7' + card.height);
       body.append(element('span', 'tile-meta', metaBits.join(' \u00b7 ') || 'Flash card'));
@@ -1302,6 +1324,7 @@
         if (!value) return;
         meta.append(element('dt', '', label), element('dd', '', value));
       }
+      var embedUrl = card.kind === 'embed' ? resolveEmbedUrl(card.url, document.baseURI) : '';
       metaRow('Year', card.year);
       metaRow('Size', card.width + ' \u00d7 ' + card.height);
       metaRow('Card ID', card.id);
@@ -1310,6 +1333,12 @@
         if (card.downloads.length) bundleBits.push(card.downloads.length + (card.downloads.length === 1 ? ' download' : ' downloads'));
         if (card.gallery.length) bundleBits.push(card.gallery.length + (card.gallery.length === 1 ? ' gallery image' : ' gallery images'));
         metaRow('Bundle', bundleBits.join(' \u00b7 ') || 'Archived artifact');
+      } else if (card.kind === 'embed') {
+        var embedHost = '';
+        if (embedUrl) {
+          try { embedHost = new URL(embedUrl).host; } catch (error) { embedHost = ''; }
+        }
+        metaRow('Host', embedHost || 'External browser game');
       } else {
         metaRow('File', card.swf || 'Not listed');
       }
@@ -1327,6 +1356,9 @@
       }
       if (card.fileMissing) {
         container.append(element('p', 'details-warning', 'No SWF file is listed for this card, so the Launch button is disabled.'));
+      }
+      if (card.kind === 'embed' && !embedUrl) {
+        container.append(element('p', 'details-warning', 'No game URL is listed for this card, so the Launch button is disabled.'));
       }
 
       if (card.description) {
@@ -1350,7 +1382,7 @@
         chips.append(element('span', 'control-chip', 'Mouse or touchscreen'));
       }
       controlsSection.append(chips);
-      if (card.keyboardControls.length) {
+      if (card.keyboardControls.length && card.kind !== 'embed') {
         controlsSection.append(element('p', 'hint', 'A touch keyboard with these keys appears in the player on touch devices.'));
       }
       container.append(controlsSection);
@@ -1370,15 +1402,21 @@
 
       var actions = element('div', 'details-actions');
       var artifact = card.kind === 'artifact';
-      var launch = element('button', 'rw-button primary', artifact ? 'Open files & preview' : 'Launch card');
+      var embed = card.kind === 'embed';
+      var launch = element('button', 'rw-button primary',
+        artifact ? 'Open files & preview' : embed ? 'Launch game' : 'Launch card');
       launch.type = 'button';
-      launch.disabled = !artifact && !card.swf;
-      launch.setAttribute('aria-label', artifact ? 'Open files and preview for ' + card.title : 'Launch ' + card.title);
+      launch.disabled = embed ? !embedUrl : (!artifact && !card.swf);
+      launch.setAttribute('aria-label', artifact
+        ? 'Open files and preview for ' + card.title
+        : embed ? 'Launch ' + card.title + ' in the desktop' : 'Launch ' + card.title);
       launch.addEventListener('click', function () { launchCard(card); });
       actions.append(launch);
       actions.append(element('p', 'hint', artifact
         ? 'The sprite preview and every download open in one window. Nothing starts automatically.'
-        : 'Cards never autoplay from a link. Launching closes any other player first so only one card uses audio at a time.'));
+        : embed
+          ? 'The original game runs on its own site in this window. Nothing downloads until you choose Load game there.'
+          : 'Cards never autoplay from a link. Launching closes any other player first so only one card uses audio at a time.'));
       container.append(actions);
     }
 
@@ -1742,6 +1780,10 @@
 
     function launchCard(card) {
       if (!card) return;
+      if (card.kind === 'embed') {
+        openEmbedWindow(card);
+        return;
+      }
       if (card.kind === 'artifact') {
         openArtifactWindow(card);
         return;
@@ -1826,6 +1868,78 @@
       });
       record.onClose = function () { record.body.replaceChildren(); };
       announce('Opened ' + card.title + ' files and preview.');
+      return record;
+    }
+
+    /* ---------------- browser-game embed window ---------------- */
+
+    function embedHost(card) {
+      var url = resolveEmbedUrl(card.url, document.baseURI);
+      if (!url) return '';
+      try { return new URL(url).host; } catch (error) { return ''; }
+    }
+
+    function buildEmbedContent(card) {
+      var content = element('div', 'embed-content');
+      var frame = document.createElement('iframe');
+      frame.className = 'embed-frame';
+      frame.title = card.title + ' \u2014 browser game';
+      // `cross-origin-isolated` lets the game page keep SharedArrayBuffer; the
+      // game host must send matching COOP/COEP and a same-site CORP header.
+      frame.setAttribute('allow', 'autoplay; fullscreen; cross-origin-isolated');
+      frame.setAttribute('allowfullscreen', '');
+      frame.src = resolveEmbedUrl(card.url, document.baseURI);
+      content.append(frame);
+
+      var note = 'Original game hosted at ' + (embedHost(card) || 'its own site') +
+        '. Nothing downloads until Load game is chosen there.';
+      if (typeof window.crossOriginIsolated === 'boolean' && !window.crossOriginIsolated) {
+        note += ' This page is not cross-origin isolated, so the game may offer a separate link instead.';
+      }
+      content.append(element('p', 'embed-note', note));
+      return content;
+    }
+
+    function openEmbedWindow(card) {
+      var url = resolveEmbedUrl(card.url, document.baseURI);
+      if (!url) {
+        setExplorerStatus('\u201c' + card.title + '\u201d has no game URL listed, so it cannot be launched.', 'error');
+        announce(card.title + ' cannot be launched because no game URL is listed.');
+        return null;
+      }
+      var id = 'embed';
+      var existing = state.windows.get(id);
+      if (existing) {
+        restoreWindow(existing);
+        if (existing.options.cardId !== card.id) {
+          // Switching games: release the running emulator before the next one.
+          setWindowTitle(existing, card.title + ' \u2014 Browser game');
+          existing.body.replaceChildren(buildEmbedContent(card));
+          existing.options.cardId = card.id;
+          announce('Opened ' + card.title + '. The previous browser game was closed.');
+        }
+        focusWindow(id);
+        return existing;
+      }
+      var area = desktopArea();
+      var width = Math.min(980, Math.max(320, area.width - 60));
+      var height = Math.min(760, Math.max(220, area.height - 60));
+      var record = createWindow({
+        id: id,
+        kind: 'embed',
+        icon: 'icon-play',
+        cardId: card.id,
+        title: card.title + ' \u2014 Browser game',
+        bounds: {
+          width: width,
+          height: height,
+          x: Math.round((area.width - width) / 2),
+          y: Math.round((area.height - height) / 2),
+        },
+        content: buildEmbedContent(card),
+      });
+      record.onClose = function () { record.body.replaceChildren(); };
+      announce('Opened ' + card.title + ' in the desktop.');
       return record;
     }
 
@@ -1939,6 +2053,7 @@
         '<h3>Play cards safely</h3>' +
         '<p>Cards only start when you choose <strong>Launch card</strong> (or the play button on a tile). Links such as <code>?card=id</code> select a card and show its details, but they never autoplay. This keeps surprise audio away and gives you control.</p>' +
         '<p>Only one player runs at a time. Launching another card closes the previous player completely, which stops its sound and frees its memory. Closing the player window does the same.</p>' +
+        '<p>A preserved <strong>browser game</strong> card opens in its own single window. Its emulator does not download anything until you choose <strong>Load game</strong> on the game page, and closing that window releases the game.</p>' +
         '<h3>Windows</h3>' +
         '<ul>' +
         '<li>Drag a title bar to move a window; drag any edge or corner to resize it. Windows stay inside the desktop.</li>' +
@@ -1974,7 +2089,9 @@
     /* ---------------- shell actions ---------------- */
 
     function randomCard() {
-      var pool = state.catalog.cards.filter(function (card) { return card.swf; });
+      var pool = state.catalog.cards.filter(function (card) {
+        return card.swf || (card.kind === 'embed' && resolveEmbedUrl(card.url, document.baseURI));
+      });
       if (!pool.length) {
         openExplorer();
         setExplorerStatus('The catalog is still loading or contains no playable cards.', 'error');
@@ -2073,6 +2190,7 @@
     sanitizeDownloadList: sanitizeDownloadList,
     sanitizeGallery: sanitizeGallery,
     resolveUrl: resolveUrl,
+    resolveEmbedUrl: resolveEmbedUrl,
     validatePlayerMessage: validatePlayerMessage,
     cardAssetUrl: cardAssetUrl,
     explorerBounds: explorerBounds,

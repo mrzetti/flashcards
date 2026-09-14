@@ -49,6 +49,14 @@ If-Modified-Since after a deploy instead of reusing a stale launcher or catalog
 (mobile browsers are the usual victims). `qa/check_deployment.py` asserts the
 header on every checked URL.
 
+The template also enables cross-origin isolation with
+`Cross-Origin-Opener-Policy: same-origin` and
+`Cross-Origin-Embedder-Policy: require-corp`. This is required for the embedded
+Asche browser game to keep SharedArrayBuffer. Keep the self-hosted site free of
+cross-origin resources without compatible CORP headers; the Asche deployment
+sends `Cross-Origin-Resource-Policy: same-site` so its sibling subdomain may be
+framed. `qa/check_deployment.py` also checks the game URL's isolation headers.
+
 The script validates catalog paths and SWF integrity before copying. Updates are
 in-place; use a maintenance window if replacing a large collection. All card
 assets must be under `assets/` or `originals/`, the two synchronized trees.

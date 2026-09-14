@@ -121,6 +121,36 @@
       "gallery": [
         { "url": "thumbs/card.svg", "caption": "Fixture gallery image" }
       ]
+    },
+    {
+      "id": "embed",
+      "title": "Embedded Game",
+      "kind": "embed",
+      "url": "fixtures/embed.html",
+      "thumbnail": "thumbs/card.svg",
+      "width": 640,
+      "height": 480,
+      "year": 1997,
+      "description": "A fixture browser game loaded in the desktop embed window.",
+      "instructions": "Choose Load game in the frame.",
+      "controls": ["Arrow keys", "Space"],
+      "status": "Playable — fixture embed",
+      "notes": "Exercises the embed window in the browser tests."
+    },
+    {
+      "id": "embed-alt",
+      "title": "Second Embedded Game",
+      "kind": "embed",
+      "url": "fixtures/embed.html?game=two",
+      "thumbnail": "thumbs/card.svg",
+      "width": 800,
+      "height": 600,
+      "year": 1998,
+      "description": "A second fixture browser game used to test that only one embed window exists.",
+      "instructions": "Choose Load game in the frame.",
+      "controls": ["Mouse"],
+      "status": "Playable — fixture embed",
+      "notes": "Switching embed cards replaces the running frame."
     }
   ]
 }

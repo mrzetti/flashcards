@@ -36,3 +36,13 @@ decoded sprites, texts and scripts remain the property of their respective
 owners. The browser preview is an independent rebuild from the preserved
 sprites and is not the original program. Extraction tools used to derive the
 artifacts are credited in `PROVENANCE.md` section 13.
+
+## Asche zu Asche (1997 game)
+
+The browser-game card embeds the separately preserved original game from the
+Asche project (https://github.com/mrzetti/asche). The Asche project credits the
+game to **Oliver Czok for Motor Music, © 1997**, preserved from the Rammstein
+World download. The game executable, runtime DLLs, audio, artwork and emulator
+files remain the property of their respective owners and are not copied into
+this repository; only a derived title-screen thumbnail is stored here. Boxedwine
+and Wine licensing is documented in that project. See `PROVENANCE.md` section 15.

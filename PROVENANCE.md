@@ -195,6 +195,7 @@ decompiled export). No thumbnail is an invented or AI-generated image.
 
 | id | Source | Note |
 | --- | --- | --- |
+| 1997-asche-zu-asche | Asche project `reference/extracted/title-screen.png` | Title screen of the preserved 1997 game; extracted from `RSTEIN.EXE` by the Asche project's `reference/extract_game_assets.py`. The game itself is hosted separately (see section 15). The 480×360 JPEG was scaled from the 640×480 PNG with ffmpeg. |
 | 2001-mutter | `Mutter/frames/1131.png` | Green cross/logo frame from the timeline. |
 | 2001-ich-will | `Ich will/images/110.jpg` | Bitmap export (Till Lindemann still). |
 | 2002-mutter | `assets/cards/2002-mutter/images/embedded_01.jpg`, pulled from the movie's `DefineBitsJPEG2` tags | Bitmap extracted from the movie itself (no decompiled export exists); all 13 recovered JPEGs are kept in `assets/cards/2002-mutter/images/` and their hashes are in `assets/cards/SHA256SUMS`. |
@@ -550,3 +551,23 @@ asset is the RammWiki wordmark in `assets/brand/rammwiki-wordmark.svg`, fetched
 It is not part of the preserved card collection. It is used to identify the
 RammWiki project this desktop belongs to and remains RammWiki property; see
 `THIRD_PARTY.md`.
+
+## 15. Asche zu Asche browser game card
+
+The `1997-asche-zu-asche` catalog entry is not a Flash card: it embeds the
+separately preserved 1997 Windows game from https://asche.rammwiki.mrzetti.com
+(repository: https://github.com/mrzetti/asche) through its `?embed=1` compact
+player. That project documents the original executable, VB3 runtime, custom DLL,
+audio, Boxedwine/Wine runtime and extraction hashes; none of those files are
+duplicated here.
+
+- Thumbnail: `assets/thumbnails/1997-asche-zu-asche.jpg`, derived from the
+  Asche project's extracted title screen (see section 6).
+- The desktop only frames the game page: nothing downloads until the visitor
+  chooses **Load game**, and closing the window releases the emulator.
+- Embedding needs cross-origin isolation. This site sends
+  `Cross-Origin-Opener-Policy: same-origin` and
+  `Cross-Origin-Embedder-Policy: require-corp`; the Asche deployment sends the
+  matching headers with `Cross-Origin-Resource-Policy: same-site` so its sibling
+  subdomain may frame it.
+- Verification of the live embed is recorded in `VERIFICATION.md`.

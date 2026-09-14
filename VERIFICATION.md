@@ -63,11 +63,11 @@ and mobile-emulated layouts:
 - The narrow layout has no horizontal page overflow; Benzin receives four
   card-specific touch keys.
 
-The **55-test unit/mock-browser suite** additionally exercises loading failures, unsupported
+The **62-test unit/mock-browser suite** additionally exercises loading failures, unsupported
 runtime states, message validation, delayed loads while minimized, held-key
-release, restart, focus, the standalone Start gate, filtering, artifact cards and
-window state. Mocked tests validate wrapper behavior; they do not prove game
-compatibility.
+release, restart, focus, the standalone Start gate, filtering, artifact cards,
+browser-game embed cards and window state. Mocked tests validate wrapper
+behavior; they do not prove game compatibility.
 
 ## Screensaver artifact
 
@@ -102,7 +102,7 @@ player, the artifact preview and all touch controls were kept as they were; the
 change is CSS plus launcher wording and the `assets/brand/rammwiki-wordmark.svg`
 brand asset.
 
-- The full **55-test unit/mock-browser suite** passed against the theme alone,
+- The full **62-test unit/mock-browser suite** passed against the theme alone,
   and the real-catalog pages render without page errors.
 - Desktop, Start menu, Help, standalone player (mocked Ruffle), screensaver
   preview, mobile 390×844 and the empty wallpaper were captured headlessly and
@@ -111,6 +111,36 @@ brand asset.
   the reskin.
 - The wordmark is fetched from https://ramm.wiki/w/rammwiki.svg and documented in
   `PROVENANCE.md` section 14; the theme uses no Microsoft assets.
+
+## Browser-game embed (Asche zu Asche)
+
+The `1997-asche-zu-asche` card (a non-Flash `embed`) was verified against the
+public sites on 14 September 2026 in the same Chromium used for the other
+real-runtime checks:
+
+- `https://flashcards.rammwiki.mrzetti.com/` reports
+  `window.crossOriginIsolated === true`; nginx serves COOP `same-origin` and
+  COEP `require-corp`. The Asche deployment serves the matching COOP/COEP
+  headers with CORP `same-site`, so its sibling subdomain may frame it.
+- Launching the card opens exactly one `embed` window whose iframe points at
+  `https://asche.rammwiki.mrzetti.com/?embed=1` with
+  `allow="autoplay; fullscreen; cross-origin-isolated"`. The frame itself
+  reports cross-origin isolation and the compact `embed` view, and nothing had
+  downloaded before **Load game** was chosen.
+- Choosing **Load game** created the Boxedwine emulator frame
+  (`/emulator/boxedwine.html?...`), its canvas appeared and the original game
+  reached its title screen (“Tap the title screen to start”), with zero page
+  errors on the desktop page.
+- Closing the window released the frame (no embed iframes remained).
+- The 2009 Pussy Flash card still reached `player.status === 'playing'` under
+  the new headers, so cross-origin isolation did not regress Ruffle playback.
+- `qa/check_deployment.py` verifies the deployed files, the embed thumbnail and
+  the game URL's isolation headers.
+
+Releasing the emulator by closing the window is the documented behavior; the
+desktop cannot pause Boxedwine while it is hidden, and a complete playthrough
+of all three levels was not performed (the game's own project documents its
+runtime checks).
 
 ## Reproduce
 

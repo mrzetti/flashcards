@@ -26,9 +26,9 @@ test('Explorer renders the catalog, filters by search and shows placeholder thum
     await openDesktop(page, server.baseURL);
     await page.waitForSelector('[data-card-id="mouse"] .tile-fallback');
 
-    assert.equal(await page.locator('.card-tile').count(), 8);
+    assert.equal(await page.locator('.card-tile').count(), 10);
     assert.equal(await page.locator('.task-pane, [data-filter]').count(), 0);
-    assert.match(await page.locator('#status-count').textContent(), /8 cards/);
+    assert.match(await page.locator('#status-count').textContent(), /10 cards/);
     assert.match(await page.locator('#clock').textContent(), /^\d{1,2}:\d{2} (AM|PM)$/);
 
     // Short, explicit status labels; the full catalog text stays in the pane.
@@ -42,14 +42,14 @@ test('Explorer renders the catalog, filters by search and shows placeholder thum
     await page.fill('#card-search', 'racer');
     assert.equal(await page.locator('.card-tile').count(), 1);
     assert.equal(await page.locator('.card-tile').getAttribute('data-card-id'), 'beta');
-    assert.match(await page.locator('#explorer .explorer-status').textContent(), /Showing 1 of 8 cards/);
+    assert.match(await page.locator('#explorer .explorer-status').textContent(), /Showing 1 of 10 cards/);
 
     await page.fill('#card-search', 'nothing-matches-this');
     assert.equal(await page.locator('.card-tile').count(), 0);
     assert.match(await page.locator('#explorer .explorer-status').textContent(), /No cards match/);
 
     await page.fill('#card-search', '');
-    assert.equal(await page.locator('.card-tile').count(), 8);
+    assert.equal(await page.locator('.card-tile').count(), 10);
 
     // The unverified card keeps its raw catalog detail in the pane.
     await page.click('[data-card-id="mouse"]');

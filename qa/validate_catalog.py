@@ -62,7 +62,7 @@ def main():
         assert card["title"] and card["instructions"], ident
         assert card["width"] > 0 and card["height"] > 0, ident
         kind = card.get("kind", "flash")
-        assert kind in ("flash", "artifact"), f"{ident}: unknown kind {kind!r}"
+        assert kind in ("flash", "artifact", "embed"), f"{ident}: unknown kind {kind!r}"
         if kind == "artifact":
             local_file(card["thumbnail"])
             if card.get("preview"):
@@ -75,6 +75,13 @@ def main():
                 local_file(entry["url"])
             print(f"OK {ident}: artifact with {len(card['downloads'])} downloads, "
                   f"{len(card.get('gallery', []))} gallery images")
+            continue
+        if kind == "embed":
+            local_file(card["thumbnail"])
+            assert not card.get("swf"), f"{ident}: embed must not list a SWF"
+            url = urlsplit(card.get("url", ""))
+            assert url.scheme == "https" and url.netloc, f"{ident}: embed needs an https url"
+            print(f"OK {ident}: browser game embed at {url.netloc}{url.path}")
             continue
         data = local_file(card["swf"]).read_bytes()
         assert data[:3] in (b"FWS", b"CWS", b"ZWS"), f"Invalid SWF: {ident}"

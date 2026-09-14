@@ -4,7 +4,8 @@ A browser home for a collection of original Rammstein Flashcards: promotional
 microsites, animations, and small interactive games, presented in a dark
 RammWiki-branded desktop. Alongside the Flash cards it preserves the 1999
 **RAMMSTEIN Screensaver**, an archived Director 6/Windows artifact whose 103
-sprites ship with a browser preview and downloads.
+sprites ship with a browser preview and downloads, and embeds **Asche zu Asche**,
+the preserved 1997 browser game hosted in its own project.
 
 **Play:** https://flashcards.rammwiki.mrzetti.com  
 **Source:** https://github.com/mrzetti/flashcards
@@ -33,6 +34,10 @@ controls. See the card's instructions and compatibility notes before playing.
   from the extracted original bitmaps, the download list, and a gallery of the
   extracted images. The original Windows executable and the Director movie are
   downloads, not browser plugins.
+- **Browser games** (like Asche zu Asche) run on their own site inside one
+  desktop window. The emulator is click-to-load there, closing the window
+  releases it, and the game page keeps a full-page link for browsers without the
+  required cross-origin isolation.
 
 **Playable** means the documented local interaction was verified. **Partial**
 means something important is absent or unconfirmed, commonly a remote video or
@@ -78,6 +83,13 @@ Artifact cards (`"kind": "artifact"`) omit `swf` and instead carry an optional
 (`url`/`caption`) lists. Their files are validated against the deployed trees by
 `qa/validate_catalog.py`; preview pages live at the project root, like
 `player.html`.
+
+Browser-game cards (`"kind": "embed"`) carry an https `url` to the game's own
+click-to-load page and use the desktop's single embed window instead of Ruffle.
+The host must allow framing: this site sends COOP `same-origin` and COEP
+`require-corp` for cross-origin isolation, and the game host sends COOP/COEP
+plus a same-site `Cross-Origin-Resource-Policy`. Nothing downloads until the
+game page's own Load game button is used.
 
 1. Keep the original movie or archive byte-for-byte and record its SHA-256 and
    provenance.

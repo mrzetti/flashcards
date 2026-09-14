@@ -210,8 +210,47 @@ test('artifact cards keep downloads and gallery but never need a SWF', () => {
   assert.equal(core.sanitizeCard({ id: 'x' }).fileMissing, true);
 });
 
-test('download and gallery entry lists are bounded and reject malformed items', () => {
-  const downloads = core.sanitizeDownloadList([
+test('embed cards keep their game URL and never need a SWF', () => {
+  const card = core.sanitizeCard({
+    id: '1997-asche-zu-asche',
+    title: 'Asche zu Asche',
+    kind: 'embed',
+    url: 'https://asche.example.test/?embed=1',
+    thumbnail: 'assets/thumbnails/1997-asche-zu-asche.jpg',
+    width: 640,
+    height: 480,
+    year: 1997,
+    status: 'Playable — browser emulator',
+    instructions: 'Choose Load game.',
+    controls: ['Arrow keys', 'Space'],
+  });
+  assert.equal(card.kind, 'embed');
+  assert.equal(card.url, 'https://asche.example.test/?embed=1');
+  assert.equal(card.swf, '');
+  assert.equal(card.fileMissing, false);
+  assert.equal(core.matchesSearch(card, 'asche'), true);
+  assert.equal(core.matchesSearch(card, 'browser game'), true);
+  assert.equal(core.matchesSearch(card, 'emulator'), true);
+  // Embed entries without a URL keep an empty string instead of crashing.
+  assert.equal(core.sanitizeCard({ id: 'x', kind: 'embed' }).url, '');
+  // A non-string embed alias is ignored safely.
+  assert.equal(core.sanitizeCard({ id: 'x', kind: 'embed', embed: { url: 'https://x' } }).url, '');
+});
+
+test('resolveEmbedUrl allows only http(s) game pages', () => {
+  const page = 'https://flashcards.example.test/index.html';
+  assert.equal(
+    core.resolveEmbedUrl('https://game.example.test/?embed=1', page),
+    'https://game.example.test/?embed=1',
+  );
+  assert.equal(core.resolveEmbedUrl('game/page.html', page), 'https://flashcards.example.test/game/page.html');
+  assert.equal(core.resolveEmbedUrl('javascript:alert(1)', page), '');
+  assert.equal(core.resolveEmbedUrl('file:///tmp/game.html', page), '');
+  assert.equal(core.resolveEmbedUrl('data:text/html,<p>hi</p>', page), '');
+  assert.equal(core.resolveEmbedUrl('', page), '');
+});
+
+test('download and gallery entry lists are bounded and reject malformed items', () => {  const downloads = core.sanitizeDownloadList([
     { label: 'a', url: 'a' },
     { label: 'b', url: 'b', note: 'from note' },
     { label: 'c' },

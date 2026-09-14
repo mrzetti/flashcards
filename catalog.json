@@ -1,6 +1,28 @@
 {
   "cards": [
     {
+      "id": "1997-asche-zu-asche",
+      "title": "Asche zu Asche",
+      "kind": "embed",
+      "url": "https://asche.rammwiki.mrzetti.com/?embed=1",
+      "thumbnail": "assets/thumbnails/1997-asche-zu-asche.jpg",
+      "width": 640,
+      "height": 480,
+      "year": 1997,
+      "description": "Rammstein's original 1997 Windows game, preserved for the browser: guide the figure through three cavern, concert and beach levels, shooting the floating band-member faces that open the way forward.",
+      "instructions": "Choose Load game in the Asche window and wait for the title screen \u2014 the first run downloads about 40 MB \u2014 then click the title screen to start. Hold Left/Right to move, Up to jump and Space to fire; Escape quits. On touch devices the game shows its own on-screen buttons.",
+      "controls": [
+        { "key": "ArrowLeft", "label": "Move left" },
+        { "key": "ArrowRight", "label": "Move right" },
+        { "key": "ArrowUp", "label": "Jump" },
+        { "key": "Space", "label": "Fire" },
+        { "key": "Escape", "label": "Quit game" },
+        "Mouse"
+      ],
+      "status": "Playable \u2014 original 1997 game runs in the Asche browser emulator",
+      "notes": "The game is hosted separately at asche.rammwiki.mrzetti.com and embedded here with its compact click-to-load player; the desktop only frames it. Nothing downloads until Load game is chosen, closing the window releases the emulator, and the game page also offers a full-page link. The original email/fax high-score promotion has ended and is not restored. See the Asche project's RUNTIME.md and tools/ verification scripts for the emulator and game-file details."
+    },
+    {
       "id": "2001-mutter",
       "title": "Mutter — Intro",
       "swf": "originals/2001-mutter.swf",

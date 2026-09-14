@@ -41,6 +41,8 @@ Unit tests (`tests/unit/`):
   vectors
 - player/host message validation: channel, type, state, instance token, card id,
   volume clamping
+- embed URL resolution: http(s) only, relative paths, rejects `file:`, `data:`
+  and script URLs; embed catalog entries never need a SWF
 - stored volume fallback
 
 Browser tests (`tests/browser/`, Playwright + mock Ruffle):
@@ -70,6 +72,9 @@ Browser tests (`tests/browser/`, Playwright + mock Ruffle):
 - mobile: compact full-size windows, no page overflow, touch keyboard contains
   exactly the keys a card lists, held touch keys survive focus changes,
   keyboard activation releases on blur
+- embed cards: one browser-game window, click-to-load fixture frame, switching
+  cards replaces the previous document, closing releases the frame, deep links
+  select without launching, and Ruffle/player frames are never created
 
 ## Mock Ruffle
 

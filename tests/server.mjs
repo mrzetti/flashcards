@@ -82,6 +82,10 @@ export async function startServer(options = {}) {
         const relative = pathname.slice('/'.length);
         body = await readIfExists(path.join(FIXTURES, relative));
         fileName = path.basename(pathname);
+      } else if (pathname.startsWith('/fixtures/')) {
+        const relative = pathname.slice('/fixtures/'.length);
+        body = await readIfExists(path.join(FIXTURES, relative));
+        fileName = path.basename(pathname);
       } else {
         const relative = pathname.replace(/^\/+/, '');
         const candidate = path.resolve(PROJECT_ROOT, relative);
@@ -103,6 +107,11 @@ export async function startServer(options = {}) {
         'Content-Type': type,
         'Cache-Control': 'no-store',
         'Access-Control-Allow-Origin': '*',
+        // Mirror the production cross-origin isolation headers so browser tests
+        // exercise the same context the deployed desktop runs in.
+        'Cross-Origin-Opener-Policy': 'same-origin',
+        'Cross-Origin-Embedder-Policy': 'require-corp',
+        'Cross-Origin-Resource-Policy': 'same-origin',
       }).end(body);
     } catch (error) {
       res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Server error: ' + error.message);

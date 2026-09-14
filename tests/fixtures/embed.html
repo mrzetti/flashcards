@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fixture browser game</title>
+</head>
+<body>
+  <h1>Fixture browser game</h1>
+  <button id="load" type="button">Load game</button>
+  <p id="state">not loaded</p>
+  <script>
+    window.__embedFixture = {
+      loaded: false,
+      game: new URLSearchParams(location.search).get('game') || 'one',
+    };
+    document.getElementById('load').addEventListener('click', function () {
+      window.__embedFixture.loaded = true;
+      document.getElementById('state').textContent = 'loaded ' + window.__embedFixture.game;
+    });
+  </script>
+</body>
+</html>
