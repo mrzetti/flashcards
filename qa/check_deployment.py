@@ -26,12 +26,20 @@ def fetch(relative, expected_type=None):
 
 fetch("index.html", "text/html")
 fetch("player.html", "text/html")
+fetch("screensaver.html", "text/html")
 fetch("styles.css", "text/css")
 fetch("app.js", "application/javascript")
 fetch("player.js", "application/javascript")
+fetch("screensaver.js", "application/javascript")
 fetch("originals/player_txt.txt", "text/plain")
 catalog = json.loads(fetch("catalog.json", "application/json"))
 for card in catalog["cards"]:
+    if card.get("kind") == "artifact":
+        if card.get("preview"):
+            fetch(card["preview"], "text/html")
+        for entry in card.get("gallery", []):
+            fetch(entry["url"])
+        continue
     fetch(card["swf"], "application/x-shockwave-flash")
     fetch(card["thumbnail"])
 fetch("assets/ruffle/ruffle.js", "application/javascript")

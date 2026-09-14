@@ -2,7 +2,9 @@
 
 A browser home for a collection of original Rammstein Flashcards: promotional
 microsites, animations, and small interactive games, presented in a Windows
-XP–inspired desktop.
+XP–inspired desktop. Alongside the Flash cards it preserves the 1999
+**RAMMSTEIN Screensaver**, an archived Director 6/Windows artifact whose 103
+sprites ship with a browser preview and downloads.
 
 **Play:** https://flashcards.rammwiki.mrzetti.com  
 **Source:** https://github.com/mrzetti/flashcards
@@ -26,6 +28,11 @@ controls. See the card's instructions and compatibility notes before playing.
   selects Ich will and waits for the visitor to choose Launch.
 - On mobile, windows fill the desktop. Benzin gets its own accelerate, brake,
   left and right touch buttons; pointer-driven cards do not get a generic keypad.
+- **Archived artifacts** (like the 1999 screensaver) do not run in Ruffle. Their
+  green button opens one files-and-preview window: a sprite animation rebuilt
+  from the extracted original bitmaps, the download list, and a gallery of the
+  extracted images. The original Windows executable and the Director movie are
+  downloads, not browser plugins.
 
 **Playable** means the documented local interaction was verified. **Partial**
 means something important is absent or unconfirmed, commonly a remote video or
@@ -62,11 +69,18 @@ from the English launcher UI.
 
 The collection is described by `catalog.json`, with a top-level `cards` array.
 Use a stable ASCII `id` and relative asset URLs. Store public card files under
-`assets/` or `originals/` so deployment includes them. Each card includes its `title`,
+`assets/` or `originals/` so deployment includes them. Flash cards include their
 `swf`, `thumbnail`, native `width`/`height`, description, instructions, controls,
 status, and notes. Include a `year` only when supported by evidence.
 
-1. Keep the original movie byte-for-byte and record its SHA-256 and provenance.
+Artifact cards (`"kind": "artifact"`) omit `swf` and instead carry an optional
+`preview` page plus `downloads` (`label`/`url`/`meta`) and `gallery`
+(`url`/`caption`) lists. Their files are validated against the deployed trees by
+`qa/validate_catalog.py`; preview pages live at the project root, like
+`player.html`.
+
+1. Keep the original movie or archive byte-for-byte and record its SHA-256 and
+   provenance.
 2. Inspect decompiled scripts and runtime network requests for companion files.
    Preserve the required relative layout. Keep compatibility patches separate.
 3. Add a thumbnail derived from the card (with its origin documented), then add

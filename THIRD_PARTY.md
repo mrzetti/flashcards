@@ -21,3 +21,14 @@ The desktop and window decorations are implemented in CSS for this project.
 Windows XP is a Microsoft trademark; this independent fan preservation project
 is not affiliated with or endorsed by Microsoft. Catalog thumbnails derived
 from the supplied collection retain the underlying artwork's rights.
+
+## 1999 RAMMSTEIN Screensaver
+
+The screensaver card preserves material credited in its own readme and credits
+screen to **(p)+(c) 1999 Motor Music, Hamburg**, with concept, design and
+programming by **Guido Raschke**, built with MacSourcery's CineMac engine and
+Macromedia Director 6. The installer, the extracted executable, the movies, the
+decoded sprites, texts and scripts remain the property of their respective
+owners. The browser preview is an independent rebuild from the preserved
+sprites and is not the original program. Extraction tools used to derive the
+artifacts are credited in `PROVENANCE.md` section 13.

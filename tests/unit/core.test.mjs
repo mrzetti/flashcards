@@ -173,6 +173,66 @@ test('sanitizeCatalog drops invalid entries and applies defaults', () => {
   assert.deepEqual(core.sanitizeCatalog({ cards: 'nope' }), { cards: [] });
 });
 
+test('artifact cards keep downloads and gallery but never need a SWF', () => {
+  const card = core.sanitizeCard({
+    id: '1999-rst-screensaver',
+    title: 'RAMMSTEIN Screensaver',
+    kind: 'artifact',
+    preview: 'screensaver.html',
+    thumbnail: 'assets/thumbnails/1999-rst-screensaver.jpg',
+    width: 800,
+    height: 600,
+    status: 'Partial — preserved',
+    instructions: 'Open the preview.',
+    controls: ['Mouse (move to exit)'],
+    downloads: [
+      { label: 'Original archive', url: 'originals/a.zip', meta: '1 MB' },
+      { label: '', url: 'originals/missing-label.zip' },
+      { label: 'No URL' },
+      'nope',
+      null,
+    ],
+    gallery: [
+      { url: 'assets/cards/a/sprites/one.png', caption: 'One' },
+      { caption: 'no url' },
+    ],
+  });
+  assert.equal(card.kind, 'artifact');
+  assert.equal(card.fileMissing, false);
+  assert.equal(card.preview, 'screensaver.html');
+  assert.deepEqual(card.downloads.map((entry) => entry.label), ['Original archive']);
+  assert.equal(card.downloads[0].meta, '1 MB');
+  assert.deepEqual(card.gallery, [{ url: 'assets/cards/a/sprites/one.png', caption: 'One' }]);
+  assert.equal(core.matchesSearch(card, 'original archive'), true);
+  assert.equal(core.matchesSearch(card, 'screensaver'), true);
+  // An unknown kind falls back to the Flash behaviour.
+  assert.equal(core.sanitizeCard({ id: 'x', kind: 'something' }).kind, 'flash');
+  assert.equal(core.sanitizeCard({ id: 'x' }).fileMissing, true);
+});
+
+test('download and gallery entry lists are bounded and reject malformed items', () => {
+  const downloads = core.sanitizeDownloadList([
+    { label: 'a', url: 'a' },
+    { label: 'b', url: 'b', note: 'from note' },
+    { label: 'c' },
+    null,
+    [],
+  ]);
+  assert.deepEqual(downloads, [
+    { label: 'a', url: 'a', meta: '' },
+    { label: 'b', url: 'b', meta: 'from note' },
+  ]);
+  assert.deepEqual(core.sanitizeDownloadList('nope'), []);
+  assert.deepEqual(core.sanitizeGallery([{ src: 'a.png', title: 'A' }, { url: 'b.png' }]), [
+    { url: 'a.png', caption: 'A' },
+    { url: 'b.png', caption: '' },
+  ]);
+  assert.deepEqual(core.sanitizeGallery(null), []);
+  const many = Array.from({ length: 100 }, (unused, i) => ({ label: 'd' + i, url: 'u' + i }));
+  assert.equal(core.sanitizeDownloadList(many).length, 40);
+  assert.equal(core.sanitizeGallery(many).length, 80);
+});
+
 test('expandControls understands strings, arrow groups, letters and objects', () => {
   const entries = core.expandControls(['Arrow keys', 'Space', 'a', '5', { key: 'KeyD', label: 'Duck' }, 'Mouse', 'Weird input']);
   const codes = entries.map((entry) => entry.code);

@@ -100,6 +100,27 @@
       "controls": [],
       "status": "Unsupported — no SWF recovered",
       "notes": "The original file could not be recovered."
+    },
+    {
+      "id": "artifact",
+      "title": "Screensaver Artifact",
+      "kind": "artifact",
+      "thumbnail": "thumbs/card.svg",
+      "preview": "screensaver.html",
+      "width": 800,
+      "height": 600,
+      "year": 1999,
+      "description": "An archived artifact fixture with a sprite preview, downloads and a gallery.",
+      "instructions": "Open the files window to see the preview and the downloads.",
+      "controls": ["Mouse"],
+      "status": "Partial — fixture artifact",
+      "notes": "Exercises the artifact window in the browser tests.",
+      "downloads": [
+        { "label": "Fixture bundle", "url": "originals/fixture.zip", "meta": "1 KB · fixture" }
+      ],
+      "gallery": [
+        { "url": "thumbs/card.svg", "caption": "Fixture gallery image" }
+      ]
     }
   ]
 }

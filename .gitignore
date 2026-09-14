@@ -4,3 +4,4 @@ playwright-report/
 .DS_Store
 *.log
 qa/runtime-worker/out/
+__pycache__/

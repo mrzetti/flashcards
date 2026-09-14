@@ -1,0 +1,2621 @@
+{
+  "cast": [
+    {
+      "id": 13,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f07",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 232,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 232,
+      "file": "sprites/013-f07.png",
+      "bitdBytes": 2481
+    },
+    {
+      "id": 21,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00022",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 41,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 41,
+      "file": "sprites/021-AA_f00022.png",
+      "bitdBytes": 865
+    },
+    {
+      "id": 27,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "18",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 91,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 330,
+      "height": 89,
+      "bitsPerPixel": 8,
+      "pitch": 330,
+      "clutId": 0,
+      "bitdId": 91,
+      "file": "sprites/027-18.png",
+      "bitdBytes": 7625
+    },
+    {
+      "id": 28,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "neue_maske",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 29,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 1168,
+      "height": 200,
+      "bitsPerPixel": 8,
+      "pitch": 1168,
+      "clutId": 0,
+      "bitdId": 29,
+      "file": "sprites/028-neue_maske.png",
+      "bitdBytes": 60147
+    },
+    {
+      "id": 33,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "03",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 265,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 360,
+      "height": 117,
+      "bitsPerPixel": 8,
+      "pitch": 360,
+      "clutId": 0,
+      "bitdId": 265,
+      "file": "sprites/033-03.png",
+      "bitdBytes": 12024
+    },
+    {
+      "id": 37,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00021",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 6,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 6,
+      "file": "sprites/037-AA_f00021.png",
+      "bitdBytes": 940
+    },
+    {
+      "id": 38,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "red_cross",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 11,
+          "fourCC": "SCVW"
+        },
+        {
+          "id": 9968,
+          "fourCC": "\u0000\u0000\u0000\u0014"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00020",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 24,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 24,
+      "file": "sprites/039-AA_f00020.png",
+      "bitdBytes": 905
+    },
+    {
+      "id": 43,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00023",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 44,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 44,
+      "file": "sprites/043-AA_f00023.png",
+      "bitdBytes": 695
+    },
+    {
+      "id": 46,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00024",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 47,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 47,
+      "file": "sprites/046-AA_f00024.png",
+      "bitdBytes": 737
+    },
+    {
+      "id": 48,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "04",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 272,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 344,
+      "height": 208,
+      "bitsPerPixel": 8,
+      "pitch": 344,
+      "clutId": 0,
+      "bitdId": 272,
+      "file": "sprites/048-04.png",
+      "bitdBytes": 14189
+    },
+    {
+      "id": 49,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00025",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 50,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 50,
+      "file": "sprites/049-AA_f00025.png",
+      "bitdBytes": 839
+    },
+    {
+      "id": 51,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "20",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 483,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 316,
+      "height": 136,
+      "bitsPerPixel": 8,
+      "pitch": 316,
+      "clutId": 0,
+      "bitdId": 483,
+      "file": "sprites/051-20.png",
+      "bitdBytes": 10507
+    },
+    {
+      "id": 52,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00026",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 53,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 53,
+      "file": "sprites/052-AA_f00026.png",
+      "bitdBytes": 894
+    },
+    {
+      "id": 54,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "19",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 524,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 251,
+      "height": 125,
+      "bitsPerPixel": 8,
+      "pitch": 252,
+      "clutId": 0,
+      "bitdId": 524,
+      "file": "sprites/054-19.png",
+      "bitdBytes": 7929
+    },
+    {
+      "id": 55,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00027",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 56,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 56,
+      "file": "sprites/055-AA_f00027.png",
+      "bitdBytes": 862
+    },
+    {
+      "id": 57,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 12,
+      "resources": []
+    },
+    {
+      "id": 58,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00028",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 59,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 59,
+      "file": "sprites/058-AA_f00028.png",
+      "bitdBytes": 933
+    },
+    {
+      "id": 61,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00029",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 62,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 62,
+      "file": "sprites/061-AA_f00029.png",
+      "bitdBytes": 905
+    },
+    {
+      "id": 64,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00030",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 65,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 65,
+      "file": "sprites/064-AA_f00030.png",
+      "bitdBytes": 940
+    },
+    {
+      "id": 66,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "21",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 125,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 355,
+      "height": 90,
+      "bitsPerPixel": 8,
+      "pitch": 356,
+      "clutId": 0,
+      "bitdId": 125,
+      "file": "sprites/066-21.png",
+      "bitdBytes": 8428
+    },
+    {
+      "id": 67,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00031",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 68,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 68,
+      "file": "sprites/067-AA_f00031.png",
+      "bitdBytes": 865
+    },
+    {
+      "id": 69,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "credits",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 218,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 251,
+      "height": 102,
+      "bitsPerPixel": 8,
+      "pitch": 252,
+      "clutId": 0,
+      "bitdId": 218,
+      "file": "sprites/069-credits.png",
+      "bitdBytes": 8399
+    },
+    {
+      "id": 70,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00032",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 71,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 71,
+      "file": "sprites/070-AA_f00032.png",
+      "bitdBytes": 695
+    },
+    {
+      "id": 73,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00033",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 74,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 74,
+      "file": "sprites/073-AA_f00033.png",
+      "bitdBytes": 737
+    },
+    {
+      "id": 76,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00034",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 77,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 77,
+      "file": "sprites/076-AA_f00034.png",
+      "bitdBytes": 839
+    },
+    {
+      "id": 79,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00035",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 80,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 80,
+      "file": "sprites/079-AA_f00035.png",
+      "bitdBytes": 891
+    },
+    {
+      "id": 82,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00036",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 83,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 83,
+      "file": "sprites/082-AA_f00036.png",
+      "bitdBytes": 862
+    },
+    {
+      "id": 85,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "AA f00037",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 86,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 60,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 86,
+      "file": "sprites/085-AA_f00037.png",
+      "bitdBytes": 933
+    },
+    {
+      "id": 99,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "14",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 102,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 360,
+      "height": 117,
+      "bitsPerPixel": 8,
+      "pitch": 360,
+      "clutId": 0,
+      "bitdId": 102,
+      "file": "sprites/099-14.png",
+      "bitdBytes": 11691
+    },
+    {
+      "id": 106,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "15",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 103,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 260,
+      "height": 96,
+      "bitsPerPixel": 8,
+      "pitch": 260,
+      "clutId": 0,
+      "bitdId": 103,
+      "file": "sprites/106-15.png",
+      "bitdBytes": 5943
+    },
+    {
+      "id": 110,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "16",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 107,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 296,
+      "height": 126,
+      "bitsPerPixel": 8,
+      "pitch": 296,
+      "clutId": 0,
+      "bitdId": 107,
+      "file": "sprites/110-16.png",
+      "bitdBytes": 9870
+    },
+    {
+      "id": 116,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 4,
+      "resources": []
+    },
+    {
+      "id": 118,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "13",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 463,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 360,
+      "height": 85,
+      "bitsPerPixel": 8,
+      "pitch": 360,
+      "clutId": 0,
+      "bitdId": 463,
+      "file": "sprites/118-13.png",
+      "bitdBytes": 11386
+    },
+    {
+      "id": 132,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f02",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 154,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 154,
+      "file": "sprites/132-f02.png",
+      "bitdBytes": 2426
+    },
+    {
+      "id": 136,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "09",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 316,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 313,
+      "height": 167,
+      "bitsPerPixel": 8,
+      "pitch": 314,
+      "clutId": 0,
+      "bitdId": 316,
+      "file": "sprites/136-09.png",
+      "bitdBytes": 11694
+    },
+    {
+      "id": 148,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 23,
+      "resources": []
+    },
+    {
+      "id": 157,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 3,
+      "resources": []
+    },
+    {
+      "id": 160,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "burning_red",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 528,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f14",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 120,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 120,
+      "file": "sprites/163-f14.png",
+      "bitdBytes": 1668
+    },
+    {
+      "id": 164,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 2,
+      "resources": []
+    },
+    {
+      "id": 167,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f13",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 228,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 228,
+      "file": "sprites/167-f13.png",
+      "bitdBytes": 1802
+    },
+    {
+      "id": 170,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f10",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 176,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 176,
+      "file": "sprites/170-f10.png",
+      "bitdBytes": 1977
+    },
+    {
+      "id": 177,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 16,
+      "resources": []
+    },
+    {
+      "id": 178,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "11",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 184,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 293,
+      "height": 127,
+      "bitsPerPixel": 8,
+      "pitch": 294,
+      "clutId": 0,
+      "bitdId": 184,
+      "file": "sprites/178-11.png",
+      "bitdBytes": 7745
+    },
+    {
+      "id": 179,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 15,
+      "resources": []
+    },
+    {
+      "id": 185,
+      "type": "shape",
+      "typeId": 8,
+      "name": "",
+      "scriptId": 0,
+      "resources": []
+    },
+    {
+      "id": 187,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 1,
+      "resources": []
+    },
+    {
+      "id": 192,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "leer",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 197,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "-",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 229,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 229,
+      "file": "sprites/199--.png",
+      "bitdBytes": 84
+    },
+    {
+      "id": 204,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "12",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 400,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 266,
+      "height": 139,
+      "bitsPerPixel": 8,
+      "pitch": 266,
+      "clutId": 0,
+      "bitdId": 400,
+      "file": "sprites/204-12.png",
+      "bitdBytes": 8488
+    },
+    {
+      "id": 205,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 5,
+      "resources": []
+    },
+    {
+      "id": 207,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f25",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 277,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 277,
+      "file": "sprites/207-f25.png",
+      "bitdBytes": 2791
+    },
+    {
+      "id": 211,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f01",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 158,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 158,
+      "file": "sprites/211-f01.png",
+      "bitdBytes": 2996
+    },
+    {
+      "id": 212,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f22",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 286,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 286,
+      "file": "sprites/212-f22.png",
+      "bitdBytes": 2449
+    },
+    {
+      "id": 215,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f16",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 237,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 237,
+      "file": "sprites/215-f16.png",
+      "bitdBytes": 2085
+    },
+    {
+      "id": 219,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f12",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 216,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 216,
+      "file": "sprites/219-f12.png",
+      "bitdBytes": 1377
+    },
+    {
+      "id": 222,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "--",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 227,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 227,
+      "file": "sprites/222---.png",
+      "bitdBytes": 84
+    },
+    {
+      "id": 230,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "rahmen32",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 231,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 800,
+      "height": 600,
+      "bitsPerPixel": 8,
+      "pitch": 800,
+      "clutId": 0,
+      "bitdId": 231,
+      "file": "sprites/230-rahmen32.png",
+      "bitdBytes": 93672
+    },
+    {
+      "id": 245,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f04",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 243,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 243,
+      "file": "sprites/245-f04.png",
+      "bitdBytes": 2643
+    },
+    {
+      "id": 246,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f06",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 247,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 247,
+      "file": "sprites/246-f06.png",
+      "bitdBytes": 2693
+    },
+    {
+      "id": 253,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 17,
+      "resources": []
+    },
+    {
+      "id": 260,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f19",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 289,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 289,
+      "file": "sprites/260-f19.png",
+      "bitdBytes": 2382
+    },
+    {
+      "id": 264,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f24",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 261,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 261,
+      "file": "sprites/264-f24.png",
+      "bitdBytes": 2784
+    },
+    {
+      "id": 268,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f15",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 239,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 239,
+      "file": "sprites/268-f15.png",
+      "bitdBytes": 1794
+    },
+    {
+      "id": 270,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f18",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 271,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 271,
+      "file": "sprites/270-f18.png",
+      "bitdBytes": 2385
+    },
+    {
+      "id": 274,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f21",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 287,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 287,
+      "file": "sprites/274-f21.png",
+      "bitdBytes": 2211
+    },
+    {
+      "id": 276,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f20",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 226,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 226,
+      "file": "sprites/276-f20.png",
+      "bitdBytes": 1939
+    },
+    {
+      "id": 278,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "05",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 280,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 298,
+      "height": 119,
+      "bitsPerPixel": 8,
+      "pitch": 298,
+      "clutId": 0,
+      "bitdId": 280,
+      "file": "sprites/278-05.png",
+      "bitdBytes": 9903
+    },
+    {
+      "id": 281,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f03",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 183,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 183,
+      "file": "sprites/281-f03.png",
+      "bitdBytes": 2211
+    },
+    {
+      "id": 283,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f05",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 217,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 217,
+      "file": "sprites/283-f05.png",
+      "bitdBytes": 2554
+    },
+    {
+      "id": 285,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "06",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 292,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 221,
+      "height": 121,
+      "bitsPerPixel": 8,
+      "pitch": 222,
+      "clutId": 0,
+      "bitdId": 292,
+      "file": "sprites/285-06.png",
+      "bitdBytes": 6253
+    },
+    {
+      "id": 288,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f23",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 208,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 208,
+      "file": "sprites/288-f23.png",
+      "bitdBytes": 2463
+    },
+    {
+      "id": 290,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f11",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 202,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 202,
+      "file": "sprites/290-f11.png",
+      "bitdBytes": 1351
+    },
+    {
+      "id": 293,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f17",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 279,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 279,
+      "file": "sprites/293-f17.png",
+      "bitdBytes": 2087
+    },
+    {
+      "id": 295,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "07",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 296,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 249,
+      "height": 108,
+      "bitsPerPixel": 8,
+      "pitch": 250,
+      "clutId": 0,
+      "bitdId": 296,
+      "file": "sprites/295-07.png",
+      "bitdBytes": 6183
+    },
+    {
+      "id": 297,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f08",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 298,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 298,
+      "file": "sprites/297-f08.png",
+      "bitdBytes": 2218
+    },
+    {
+      "id": 299,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f09",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 291,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 291,
+      "file": "sprites/299-f09.png",
+      "bitdBytes": 1898
+    },
+    {
+      "id": 302,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f26",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 303,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 303,
+      "file": "sprites/302-f26.png",
+      "bitdBytes": 2364
+    },
+    {
+      "id": 304,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "08",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 93,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 259,
+      "height": 140,
+      "bitsPerPixel": 8,
+      "pitch": 260,
+      "clutId": 0,
+      "bitdId": 93,
+      "file": "sprites/304-08.png",
+      "bitdBytes": 10373
+    },
+    {
+      "id": 305,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f27",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 306,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 306,
+      "file": "sprites/305-f27.png",
+      "bitdBytes": 1837
+    },
+    {
+      "id": 308,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f28",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 309,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 309,
+      "file": "sprites/308-f28.png",
+      "bitdBytes": 1903
+    },
+    {
+      "id": 311,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f29",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 312,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 312,
+      "file": "sprites/311-f29.png",
+      "bitdBytes": 2488
+    },
+    {
+      "id": 314,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f30",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 315,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 315,
+      "file": "sprites/314-f30.png",
+      "bitdBytes": 2406
+    },
+    {
+      "id": 317,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f31",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 318,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 318,
+      "file": "sprites/317-f31.png",
+      "bitdBytes": 2417
+    },
+    {
+      "id": 320,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f32",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 321,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 321,
+      "file": "sprites/320-f32.png",
+      "bitdBytes": 2772
+    },
+    {
+      "id": 323,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "f33",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 324,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 324,
+      "file": "sprites/323-f33.png",
+      "bitdBytes": 2908
+    },
+    {
+      "id": 326,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "flamme_versetzt",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 327,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 328,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "red_cross",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 329,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 330,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g01",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 331,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 331,
+      "file": "sprites/330-g01.png",
+      "bitdBytes": 921
+    },
+    {
+      "id": 333,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g02",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 334,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 334,
+      "file": "sprites/333-g02.png",
+      "bitdBytes": 951
+    },
+    {
+      "id": 336,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g03",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 337,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 337,
+      "file": "sprites/336-g03.png",
+      "bitdBytes": 933
+    },
+    {
+      "id": 339,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g04",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 340,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 340,
+      "file": "sprites/339-g04.png",
+      "bitdBytes": 833
+    },
+    {
+      "id": 342,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g05",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 343,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 343,
+      "file": "sprites/342-g05.png",
+      "bitdBytes": 706
+    },
+    {
+      "id": 345,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g06",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 346,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 346,
+      "file": "sprites/345-g06.png",
+      "bitdBytes": 688
+    },
+    {
+      "id": 348,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g07",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 349,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 349,
+      "file": "sprites/348-g07.png",
+      "bitdBytes": 849
+    },
+    {
+      "id": 351,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g08",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 352,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 352,
+      "file": "sprites/351-g08.png",
+      "bitdBytes": 929
+    },
+    {
+      "id": 354,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g09",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 355,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 355,
+      "file": "sprites/354-g09.png",
+      "bitdBytes": 919
+    },
+    {
+      "id": 357,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g10",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 358,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 358,
+      "file": "sprites/357-g10.png",
+      "bitdBytes": 921
+    },
+    {
+      "id": 360,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g11",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 361,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 361,
+      "file": "sprites/360-g11.png",
+      "bitdBytes": 951
+    },
+    {
+      "id": 362,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "10",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 359,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 232,
+      "height": 139,
+      "bitsPerPixel": 8,
+      "pitch": 232,
+      "clutId": 0,
+      "bitdId": 359,
+      "file": "sprites/362-10.png",
+      "bitdBytes": 6726
+    },
+    {
+      "id": 363,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g12",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 364,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 364,
+      "file": "sprites/363-g12.png",
+      "bitdBytes": 938
+    },
+    {
+      "id": 366,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g13",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 367,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 367,
+      "file": "sprites/366-g13.png",
+      "bitdBytes": 833
+    },
+    {
+      "id": 369,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g14",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 370,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 370,
+      "file": "sprites/369-g14.png",
+      "bitdBytes": 706
+    },
+    {
+      "id": 371,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "rahmen_unten",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 377,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 171,
+      "height": 48,
+      "bitsPerPixel": 8,
+      "pitch": 172,
+      "clutId": 0,
+      "bitdId": 377,
+      "file": "sprites/371-rahmen_unten.png",
+      "bitdBytes": 5296
+    },
+    {
+      "id": 372,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g15",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 373,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 373,
+      "file": "sprites/372-g15.png",
+      "bitdBytes": 688
+    },
+    {
+      "id": 375,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g16",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 376,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 376,
+      "file": "sprites/375-g16.png",
+      "bitdBytes": 849
+    },
+    {
+      "id": 378,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g17",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 379,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 379,
+      "file": "sprites/378-g17.png",
+      "bitdBytes": 929
+    },
+    {
+      "id": 380,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 24,
+      "resources": []
+    },
+    {
+      "id": 381,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "g18",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 382,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 42,
+      "height": 42,
+      "bitsPerPixel": 8,
+      "pitch": 42,
+      "clutId": 0,
+      "bitdId": 382,
+      "file": "sprites/381-g18.png",
+      "bitdBytes": 919
+    },
+    {
+      "id": 384,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "01",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 385,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 385,
+      "file": "sprites/384-01.png",
+      "bitdBytes": 1016
+    },
+    {
+      "id": 386,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "rahmen_oben",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 389,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 195,
+      "height": 44,
+      "bitsPerPixel": 8,
+      "pitch": 196,
+      "clutId": 0,
+      "bitdId": 389,
+      "file": "sprites/386-rahmen_oben.png",
+      "bitdBytes": 5688
+    },
+    {
+      "id": 387,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "02",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 388,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 388,
+      "file": "sprites/387-02.png",
+      "bitdBytes": 864
+    },
+    {
+      "id": 390,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "03",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 391,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 391,
+      "file": "sprites/390-03.png",
+      "bitdBytes": 1102
+    },
+    {
+      "id": 393,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "04",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 394,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 50,
+      "height": 92,
+      "bitsPerPixel": 8,
+      "pitch": 50,
+      "clutId": 0,
+      "bitdId": 394,
+      "file": "sprites/393-04.png",
+      "bitdBytes": 1552
+    },
+    {
+      "id": 395,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "rahmen_rechts",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 410,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 46,
+      "height": 177,
+      "bitsPerPixel": 8,
+      "pitch": 46,
+      "clutId": 0,
+      "bitdId": 410,
+      "file": "sprites/395-rahmen_rechts.png",
+      "bitdBytes": 7126
+    },
+    {
+      "id": 396,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "burning_start",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 397,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 398,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "logo_halb",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 399,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 400,
+      "height": 45,
+      "bitsPerPixel": 8,
+      "pitch": 400,
+      "clutId": 0,
+      "bitdId": 399,
+      "file": "sprites/398-logo_halb.png",
+      "bitdBytes": 4068
+    },
+    {
+      "id": 402,
+      "type": "type14",
+      "typeId": 14,
+      "name": "",
+      "scriptId": 0,
+      "resources": []
+    },
+    {
+      "id": 404,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 6,
+      "resources": []
+    },
+    {
+      "id": 405,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 7,
+      "resources": []
+    },
+    {
+      "id": 406,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "green_cross",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 407,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 408,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "flamme",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 409,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 412,
+      "type": "type14",
+      "typeId": 14,
+      "name": "",
+      "scriptId": 0,
+      "resources": []
+    },
+    {
+      "id": 431,
+      "type": "shape",
+      "typeId": 8,
+      "name": "",
+      "scriptId": 0,
+      "resources": []
+    },
+    {
+      "id": 435,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 21,
+      "resources": []
+    },
+    {
+      "id": 443,
+      "type": "filmLoop",
+      "typeId": 2,
+      "name": "burning_green",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 616,
+          "fourCC": "SCVW"
+        }
+      ]
+    },
+    {
+      "id": 446,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 8,
+      "resources": []
+    },
+    {
+      "id": 447,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 9,
+      "resources": []
+    },
+    {
+      "id": 448,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 10,
+      "resources": []
+    },
+    {
+      "id": 457,
+      "type": "button",
+      "typeId": 7,
+      "name": "",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 472,
+          "fourCC": "STXT"
+        }
+      ],
+      "textFile": "texts/457-label.txt",
+      "text": "TAFELN_A"
+    },
+    {
+      "id": 497,
+      "type": "shape",
+      "typeId": 8,
+      "name": "",
+      "scriptId": 0,
+      "resources": []
+    },
+    {
+      "id": 523,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "17",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 81,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 260,
+      "height": 114,
+      "bitsPerPixel": 8,
+      "pitch": 260,
+      "clutId": 0,
+      "bitdId": 81,
+      "file": "sprites/523-17.png",
+      "bitdBytes": 8830
+    },
+    {
+      "id": 526,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 11,
+      "resources": []
+    },
+    {
+      "id": 549,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "02",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 638,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 360,
+      "height": 134,
+      "bitsPerPixel": 8,
+      "pitch": 360,
+      "clutId": 0,
+      "bitdId": 638,
+      "file": "sprites/549-02.png",
+      "bitdBytes": 12898
+    },
+    {
+      "id": 552,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 22,
+      "resources": [
+        {
+          "id": 549,
+          "fourCC": "\u0000\u0000\u0002C"
+        }
+      ]
+    },
+    {
+      "id": 553,
+      "type": "button",
+      "typeId": 7,
+      "name": "",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 411,
+          "fourCC": "STXT"
+        }
+      ],
+      "textFile": "texts/553-label.txt",
+      "text": "TAFELN_B"
+    },
+    {
+      "id": 554,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 18,
+      "resources": []
+    },
+    {
+      "id": 555,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 20,
+      "resources": [
+        {
+          "id": 594,
+          "fourCC": "\u0000\u0000\u0002U"
+        }
+      ]
+    },
+    {
+      "id": 557,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 13,
+      "resources": []
+    },
+    {
+      "id": 561,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 19,
+      "resources": []
+    },
+    {
+      "id": 562,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 14,
+      "resources": []
+    },
+    {
+      "id": 617,
+      "type": "button",
+      "typeId": 7,
+      "name": "",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 210,
+          "fourCC": "STXT"
+        }
+      ],
+      "textFile": "texts/617-label.txt",
+      "text": "KREUZE (Zufallsprinzip)"
+    },
+    {
+      "id": 624,
+      "type": "button",
+      "typeId": 7,
+      "name": "",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 22,
+          "fourCC": "STXT"
+        }
+      ],
+      "textFile": "texts/624-label.txt",
+      "text": "scharfmachen & zur\u00fcck"
+    },
+    {
+      "id": 628,
+      "type": "button",
+      "typeId": 7,
+      "name": "",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 631,
+          "fourCC": "STXT"
+        }
+      ],
+      "textFile": "texts/628-label.txt",
+      "text": "Geschichte"
+    },
+    {
+      "id": 676,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 26,
+      "resources": []
+    },
+    {
+      "id": 694,
+      "type": "script",
+      "typeId": 11,
+      "name": "",
+      "scriptId": 27,
+      "resources": []
+    },
+    {
+      "id": 720,
+      "type": "bitmap",
+      "typeId": 1,
+      "name": "01",
+      "scriptId": 0,
+      "resources": [
+        {
+          "id": 640,
+          "fourCC": "BITD"
+        }
+      ],
+      "width": 360,
+      "height": 131,
+      "bitsPerPixel": 8,
+      "pitch": 360,
+      "clutId": 0,
+      "bitdId": 640,
+      "file": "sprites/720-01.png",
+      "bitdBytes": 12970
+    }
+  ]
+}

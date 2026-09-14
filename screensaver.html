@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="An animation rebuilt from the 103 original sprites of the 1999 RAMMSTEIN Windows screensaver.">
+  <title>RAMMSTEIN Screensaver — sprite preview</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="screensaver.js" defer></script>
+</head>
+<body class="screensaver-page">
+  <header class="screensaver-header">
+    <h1>RAMMSTEIN Screensaver</h1>
+    <span class="screensaver-year">1999 · sprite preview</span>
+  </header>
+
+  <main class="screensaver-main">
+    <div class="screensaver-stage-wrap">
+      <div id="screensaver-stage" class="screensaver-stage"
+           role="img"
+           aria-label="Animation rebuilt from the original screensaver sprites: lyric plates and drifting crosses on a black screen">
+        <img id="screensaver-frame" class="screensaver-frame" alt="" hidden>
+        <img id="screensaver-plate-a" class="screensaver-plate" alt="" hidden>
+        <img id="screensaver-plate-b" class="screensaver-plate" alt="" hidden>
+        <div id="screensaver-sprites" class="screensaver-sprites" aria-hidden="true"></div>
+        <p id="screensaver-status" class="screensaver-status">Loading the extracted sprites…</p>
+      </div>
+    </div>
+
+    <div class="screensaver-toolbar">
+      <button id="screensaver-pause" type="button" class="xp-button" aria-pressed="false">Pause</button>
+      <button id="screensaver-next" type="button" class="xp-button">Next panel</button>
+      <span class="screensaver-credit">(p)+(c) 1999 Motor Music, Hamburg · concept, design &amp; programming Guido Raschke</span>
+    </div>
+
+    <p class="screensaver-note">
+      This page is not the original program. It rebuilds the screensaver&rsquo;s look from its own
+      extracted bitmaps: the screen frame, the 21 lyric plates, the RAMMSTEIN wordmark and the
+      animation frames of the crosses and flames. The original runs only on 32-bit Windows, and
+      it exits as soon as the pointer moves; the downloads on the card include it alongside the
+      complete extraction.
+    </p>
+  </main>
+</body>
+</html>

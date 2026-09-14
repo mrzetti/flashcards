@@ -187,6 +187,187 @@
       "controls": ["Mouse (click)"],
       "status": "Verified playback — animation, audio and MORE link",
       "notes": "Original SWF unchanged. The embedded premiere notice supplies the year 2009. Animation, audio, mute, restart, fullscreen and the MORE URL prompt were checked. External video/blog destinations are not archived by this project."
+    },
+    {
+      "id": "1999-rst-screensaver",
+      "title": "RAMMSTEIN Screensaver",
+      "kind": "artifact",
+      "thumbnail": "assets/thumbnails/1999-rst-screensaver.jpg",
+      "preview": "screensaver.html",
+      "width": 800,
+      "height": 600,
+      "year": 1999,
+      "description": "The 1999 Windows screensaver credited to Motor Music: red and green crosses and burning flames drift across a black screen while Rammstein lyric plates and the wordmark appear. Concept, design and programming: Guido Raschke; built with MacSourcery's CineMac engine and Macromedia Director 6.",
+      "instructions": "Open the preview for a browser animation rebuilt from the extracted original sprites (Pause/Resume and Next panel are available). The original is Windows-only and cannot run in a modern browser: download the extracted RST_saver.exe or the original installer for a compatible 32-bit Windows system or virtual machine. In the original, moving the pointer exits the screensaver; its credits screen reports version R2.2, 09.11.1999.",
+      "controls": [
+        "Mouse (move to exit)"
+      ],
+      "status": "Partial — Director 6 movie preserved and all sprites extracted; no browser Director runtime",
+      "notes": "RST_saver.exe is the 32-bit Director 6 MacroMix projector carved from the installer; its protected movie source_4.dir was rebuilt from the scattered chunk map and decompiled with ProjectorRays 0.2.1. All 103 8-bit BITD bitmaps were decoded with ScummVM's Director decoder and rendered with the movie's built-in system palette. The original has no sound. It requires Windows 95/98/NT4.0; the installer itself is a 16-bit NE program. See PROVENANCE.md and VERIFICATION.md for hashes and extraction evidence.",
+      "downloads": [
+        {
+          "label": "Original archive — RST_screensaver.zip",
+          "url": "originals/1999-rst-screensaver.zip",
+          "meta": "1.14 MB · as received"
+        },
+        {
+          "label": "Original installer — RST_installer.exe",
+          "url": "originals/1999-rst-screensaver-installer.exe",
+          "meta": "2.74 MB · 16-bit Windows installer"
+        },
+        {
+          "label": "Original readme — readme.txt",
+          "url": "originals/1999-rst-screensaver-readme.txt",
+          "meta": "1 KB · German/English notes, version 091199_R2.2"
+        },
+        {
+          "label": "Extracted screensaver — RST_saver.exe",
+          "url": "assets/cards/1999-rst-screensaver/RST_saver.exe",
+          "meta": "2.16 MB · 32-bit Director 6 projector"
+        },
+        {
+          "label": "Reconstructed movie — source_4.dir",
+          "url": "assets/cards/1999-rst-screensaver/source_4.dir",
+          "meta": "748 KB · protected movie rebuilt as an editable XFIR"
+        },
+        {
+          "label": "Decompiled movie — source_4_decompiled.dir",
+          "url": "assets/cards/1999-rst-screensaver/source_4_decompiled.dir",
+          "meta": "750 KB · Lingo scripts restored"
+        },
+        {
+          "label": "All 103 sprites — sprites.zip",
+          "url": "assets/cards/1999-rst-screensaver/sprites.zip",
+          "meta": "257 KB · PNG sprites plus cast and scene manifests"
+        },
+        {
+          "label": "Complete extraction — RST_screensaver_extracted.zip",
+          "url": "assets/cards/1999-rst-screensaver/RST_screensaver_extracted.zip",
+          "meta": "1.84 MB · sprites, scripts, texts, movies, payloads"
+        }
+      ],
+      "gallery": [
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/230-rahmen32.png",
+          "caption": "Screen frame (rahmen32): the artwork border the movie draws around the black stage."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/398-logo_halb.png",
+          "caption": "RAMMSTEIN wordmark plate."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/069-credits.png",
+          "caption": "Credits plate: (p)+(c) 1999 Motor Music, Hamburg; concept, design and programming Guido Raschke; version R2.2 09.11.1999."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/720-01.png",
+          "caption": "Plate '01' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/549-02.png",
+          "caption": "Plate '02' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/033-03.png",
+          "caption": "Plate '03' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/048-04.png",
+          "caption": "Plate '04' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/278-05.png",
+          "caption": "Plate '05' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/285-06.png",
+          "caption": "Plate '06' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/295-07.png",
+          "caption": "Plate '07' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/304-08.png",
+          "caption": "Plate '08' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/136-09.png",
+          "caption": "Plate '09' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/362-10.png",
+          "caption": "Plate '10' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/178-11.png",
+          "caption": "Plate '11' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/204-12.png",
+          "caption": "Plate '12' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/118-13.png",
+          "caption": "Plate '13' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/099-14.png",
+          "caption": "Plate '14' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/106-15.png",
+          "caption": "Plate '15' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/110-16.png",
+          "caption": "Plate '16' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/523-17.png",
+          "caption": "Plate '17' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/027-18.png",
+          "caption": "Plate '18' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/054-19.png",
+          "caption": "Plate '19' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/051-20.png",
+          "caption": "Plate '20' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/066-21.png",
+          "caption": "Plate '21' — one of the 21 lyric plates used by the TAFELN_A/TAFELN_B sequences (shuffled in the original)."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/021-AA_f00022.png",
+          "caption": "Red-cross animation frame from the KREUZE sequence ('crosses, random principle')."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/290-f11.png",
+          "caption": "Flame animation frame from the burning-cross film loops."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/354-g09.png",
+          "caption": "Green-spark animation frame from the burning-green film loops."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/sprites/028-neue_maske.png",
+          "caption": "Transition mask (neue_maske) used to wipe between scenes."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/installer/80c8.png",
+          "caption": "Installer resource: 'Made with Macromedia' plate from the CineMac screensaver engine."
+        },
+        {
+          "url": "assets/cards/1999-rst-screensaver/installer/80c9.png",
+          "caption": "Installer resource: CineMac (MacSourcery) logo placeholder dialog bitmap."
+        }
+      ]
     }
   ]
 }

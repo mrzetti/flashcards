@@ -979,6 +979,122 @@ button {
   line-height: 1.45;
 }
 
+/* Artifact cards: downloads and the extracted-sprite gallery. */
+
+.download-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.download-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-link {
+  color: #1c4e94;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.download-link:hover,
+.download-link:focus-visible {
+  color: #0b2d5e;
+}
+
+.download-meta {
+  color: #5a6a80;
+  font-size: 10.5px;
+}
+
+.artifact-content {
+  height: 100%;
+  overflow: auto;
+  padding: 10px;
+  background: #0b0f14;
+  color: #dfe6ef;
+  font-size: 12px;
+}
+
+.artifact-preview {
+  border: 1px solid #2b3a4d;
+  background: #000;
+  margin-bottom: 12px;
+}
+
+.artifact-frame {
+  display: block;
+  width: 100%;
+  height: min(64vh, 620px);
+  border: 0;
+  background: #000;
+}
+
+.artifact-section {
+  margin: 0 0 14px;
+}
+
+.artifact-heading {
+  margin: 0 0 2px;
+  font-size: 13px;
+  color: #8fbfe8;
+}
+
+.artifact-hint {
+  margin: 0 0 8px;
+  color: #93a5ba;
+  font-size: 11px;
+}
+
+.artifact-content .download-link {
+  color: #a8d4ff;
+}
+
+.artifact-content .download-link:hover,
+.artifact-content .download-link:focus-visible {
+  color: #ffffff;
+}
+
+.artifact-content .download-meta {
+  color: #8296ad;
+}
+
+.artifact-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.gallery-item {
+  margin: 0;
+  border: 1px solid #2b3a4d;
+  background: #000;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #000;
+}
+
+.gallery-item figcaption {
+  padding: 5px 6px;
+  color: #9fb2c8;
+  font-size: 10.5px;
+  line-height: 1.35;
+}
+
+.window[data-window-id="artifact"] .window-body {
+  padding: 0;
+  background: #0b0f14;
+}
+
 .explorer-statusbar {
   display: flex;
   align-items: center;
@@ -1986,4 +2102,149 @@ body.player-page {
   * {
     scroll-behavior: auto !important;
   }
+}
+
+/* --------------------------------------------------------------------------
+   7. Screensaver preview page (loaded inside the artifact window iframe)
+   -------------------------------------------------------------------------- */
+
+body.screensaver-page {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #0b0f14;
+  color: #dfe6ef;
+  font-family: Tahoma, "Segoe UI", Verdana, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.screensaver-page .screensaver-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  padding: 7px 12px;
+  background: linear-gradient(180deg, #0058ee 0%, #2f7ae8 55%, #003092 100%);
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.screensaver-page .screensaver-header h1 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 13.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.screensaver-page .screensaver-year {
+  flex: none;
+  font-size: 11.5px;
+  opacity: 0.9;
+}
+
+.screensaver-page .screensaver-main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  overflow: auto;
+}
+
+.screensaver-page .screensaver-stage-wrap {
+  width: 100%;
+  max-width: 960px;
+}
+
+.screensaver-page .screensaver-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #000;
+  border: 1px solid #2b3a4d;
+  overflow: hidden;
+}
+
+.screensaver-page .screensaver-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.screensaver-page .screensaver-sprites {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.screensaver-page .screensaver-sprite {
+  position: absolute;
+  image-rendering: pixelated;
+  will-change: left, top;
+}
+
+.screensaver-page .screensaver-plate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 62%;
+  max-height: 46%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.screensaver-page .screensaver-plate.is-visible {
+  opacity: 1;
+}
+
+.screensaver-page .screensaver-stage.is-paused .screensaver-sprite,
+.screensaver-page .screensaver-stage.is-paused .screensaver-plate {
+  filter: saturate(0.6) brightness(0.85);
+}
+
+.screensaver-page .screensaver-status {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 18px;
+  color: #9fb2c8;
+  text-align: center;
+  z-index: 4;
+}
+
+.screensaver-page .screensaver-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 960px;
+}
+
+.screensaver-page .screensaver-credit {
+  color: #8296ad;
+  font-size: 11px;
+}
+
+.screensaver-page .screensaver-note {
+  max-width: 960px;
+  margin: 0;
+  color: #93a5ba;
+  font-size: 11.5px;
+  line-height: 1.55;
 }

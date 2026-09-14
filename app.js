@@ -136,6 +136,14 @@
       if (entry && entry.label) parts.push(entry.label);
       if (entry && entry.code) parts.push(entry.code);
     });
+    if (card.kind === 'artifact') parts.push('artifact download preservation');
+    (card.downloads || []).forEach(function (entry) {
+      if (entry && entry.label) parts.push(entry.label);
+      if (entry && entry.meta) parts.push(entry.meta);
+    });
+    (card.gallery || []).forEach(function (entry) {
+      if (entry && entry.caption) parts.push(entry.caption);
+    });
     return parts.join(' ').toLowerCase();
   }
 
@@ -306,6 +314,38 @@
     };
   }
 
+  function sanitizeDownloadList(raw) {
+    if (!Array.isArray(raw)) return [];
+    var list = [];
+    raw.slice(0, 40).forEach(function (item) {
+      if (!item || typeof item !== 'object' || Array.isArray(item)) return;
+      var label = asTrimmedString(item.label || item.title);
+      var url = asTrimmedString(item.url);
+      if (!label || !url) return;
+      list.push({
+        label: label,
+        url: url,
+        meta: asTrimmedString(item.meta || item.note),
+      });
+    });
+    return list;
+  }
+
+  function sanitizeGallery(raw) {
+    if (!Array.isArray(raw)) return [];
+    var list = [];
+    raw.slice(0, 80).forEach(function (item) {
+      if (!item || typeof item !== 'object' || Array.isArray(item)) return;
+      var url = asTrimmedString(item.url || item.src);
+      if (!url) return;
+      list.push({
+        url: url,
+        caption: asTrimmedString(item.caption || item.title),
+      });
+    });
+    return list;
+  }
+
   function sanitizeCard(raw) {
     if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
     var id = asTrimmedString(raw.id);
@@ -313,10 +353,15 @@
     var controls = expandControls(raw.controls);
     var status = normalizeStatus(raw.status);
     var swf = asTrimmedString(raw.swf);
+    var kind = asTrimmedString(raw.kind) === 'artifact' ? 'artifact' : 'flash';
     return {
       id: id,
       title: asTrimmedString(raw.title) || id,
+      kind: kind,
       swf: swf,
+      preview: asTrimmedString(raw.preview),
+      downloads: sanitizeDownloadList(raw.downloads),
+      gallery: sanitizeGallery(raw.gallery),
       thumbnail: asTrimmedString(raw.thumbnail),
       base: asTrimmedString(raw.base),
       width: positiveInt(raw.width, 640),
@@ -328,7 +373,7 @@
       keyboardControls: keyboardControls(controls),
       status: status,
       notes: asTrimmedString(raw.notes),
-      fileMissing: !swf,
+      fileMissing: kind !== 'artifact' && !swf,
     };
   }
 
@@ -490,6 +535,8 @@
       keyDefinition: keyDefinition,
       sanitizeCard: sanitizeCard,
       sanitizeCatalog: sanitizeCatalog,
+      sanitizeDownloadList: sanitizeDownloadList,
+      sanitizeGallery: sanitizeGallery,
       resolveUrl: resolveUrl,
       validatePlayerMessage: validatePlayerMessage,
       cardAssetUrl: cardAssetUrl,
@@ -1165,6 +1212,7 @@
       var body = element('div', 'tile-body');
       body.append(element('span', 'tile-title', card.title));
       var metaBits = [];
+      if (card.kind === 'artifact') metaBits.push('Archived artifact');
       if (card.year) metaBits.push(card.year);
       if (card.width && card.height) metaBits.push(card.width + '\u00d7' + card.height);
       body.append(element('span', 'tile-meta', metaBits.join(' \u00b7 ') || 'Flash card'));
@@ -1257,7 +1305,14 @@
       metaRow('Year', card.year);
       metaRow('Size', card.width + ' \u00d7 ' + card.height);
       metaRow('Card ID', card.id);
-      metaRow('File', card.swf || 'Not listed');
+      if (card.kind === 'artifact') {
+        var bundleBits = [];
+        if (card.downloads.length) bundleBits.push(card.downloads.length + (card.downloads.length === 1 ? ' download' : ' downloads'));
+        if (card.gallery.length) bundleBits.push(card.gallery.length + (card.gallery.length === 1 ? ' gallery image' : ' gallery images'));
+        metaRow('Bundle', bundleBits.join(' \u00b7 ') || 'Archived artifact');
+      } else {
+        metaRow('File', card.swf || 'Not listed');
+      }
       metaRow('Status', card.status.raw || card.status.label);
       container.append(meta);
 
@@ -1306,14 +1361,24 @@
         container.append(notes);
       }
 
+      if (card.kind === 'artifact' && card.downloads.length) {
+        var filesSection = element('div', 'details-section');
+        filesSection.append(element('h4', '', 'Downloads'));
+        filesSection.append(buildDownloadList(card.downloads));
+        container.append(filesSection);
+      }
+
       var actions = element('div', 'details-actions');
-      var launch = element('button', 'xp-button primary', 'Launch card');
+      var artifact = card.kind === 'artifact';
+      var launch = element('button', 'xp-button primary', artifact ? 'Open files & preview' : 'Launch card');
       launch.type = 'button';
-      launch.disabled = !card.swf;
-      launch.setAttribute('aria-label', 'Launch ' + card.title);
+      launch.disabled = !artifact && !card.swf;
+      launch.setAttribute('aria-label', artifact ? 'Open files and preview for ' + card.title : 'Launch ' + card.title);
       launch.addEventListener('click', function () { launchCard(card); });
       actions.append(launch);
-      actions.append(element('p', 'hint', 'Cards never autoplay from a link. Launching closes any other player first so only one card uses audio at a time.'));
+      actions.append(element('p', 'hint', artifact
+        ? 'The sprite preview and every download open in one window. Nothing starts automatically.'
+        : 'Cards never autoplay from a link. Launching closes any other player first so only one card uses audio at a time.'));
       container.append(actions);
     }
 
@@ -1322,6 +1387,24 @@
       wrap.classList.add('details-thumb');
       wrap.setAttribute('aria-hidden', 'true');
       return wrap;
+    }
+
+    function buildDownloadList(downloads) {
+      var list = element('ul', 'download-list');
+      (downloads || []).forEach(function (entry) {
+        var href = resolveUrl(entry.url, document.baseURI);
+        if (!href) return;
+        var item = element('li', 'download-item');
+        var link = document.createElement('a');
+        link.className = 'download-link';
+        link.href = href;
+        link.setAttribute('download', '');
+        link.textContent = entry.label;
+        item.append(link);
+        if (entry.meta) item.append(element('span', 'download-meta', entry.meta));
+        list.append(item);
+      });
+      return list;
     }
 
     function renderExplorer() {
@@ -1659,12 +1742,91 @@
 
     function launchCard(card) {
       if (!card) return;
+      if (card.kind === 'artifact') {
+        openArtifactWindow(card);
+        return;
+      }
       if (!card.swf) {
         setExplorerStatus('\u201c' + card.title + '\u201d has no SWF file listed, so it cannot be played.', 'error');
         announce(card.title + ' cannot be played because no SWF file is listed.');
         return;
       }
       openPlayerWindow(card);
+    }
+
+    function buildArtifactContent(card) {
+      var content = element('div', 'artifact-content');
+      var previewUrl = card.preview ? resolveUrl(card.preview, document.baseURI) : '';
+      if (previewUrl) {
+        var preview = element('div', 'artifact-preview');
+        var frame = document.createElement('iframe');
+        frame.className = 'artifact-frame';
+        frame.title = card.title + ' preview';
+        frame.setAttribute('allow', 'autoplay');
+        frame.src = previewUrl;
+        preview.append(frame);
+        content.append(preview);
+      }
+
+      var files = element('section', 'artifact-section');
+      files.append(element('h3', 'artifact-heading', 'Downloads'));
+      files.append(element('p', 'artifact-hint', 'Everything extracted from the original archive; see the card notes for what each file is.'));
+      files.append(buildDownloadList(card.downloads));
+      content.append(files);
+
+      if (card.gallery.length) {
+        var gallerySection = element('section', 'artifact-section');
+        gallerySection.append(element('h3', 'artifact-heading', 'Extracted sprites'));
+        gallerySection.append(element('p', 'artifact-hint',
+          'The movie\u2019s 103 original bitmaps were decoded byte-for-byte; the preview above and the complete download bundle use the same PNG files.'));
+        var grid = element('div', 'artifact-gallery');
+        card.gallery.forEach(function (entry) {
+          var url = resolveUrl(entry.url, document.baseURI, { allowData: true });
+          if (!url) return;
+          var figure = element('figure', 'gallery-item');
+          var img = document.createElement('img');
+          img.src = url;
+          img.alt = entry.caption || '';
+          img.loading = 'lazy';
+          figure.append(img);
+          if (entry.caption) figure.append(element('figcaption', '', entry.caption));
+          grid.append(figure);
+        });
+        gallerySection.append(grid);
+        content.append(gallerySection);
+      }
+      return content;
+    }
+
+    function openArtifactWindow(card) {
+      var id = 'artifact';
+      var existing = state.windows.get(id);
+      if (existing) {
+        restoreWindow(existing);
+        setWindowTitle(existing, card.title + ' \u2014 Files & Preview');
+        existing.body.replaceChildren(buildArtifactContent(card));
+        focusWindow(id);
+        return existing;
+      }
+      var area = desktopArea();
+      var width = Math.min(980, Math.max(320, area.width - 60));
+      var height = Math.min(760, Math.max(220, area.height - 60));
+      var record = createWindow({
+        id: id,
+        kind: 'artifact',
+        icon: 'icon-catalog',
+        title: card.title + ' \u2014 Files & Preview',
+        bounds: {
+          width: width,
+          height: height,
+          x: Math.round((area.width - width) / 2),
+          y: Math.round((area.height - height) / 2),
+        },
+        content: buildArtifactContent(card),
+      });
+      record.onClose = function () { record.body.replaceChildren(); };
+      announce('Opened ' + card.title + ' files and preview.');
+      return record;
     }
 
     function postToPlayer(type, value) {
@@ -1908,6 +2070,8 @@
     keyEventInit: keyEventInit,
     sanitizeCard: sanitizeCard,
     sanitizeCatalog: sanitizeCatalog,
+    sanitizeDownloadList: sanitizeDownloadList,
+    sanitizeGallery: sanitizeGallery,
     resolveUrl: resolveUrl,
     validatePlayerMessage: validatePlayerMessage,
     cardAssetUrl: cardAssetUrl,

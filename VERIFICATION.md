@@ -36,6 +36,7 @@ Historical mailing lists and competition entries were not submitted.
 | Pussy | Animated single announcement reaches its final screen; MORE produces Ruffle's URL prompt for the historical Rammstein blog. Audio output, mute, volume, restart and fullscreen checked. | The destination website/video is external and is not preserved by this project. |
 | Völkerball | Gallery/menu hotspots reveal concert locations, LIVE DVD, world-tour and edition views. Website/shop prompts, audio, mute, volume, restart and fullscreen checked. | Password-preview, send and wallpaper-download services depend on missing historical files/endpoints. |
 | LIFAD | Animated artwork/intro reaches the album screen; ZUR WEBSITE produces the Rammstein URL prompt. Volume control, restart and fullscreen checked. A separate compatibility copy restores the wordmark masks and readable lettering. | No audio signal was observed in the exercised screens. The external website is not archived here. See `qa/LIFAD-RENDERING.md` for the rendering fix. |
+| RAMMSTEIN Screensaver (artifact) | The files window, download list and gallery render; the sprite preview loads `scene.json` and runs three sprite sequences (flames, green sparks, red crosses) over the original frame. Automated checks assert the preview reports ready and that launching the card never creates a Ruffle player. | The original Director 6 projector is **not run in the browser** and was not executed at all (16/32-bit Windows only). The preview is a rebuild from the extracted sprites, not a Director emulator; film-loop frame ordering was not recovered. See `PROVENANCE.md` section 13. |
 
 Additional card results and Benzin's dedicated gameplay check are recorded in
 `qa/WORKER-VERIFICATION.md` and `qa/BENZIN-VERIFICATION.md`.
@@ -62,10 +63,35 @@ and mobile-emulated layouts:
 - The narrow layout has no horizontal page overflow; Benzin receives four
   card-specific touch keys.
 
-The **51-test unit/mock-browser suite** additionally exercises loading failures, unsupported
+The **55-test unit/mock-browser suite** additionally exercises loading failures, unsupported
 runtime states, message validation, delayed loads while minimized, held-key
-release, restart, focus, the standalone Start gate, filtering, and window state.
-Mocked tests validate wrapper behavior; they do not prove game compatibility.
+release, restart, focus, the standalone Start gate, filtering, artifact cards and
+window state. Mocked tests validate wrapper behavior; they do not prove game
+compatibility.
+
+## Screensaver artifact
+
+The 1999 screensaver card (a non-Flash artifact) was verified separately:
+
+- In the real catalog run in Chromium, the tile and details render, **Open files
+  & preview** opens exactly one `artifact` window, and the preview iframe loads
+  `screensaver.html`, fetches the extracted `scene.json`, reports
+  `window.__screensaverPreview.ready` and animates three sprite sequences over
+  the original frame with zero page errors.
+- `tests/browser/artifact.test.mjs` asserts the same flow with a fixture card and
+  that launching an artifact never creates a player window or a Ruffle iframe.
+- `python3 qa/validate_catalog.py` validates the artifact entry (8 downloads,
+  30 gallery images) and all 186 preserved original/extracted hashes, including
+  the carved executable, both movies, every sprite, the bundles and the
+  installer resources.
+- Screenshots of the Explorer, the files window, the gallery and the standalone
+  preview page were opened and visually reviewed on 14 September 2026.
+
+Not verified: execution of the original Windows executable or the 16-bit
+installer (16/32-bit Windows only), the film-loop frame ordering, and
+colour-faithful reproduction of the 1999 display pipeline. The browser preview
+is a rebuild from extracted sprites, not a Director runtime; `PROVENANCE.md`
+section 13 lists the exact derived artifacts and hashes.
 
 ## Reproduce
 

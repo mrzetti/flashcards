@@ -2,9 +2,11 @@
 
 This document records where the preserved Flash cards came from, what was
 extracted or derived, what was deliberately left out, and what has and has not
-been verified. It distinguishes the **source of this collection** (the archive
-below) from **URLs that appear inside the content** (historical captions, forms
-and scripts), which are *not* provenance.
+been verified. Section 13 covers the separately supplied 1999 RAMMSTEIN
+screensaver; everything before it covers the Flashcard archive. It distinguishes
+the **source of this collection** (the archives below) from **URLs that appear
+inside the content** (historical captions, forms and scripts), which are *not*
+provenance.
 
 ## 1. Source archive
 
@@ -411,3 +413,125 @@ No SWF bytes were modified. Supplied decompiler exports were preserved as found;
 new FFDec text exports for the 2002 Mutter card received the encoding correction
 documented in section 5b. Files/directories use the ASCII slugs listed in section
 2; the original ZIP paths are preserved in this document.
+
+## 13. RAMMSTEIN Screensaver (1999) — separate source archive
+
+This card is **not** from `Flashcards.zip`. It comes from a second user-supplied
+archive and is documented with the same rules: originals byte-for-byte, derived
+artifacts labelled, and nothing claimed as verified that was not exercised.
+
+| Property | Value |
+| --- | --- |
+| File | `/home/mrzetti/downloads/RST_screensaver.zip` (user-supplied) |
+| Size | 1,193,571 bytes |
+| Modified | 2026-09-14 03:35 UTC |
+| SHA-256 | `9a792baa025966b1b6b742f651d0511f9a94111c50ec1bfa70ac88dbdbb7d5c6` |
+| ZIP entries | `readme.txt`, `RST_installer.exe` (2 files) |
+| Repo originals | `originals/1999-rst-screensaver.zip`, `originals/1999-rst-screensaver-installer.exe`, `originals/1999-rst-screensaver-readme.txt` |
+
+The readme is a bilingual German/English note dated 1999: "RAMMSTEIN
+screensaver", (p)+(c) 1999 Motor Music, Hamburg, concept/design/programming
+Guido Raschke, version `091199_R2.2_WIN`, for Windows 95/98/(NT4.0), 16-bit
+graphics at 800×600. The movie's own credits plate repeats the year and version
+(`version R2.2, 09.11.1999`); the card's `year: 1999` is supported by both. No
+download URL, author page or official product page is recorded in this repo.
+
+### 13.1 What the installer contains
+
+`RST_installer.exe` (2,874,948 bytes,
+`23882404385ebd932e4ff40e67e361c2069c92839955bf31dfb2cbcc68383bb6`) is a 16-bit
+Windows **NE** program. Its resources are 3 dialog BITMAPs, 2 ICONs (16×16 and
+32×32), a menu, 3 dialogs, 2 STRING tables and a VERSION resource; the raw
+resources are preserved under `assets/cards/1999-rst-screensaver/installer/` with
+PNG/ICO conversions for viewing.
+
+The code payloads were located and carved by scanning for valid MZ/PE/NE
+headers:
+
+| Region | Content | Carved as |
+| --- | --- | --- |
+| `0x2dce0` | 16-bit `MICKEY16` helper (keyboard/mouse hooks) | `payload/MICKEY16.bin` |
+| `0x2ed70` | 32-bit helper image | `payload/payload_0x02ed70.bin` |
+| `0x5bd70` | 32-bit `MICKEY32` helper image | `payload/payload_0x05bd70.bin` |
+| `0x94188` → EOF | 32-bit Director 6/MacroMix projector `RST_saver.exe` | `RST_saver.exe` |
+| inside it, `0x1ed696` | 16-bit player image | `payload/player16.bin` |
+| inside it, `0x1fce96` | 32-bit player image | `payload/player32.bin` |
+
+`RST_saver.exe` (2,268,348 bytes,
+`079843ee82be694fc389bdd2739a9ccf5b476247ddd38cd7fc856f1b22d6fe4d`) is exactly
+`installer[0x94188:]`; the protected movie's memory-map offsets are relative to
+that address, so the byte range is the executable the installer installs. The
+16-bit player and the Mickey files are preserved but were not analysed further.
+
+### 13.2 Reconstructing the protected Director movie
+
+The projector is a Macromedia Director 6.0.2 "MacroMix" projector whose movie
+(`source_4.dir`, per the author path string `=Baracuda Eins:RST_new
+screensaver:4th_generation:source_4.dir`) is stored as scattered chunks with a
+memory map rather than as a contiguous `.dir`. The map at projector offset
+`0x16ea7c` lists 725 used slots; the header at `0x16ea50` is
+`XFIR`/`MV93` (Director 5/6, Windows byte order).
+
+A standard Windows Director file was rebuilt by gathering the 304 real chunks in
+map order, rewriting the `imap`/`mmap` offsets and rewriting the `RIFX` length,
+mirroring ProjectorRays' writer layout:
+
+| File | Bytes | SHA-256 |
+| --- | ---: | --- |
+| `movie/source_4.dir` (repo: `assets/cards/1999-rst-screensaver/source_4.dir`) | 766,315 | `8743300711db88b1b8f1c5a515c10bc3de17c95750c6bc2b197784b5e4ee3e7d` |
+| `movie/source_4_decompiled.dir` (ProjectorRays 0.2.1, commit `6f9bceb`) | 768,202 | `8ac56bab913f3e83ed669146acb2ff3e794a9f77d778f8a51eef8126f64b54ee` |
+
+The reconstruction was done twice — once from the installer, once from the
+carved `RST_saver.exe` — and both runs produced the identical SHA-256 above.
+ProjectorRays decompiled the movie as "Macromedia Director 6.0" and restored 26
+Lingo scripts (score, movie, parent and behaviour scripts), stored under
+`scripts/`. The reconstructed `.dir` is a derived artifact: the pixels, texts
+and scripts are original, but the container layout is not the original
+byte-for-byte protected form (which remains inside `RST_saver.exe`).
+
+### 13.3 Sprites, labels and manifests
+
+The movie's `KEY*` table maps each cast member to its child resources. All 103
+bitmap members are 8-bit (`BITD` chunks, built-in system palette, clut id 0);
+they were decoded with a Python port of ScummVM's Director `BITDDecoder` (RLE
+and de-interleaving) and written as palette-indexed PNGs under `sprites/`. The
+clean renders use ScummVM's `macPalette` system-palette table; the Windows
+palette table renders the same frames as rainbow noise, and the `macPalette`
+renders reproduce the frames' intended grey/red/green look. Five button labels
+are stored in `texts/` (decoded as MacRoman: `TAFELN_A`, `TAFELN_B`, `KREUZE
+(Zufallsprinzip)`, `scharfmachen & zurück`, `Geschichte`). `cast.json` records
+every member (id, name, type, size, resources); `scene.json` groups the preview
+sequences. The card thumbnail is a **derived composite** of three original
+sprites (frame `rahmen32`, plate named `20`, a red-cross frame) and is not an
+original asset.
+
+| Bundle | Content | SHA-256 |
+| --- | --- | --- |
+| `sprites.zip` | 103 PNGs + `cast.json` + `scene.json` | `6198c3f5d530a897bbbda8b21666394865d962af2747c9611688ae4bbb9f8425` |
+| `RST_screensaver_extracted.zip` | readme, `RST_saver.exe`, both movies, sprites, scripts, texts, installer resources, payloads | `5ac492847979f9e26565e7f6a2bfa19a6fba7d900c960b20d6fdf15d05b98162` |
+
+### 13.4 Deliberately not reconstructed
+
+- **Film-loop playback.** The cast contains nine film loops (`red_cross`,
+  `green_cross`, `burning_red`, `burning_green`, `burning_start`, `flamme`,
+  `flamme_versetzt`, `leer`); their frame ordering could not be recovered from
+  the `SCVW` window-shape references, so the browser preview animates the
+  individually named frames (`f01`–`f33`, `g01`–`g18`, `AA f00020`–`f00036`)
+  instead.
+- **Sound.** The movie contains no `snd ` chunks; the original is silent.
+- **Original runtime execution.** The program was not run: it requires 16/32-bit
+  Windows. It is preserved as bytes; the browser page is a sprite preview, not a
+  Director emulator. No claim is made that `RST_saver.exe` still runs on a
+  specific machine.
+
+### 13.5 Reproduction
+
+1. `unzip RST_screensaver.zip`; keep `readme.txt` and `RST_installer.exe`.
+2. Parse the NE resources; carve the payloads listed in 13.1.
+3. Rebuild `source_4.dir` from the projector's `imap`/`mmap` chunk map (base
+   `0x94188`; chunks at map offsets).
+4. `projectorrays decompile source_4.dir -o out --dump-scripts --dump-chunks
+   --dump-json` (ProjectorRays 0.2.1); scripts are written per cast.
+5. Decode `BITD-*.bin` with the ScummVM `BITDDecoder` algorithm and the movie's
+   system palette; match cast members through the `KEY*` child table.
+6. Compare every output against `assets/cards/SHA256SUMS`.

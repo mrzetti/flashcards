@@ -21,6 +21,18 @@ def local_file(value):
     return path
 
 
+def local_page(value):
+    """A page served from the project root (player.html, screensaver.html...)."""
+    url = urlsplit(value)
+    assert not url.scheme and not url.netloc, f"Non-relative page: {value}"
+    assert not url.path.startswith("/"), f"Root-relative page: {value}"
+    assert url.path.endswith(".html"), f"Not an HTML page: {value}"
+    path = (ROOT / unquote(url.path)).resolve()
+    assert path.is_relative_to(ROOT), f"Page escapes project: {value}"
+    assert path.is_file(), f"Missing page: {value}"
+    return path
+
+
 def main():
     preserved = 0
     for manifest, base in ((ROOT / "originals/SHA256SUMS", ROOT / "originals"),
@@ -49,6 +61,21 @@ def main():
         ids.add(ident)
         assert card["title"] and card["instructions"], ident
         assert card["width"] > 0 and card["height"] > 0, ident
+        kind = card.get("kind", "flash")
+        assert kind in ("flash", "artifact"), f"{ident}: unknown kind {kind!r}"
+        if kind == "artifact":
+            local_file(card["thumbnail"])
+            if card.get("preview"):
+                local_page(card["preview"])
+            assert card.get("downloads"), f"{ident}: artifact needs downloads"
+            for entry in card["downloads"]:
+                assert entry["label"], f"{ident}: download without label"
+                local_file(entry["url"])
+            for entry in card.get("gallery", []):
+                local_file(entry["url"])
+            print(f"OK {ident}: artifact with {len(card['downloads'])} downloads, "
+                  f"{len(card.get('gallery', []))} gallery images")
+            continue
         data = local_file(card["swf"]).read_bytes()
         assert data[:3] in (b"FWS", b"CWS", b"ZWS"), f"Invalid SWF: {ident}"
         expected = struct.unpack_from("<I", data, 4)[0]
