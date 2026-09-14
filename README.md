@@ -39,7 +39,8 @@ controls. See the card's instructions and compatibility notes before playing.
 - **Browser games** (like Asche zu Asche) run on their own site inside one
   desktop window. The emulator is click-to-load there, closing the window
   releases it, and the game page keeps a full-page link for browsers without the
-  required cross-origin isolation.
+  required cross-origin isolation. Losing all lives shows a wrapper overlay that
+  restarts the game automatically after a short countdown.
 
 **Playable** means the documented local interaction was verified. **Partial**
 means something important is absent or unconfirmed, commonly a remote video or

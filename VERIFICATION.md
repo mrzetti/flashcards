@@ -175,6 +175,11 @@ real-runtime checks:
   reached its title screen (“Tap the title screen to start”), with zero page
   errors on the desktop page.
 - Closing the window released the frame (no embed iframes remained).
+- Losing the last life on the first platform showed the wrapper's own **Game
+  over** overlay inside the embedded window; after its countdown the emulator
+  reloaded automatically and the title screen returned without a click. The
+  title screen is not misdetected: the detector requires a mostly black frame
+  with red lettering in the centre band and no bright artwork elsewhere.
 - The 2009 Pussy Flash card still reached `player.status === 'playing'` under
   the new headers, so cross-origin isolation did not regress Ruffle playback.
 - `qa/check_deployment.py` verifies the deployed files, the embed thumbnail and
