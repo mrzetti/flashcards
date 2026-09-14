@@ -303,17 +303,13 @@
       restart: document.getElementById('restart-button'),
       fullscreen: document.getElementById('fullscreen-button'),
       status: document.getElementById('toolbar-status'),
-      notes: document.getElementById('player-notes'),
-      instructions: document.getElementById('player-instructions'),
-      controlsLine: document.getElementById('player-controls-line'),
-      details: document.getElementById('player-details'),
-      detailsBody: document.getElementById('player-details-body'),
     };
 
     var cardId = readCardId(location.search);
     var instance = '';
     var baseParam = '';
     var embedded = Boolean(window.parent && window.parent !== window);
+    document.querySelector('.player-header').hidden = embedded;
     try {
       var search = new URLSearchParams(location.search);
       instance = search.get('instance') || '';
@@ -701,52 +697,6 @@
       els.title.textContent = card.title;
       els.year.textContent = card.year ? 'Year ' + card.year : '';
 
-      // Concise, player-first text: the shorter of description/instructions
-      // stays visible, while the full forensic text lives in the collapsible
-      // details (important on phones where space is tight).
-      var instruction = card.instructions;
-      var description = card.description;
-      var visible = '';
-      var visibleIsInstruction = false;
-      var extras = [];
-      if (instruction && description) {
-        if (instruction.length <= description.length) {
-          visible = instruction;
-          visibleIsInstruction = true;
-          extras.push(['Description', description]);
-        } else {
-          visible = description;
-          extras.push(['How to play', instruction]);
-        }
-      } else if (instruction) {
-        visible = instruction;
-        visibleIsInstruction = true;
-      } else if (description) {
-        visible = description;
-      }
-
-      if (visible.length > 320) {
-        extras.unshift([visibleIsInstruction ? 'How to play' : 'Description', visible]);
-        visible = truncate(visible, 320);
-      }
-      els.instructions.textContent = visible
-        ? (visibleIsInstruction ? 'How to play: ' + visible : visible)
-        : 'No instructions were recorded for this card.';
-
-      var controlLabels = card.controls.map(function (entry) {
-        return entry.label || entry.code || 'Control';
-      }).filter(Boolean);
-      els.controlsLine.textContent = controlLabels.length
-        ? 'Controls: ' + controlLabels.join(', ')
-        : 'Controls: mouse or touchscreen.';
-
-      var detailLines = extras.map(function (pair) {
-        return pair[0] + ': ' + pair[1];
-      });
-      if (card.status) detailLines.push('Catalog status: ' + card.status);
-      if (card.notes) detailLines.push('Notes: ' + card.notes);
-      els.detailsBody.textContent = detailLines.join('\n\n');
-      els.details.hidden = detailLines.length === 0;
     }
 
     function startRuffle(card) {

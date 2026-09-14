@@ -65,6 +65,9 @@ test('Launch starts exactly one mocked Ruffle player with the card file and focu
     const frame = await waitForFrame(page, 'alpha');
     assert.ok(frame, 'the alpha player frame exists');
     await frame.waitForSelector('.mock-ruffle-player');
+    assert.equal(await frame.locator('.player-header').isVisible(), false);
+    assert.equal(await frame.locator('#player-notes, #player-details').count(), 0);
+    assert.equal(await page.locator('.player-statusbar, .player-switch-note').count(), 0);
     await waitForPlayerStatus(page, 'playing');
     assert.match(await page.locator('#player-window-status').textContent(), /Playing: Alpha Anthem/);
 
@@ -78,13 +81,6 @@ test('Launch starts exactly one mocked Ruffle player with the card file and focu
     assert.equal(load.options.allowScriptAccess, false);
     assert.equal(load.options.backgroundColor, '#000000');
     assert.ok(calls.some((call) => call.method === 'volume' && call.value === 0.8), 'volume applied');
-
-    // Concise instructions stay visible; forensic detail is collapsible.
-    assert.match(await frame.locator('#player-instructions').textContent(), /How to play: Click the stage to begin\./);
-    assert.match(await frame.locator('#player-controls-line').textContent(), /Controls: Mouse/);
-    assert.equal(await frame.locator('#player-details').count(), 1);
-    assert.match(await frame.locator('#player-details-body').textContent(), /Catalog status: Verified playback/);
-    assert.match(await frame.locator('#player-details-body').textContent(), /Fixture used by the browser tests/);
 
     // Focus lands inside Ruffle so keyboard input reaches the card.
     await frame.waitForFunction(() => document.activeElement && document.activeElement.classList.contains('mock-ruffle-player'));

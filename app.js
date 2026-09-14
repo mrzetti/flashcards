@@ -1550,7 +1550,7 @@
 
     function buildPlayerWindowContent() {
       var root = element('div', 'player-window-body');
-      var statusbar = element('div', 'player-statusbar');
+      var statusbar = element('div', 'sr-only');
       var dot = element('span', 'player-status-dot');
       dot.dataset.state = 'idle';
       var status = element('span', '', 'No card is playing.');
@@ -1560,8 +1560,7 @@
       card.id = 'player-window-card';
       statusbar.append(dot, status, card);
       var holder = element('div', 'player-stage-holder');
-      var note = element('p', 'player-switch-note', 'One player at a time: launching another card closes this one and releases its audio. Minimizing pauses; restoring resumes only if it was playing.');
-      root.append(statusbar, holder, note);
+      root.append(statusbar, holder);
       state.player.dotEl = dot;
       state.player.statusEl = status;
       state.player.cardEl = card;
