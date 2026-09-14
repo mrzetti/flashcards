@@ -41,7 +41,13 @@ async function openPreview(page, screenshotName) {
     const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
     const page = await context.newPage();
     page.on('pageerror', (error) => result.errors.push(error.message));
-    page.on('requestfailed', (request) => result.failedRequests.push(request.url()));
+    page.on('requestfailed', (request) => {
+      const failure = request.failure();
+      const errorText = failure ? failure.errorText : '';
+      // Browsers cancel media range requests routinely while seeking/pausing.
+      if (errorText === 'net::ERR_ABORTED') return;
+      result.failedRequests.push({ url: request.url(), error: errorText });
+    });
 
     const frame = await openPreview(page, 'desktop-catalog.png');
     result.checks.push('deep link + explicit launch open the files window');

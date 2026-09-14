@@ -124,6 +124,9 @@ same headless Chromium build, against the local preview server (real
 - `tests/browser/mutter-ecd.test.mjs` repeats the panel/metadata flow and the
   phone-layout check against fixtures with the mock Ruffle runtime, and
   `qa/mutter-ecd-verify.cjs` is the real-runtime reproduction script.
+- The same script and `qa/check_deployment.py` were run against the public
+  deployment on 14 September 2026 and passed, including the HTTPS video
+  playback, the byte-for-byte files and the disc metadata.
 
 Selected screenshots: `qa/evidence/mutter-ecd-preview.png` (files window with
 the rebuilt player) and `qa/evidence/mutter-ecd-mobile.png`.
