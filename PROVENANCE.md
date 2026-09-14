@@ -3,7 +3,8 @@
 This document records where the preserved Flash cards came from, what was
 extracted or derived, what was deliberately left out, and what has and has not
 been verified. Section 13 covers the separately supplied 1999 RAMMSTEIN
-screensaver; everything before it covers the Flashcard archive. It distinguishes
+screensaver and section 16 the separately supplied 2001 Mutter Enhanced CD;
+everything before section 13 covers the Flashcard archive. It distinguishes
 the **source of this collection** (the archives below) from **URLs that appear
 inside the content** (historical captions, forms and scripts), which are *not*
 provenance.
@@ -571,3 +572,151 @@ duplicated here.
   matching headers with `Cross-Origin-Resource-Policy: same-site` so its sibling
   subdomain may frame it.
 - Verification of the live embed is recorded in `VERIFICATION.md`.
+
+## 16. Mutter Enhanced CD (2001) — separate source archive
+
+This card is **not** from `Flashcards.zip`. It comes from a third user-supplied
+archive and follows the same rules as sections 13–15: originals are preserved
+byte-for-byte, derived artifacts are labelled, and nothing is claimed as
+verified that was not exercised.
+
+| Property | Value |
+| --- | --- |
+| File | `/home/mrzetti/downloads/Enhanced CD.zip` (user-supplied) |
+| Size | 42,910,329 bytes |
+| Modified | 2026-09-14 15:06 UTC |
+| SHA-256 | `7d223b948c5ea680336d9c96e25501d4b28e017a848b254e508606261bb3ace9` |
+| ZIP entries | 38 (5 directories + 32 files) |
+| Repo tree | `originals/2001-mutter-enhanced-cd/` (32 files, byte-for-byte) |
+
+The archive is a plain ZIP of the Windows data session of a CD Extra /
+Enhanced CD. The files were extracted to `originals/2001-mutter-enhanced-cd/`
+with the ZIP's top-level `Enhanced CD/` folder removed; every file's SHA-256 is
+recorded in `originals/SHA256SUMS`, and all CRCs were checked against the ZIP
+central directory during extraction. The ZIP container itself is not deployed:
+its only large entry, the 41.4 MB `Movies/Sonne.MPG`, is preserved directly, so
+shipping the container would only duplicate it. The 2023-03-15 timestamps on
+the ZIP entries are the user's extraction date, not disc-mastering metadata;
+the received archive's own SHA-256 is the value above.
+
+### 16.1 Identification
+
+`AUTORUN.INF` `[ID]` describes the disc as `DiscName=Mutter`,
+`Label=Universal Records`, `Selection#=314549639-2`. That selection number
+matches the enhanced second disc of the US limited edition (Discogs release
+614817: Republic Records / Universal Records, CD + Enhanced CD, released
+2 April 2001); the documented release supplies the card's `year: 2001`.
+`[AlbumCredits]` names the album and artist (`AlbumName=Mutter`,
+`ArtistName=Rammstein`) and `[SongID]` lists the eleven album tracks. The
+songs themselves play from the CD audio session and are not part of the data
+session; the supplied archive contains no audio tracks. The archive's
+`Movies/Icon_` entry is an empty 0-byte placeholder and is preserved as such.
+
+### 16.2 Contents
+
+| File(s) | Bytes | Content |
+| --- | ---: | --- |
+| `Movies/Sonne.MPG` | 41,366,260 | The Sonne music video: MPEG-1 program stream, video 352×240 (SAR 200:219), 29.97 fps, ~1,140 kb/s; MP2 stereo 224 kb/s, 44.1 kHz; 4:00.17. |
+| `Mutter.CDQ` | 17,596 | Universal Media Player presentation data; see 16.4. |
+| `ReadThis.WRI` | 243,834 | The player's generic manual as a Windows Write/RTF document, including an embedded Paint bitmap of the toolbar (the object is not extracted as a file; the text is). |
+| `AUTORUN.INF` | 3,751 | Disc identification, content map, song list, historical links and the UMP install/browser setup. |
+| `Text/About The Video`, `Text/Video.txt` | 904 / 979 | Generic notes about the disc's video and the required players. |
+| `Images/FrontLg.jpg`, `FrontMed.jpg`, `FrontSm.jpg` | 65,725 / 24,548 / 9,925 | The album front cover at three sizes. |
+| `PICTURES/JACKET01.00J` | 4,253 | JPEG, 240×240: the “Enhanced CD” plate. |
+| `PICTURES/JACKET01.00N/.00S/.00T` | 7,100 / 32,972 / 16,508 | The “CD Extra” plate as single-frame MPEG-1 video (176×112, 704×480, 352×240) wrapped in a RIFF/`CDXA` form. |
+| `CDPLUS/INFO.CDP`, `CDPLUS/SUB_INFO.en` | 2,048 / 580 | CD-Text / CD-Plus media; the track fields are unfilled placeholders (“Track 01”…). |
+| `SETUP.EXE`, `setup.ins`, `setup.lid`, `SETUP.INI`, `lang.dat`, `layout.bin`, `os.dat`, `data1.cab`, `_sys1.cab`, `_user1.cab`, `_INST32I.EX_`, `_ISDEL.EXE`, `_SETUP.DLL` | 960,788 total | InstallShield 5 installer for the Universal Media Player. |
+| `Startup.exe` | 40,960 | The LocalAutorun launcher named by `AUTORUN.INF` (`[LocalAutorun]`). |
+| `DATA.TAG` | 120 | Universal Music Group “Universal Media Player 0.30” tag. |
+
+### 16.3 Universal Media Player
+
+`data1.cab` holds the player itself; its two members were extracted with
+`unshield 1.5.1` (`unshield -O`, the old decompressor; the extraction was run
+twice into separate directories and produced identical hashes):
+
+- `ump.exe` (641,536 bytes) is a 32-bit GUI PE (6 sections, linker timestamp
+  1998-02-27 22:38 UTC, file version 1,0,0,1, original filename `LB.EXE`,
+  copyright “© 1997”). Its bitmap resources include the 224×32 toolbar
+  (pairs of 32×16 normal/disabled images: lyre, filmstrip, globe, eye,
+  question mark, two arrows) and the 489×219 About screen. That About screen
+  credits **Thinking Pictures Incorporated**, 448 W16th Street, New York
+  NY 10011, phone/fax 212.989.3950/4962, `info@thinkpix.com`; software Ed
+  Herranz; GUI Stephan Fitch – Ed Herranz; graphics David Oppenheim – David
+  Segolowitz; ECD authoring automation Howard Soroka – Modern Methods; and an
+  “Extended ECD Standard” by Howard Soroka (Modern Methods) and Ed Herranz
+  (TPI). Other strings include `http://www.rock.com/ecd`,
+  `Software\LocalAutorun\Media`, `Setup.bmp`, `*Loading CD*`, `*Empty*` and
+  the toolbar labels `Help`, `Audio`, `Video`, `Media`, `Connect`.
+- `ump.ico` (592 bytes) is stored in the cabinet as a 32×32 4-bit DIB rather
+  than an ICO container; it was converted to PNG for the preview and to the
+  `ump-icon.png` on the card.
+
+The manual states the requirements (Windows 95, Pentium, 8 MB RAM, thousands
+of colours, double-speed CD-ROM) and that video needs QuickTime 3/2.1.2 or
+Microsoft Media Player; the player's own installer is started from the disc.
+The archive contains no QuickTime installers and no Mac “CD Extra” side, both
+of which `AUTORUN.INF` references. **The player was not executed**: it is a
+16/32-bit Windows program and this project does not run it. The browser
+preview is a rebuild, not an emulator.
+
+### 16.4 Mutter.CDQ
+
+`Mutter.CDQ` (named after the disc) is the player's presentation data. It is a
+big-endian container of `size`+4CC atoms: a root `quac` atom (1,520 bytes)
+holding `vcd `, `lgin`/`lang`, `alid` and `albm`/`alin` with `enco`/`blue`,
+`name`, `part`, `frpc`/`pict`, one global `cast` and eleven `trin` records
+(`trno`, `name`, `seam`, `part`, and a nested `cast` with `name`/`role`/`cont`),
+followed by a `data` atom (16,076 bytes). The records contain offset/length
+pairs that point into a string table with the values “Artist”, “Principal
+Artist” and “Track 01”–“Track 11”; the `pict` record points at a PICT v2 image
+inside the `data` atom that decodes to the same “Enhanced CD” plate as
+`PICTURES/JACKET01.00J`. No decoder is shipped; the file is preserved as bytes
+and the structure above was observed for documentation, not executed.
+
+### 16.5 Derived artifacts
+
+| Repo file | Source | How |
+| --- | --- | --- |
+| `assets/cards/2001-mutter-enhanced-cd/ump.exe` | `data1.cab` → `ump.exe` | `unshield -O` extraction. SHA-256 `bc793800…f85f6d`. |
+| `assets/cards/2001-mutter-enhanced-cd/ump.ico` | `data1.cab` → `ump.ico` | `unshield -O` extraction. SHA-256 `1ce0460d…a043ab`. |
+| `assets/cards/2001-mutter-enhanced-cd/ump-icon.png` | `ump.ico` | ffmpeg DIB→PNG, 32×32. |
+| `assets/cards/2001-mutter-enhanced-cd/ump-toolbar.png` | `ump.exe` bitmap 128 | `wrestool` extraction, BMP→PNG. |
+| `assets/cards/2001-mutter-enhanced-cd/ump-icons.png` | `ump.exe` bitmap 128 | Top 16 px of each 32×16 cell; used as the preview's icon sprite. |
+| `assets/cards/2001-mutter-enhanced-cd/ump-about.png` | `ump.exe` bitmap 161 | `wrestool` extraction, BMP→PNG. |
+| `assets/cards/2001-mutter-enhanced-cd/setup-banner.png` | `setup.bmp` | ffmpeg BMP→PNG. |
+| `assets/cards/2001-mutter-enhanced-cd/readthis.txt` | `ReadThis.WRI` | RTF text extraction; the embedded Paint object is omitted. |
+| `assets/cards/2001-mutter-enhanced-cd/sonne-preview.mp4` | `Movies/Sonne.MPG` | `ffmpeg -i … -map 0 -c:v libx264 -crf 23 -preset slow -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart` (11.4 MB; the original file is unchanged). SHA-256 `e18a9840…36b6d6e6`. |
+| `assets/cards/2001-mutter-enhanced-cd/sonne-poster.jpg` | `Movies/Sonne.MPG` | Frame at 2:45, scaled to 322×240 with LANCZOS, JPEG q≈85. |
+| `assets/thumbnails/2001-mutter-enhanced-cd.jpg` | `Movies/Sonne.MPG` | The same 2:45 frame, cropped to the active 322×162 video area (rows 40–201, black letterbox bars removed), JPEG q≈85. A real video frame, no composite or invented artwork. |
+
+All derived files are hashed in `assets/cards/SHA256SUMS` except the thumbnail,
+matching the existing thumbnail convention.
+
+### 16.6 Browser preview
+
+`mutter-ecd.html` + `mutter-ecd.js` rebuild the Universal Media Player window
+from the preserved files: the album artwork and plates, the Sonne transcode
+with its original poster frame, the eleven track entries and three links parsed
+from `AUTORUN.INF`, the toolbar sprite rendered from `ump.exe`, the extracted
+manual and the historical addresses as text. The page fetches only its own
+site's files; the original Windows program and the original MPEG-1 are card
+downloads, not browser plugins. The page is not the original program.
+
+### 16.7 Reproduction
+
+Tools used: Python 3 (stdlib), `unshield 1.5.1`, `icoutils` (`wrestool`),
+ffmpeg 6.1, and a browser for the preview checks.
+
+1. `unzip "Enhanced CD.zip"`; verify every CRC and copy the tree to
+   `originals/2001-mutter-enhanced-cd/` (top-level `Enhanced CD/` removed).
+2. `unshield -O -d out x "Enhanced CD/data1.cab"` → `ump.exe`, `ump.ico`;
+   `python3 -m pefile`-style inspection and `wrestool -l` verify the PE and
+   its resources.
+3. `wrestool -x -t bitmap -o out ump.exe`; render/convert with ffmpeg; crop the
+   top 16 px of each 32×16 toolbar cell into `ump-icons.png`.
+4. Transcode the video, extract the poster and thumbnail frames (commands in
+   16.5), crop the thumbnail with ffmpeg.
+5. Extract the RTF text of `ReadThis.WRI`, skipping the embedded object group.
+6. Compare every output against `originals/SHA256SUMS` and
+   `assets/cards/SHA256SUMS` with `python3 qa/validate_catalog.py`.

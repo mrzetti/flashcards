@@ -32,6 +32,7 @@ const MIME = {
   '.gif': 'image/gif',
   '.wasm': 'application/wasm',
   '.swf': 'application/x-shockwave-flash',
+  '.mp4': 'video/mp4',
   '.txt': 'text/plain; charset=utf-8',
 };
 

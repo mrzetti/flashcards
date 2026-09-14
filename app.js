@@ -365,6 +365,8 @@
       preview: asTrimmedString(raw.preview),
       downloads: sanitizeDownloadList(raw.downloads),
       gallery: sanitizeGallery(raw.gallery),
+      galleryTitle: asTrimmedString(raw.galleryTitle),
+      galleryHint: asTrimmedString(raw.galleryHint),
       thumbnail: asTrimmedString(raw.thumbnail),
       base: asTrimmedString(raw.base),
       width: positiveInt(raw.width, 640),
@@ -1818,9 +1820,9 @@
 
       if (card.gallery.length) {
         var gallerySection = element('section', 'artifact-section');
-        gallerySection.append(element('h3', 'artifact-heading', 'Extracted sprites'));
+        gallerySection.append(element('h3', 'artifact-heading', card.galleryTitle || 'Extracted files'));
         gallerySection.append(element('p', 'artifact-hint',
-          'The movie\u2019s 103 original bitmaps were decoded byte-for-byte; the preview above and the complete download bundle use the same PNG files.'));
+          card.galleryHint || 'Original assets extracted from the archive; the preview above uses the same files.'));
         var grid = element('div', 'artifact-gallery');
         card.gallery.forEach(function (entry) {
           var url = resolveUrl(entry.url, document.baseURI, { allowData: true });

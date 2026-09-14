@@ -1,0 +1,21 @@
+This disc contains video!
+
+Videos can be available in either "MPEG" or "Cinepak" format, or both. Cinepak
+requires Apple's Quicktime software. If you need to, you can install QuickTime
+from this disc, by clicking the "Install QuickTime" button in the UMP preferences
+dialog.
+
+Video in MPEG format requires an MPEG-compatible player application such as
+Microsoft's Windows Media Player. If you don't have a copy of an MPEG Player, you
+can download the Windows Media Player from Microsoft's website
+(http://www.microsoft.com).
+
+MPEG video provides better audio and video quality than Cinepak, but requires a
+more powerful computer to play. Try MPEG first, and if playback quality is poor,
+try Cinepak (if it's available).
+
+To see a video, select it from the video icon (filmstrip) menu in Universal Media
+Player. It will start the appropriate movie player application. Press the play
+button (right-pointing triangle) in the movie window to start play.
+
+Enjoy!

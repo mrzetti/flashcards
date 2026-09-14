@@ -65,6 +65,95 @@
       "notes": "Unmodified movie extracted from the inner projector in '2002 - Mutter.exe'. The archive year is not a verified release date; the card refers to the 2001 album/tour. Menu and TOUR navigation, audio and player controls were checked. RealMedia/RTSP video and e-card delivery are not restored. Extraction details and corrected text-export encoding are documented in PROVENANCE.md."
     },
     {
+      "id": "2001-mutter-enhanced-cd",
+      "title": "Mutter — Enhanced CD",
+      "kind": "artifact",
+      "thumbnail": "assets/thumbnails/2001-mutter-enhanced-cd.jpg",
+      "preview": "mutter-ecd.html",
+      "width": 640,
+      "height": 480,
+      "year": 2001,
+      "description": "The data session of the US Mutter enhanced CD: a Universal Media Player shell for Windows 95 carrying the Sonne music video, album artwork, track data and 2001 web links, rebuilt here as a browser window.",
+      "instructions": "Use the toolbar in the preview. Media pages through the disc's artwork and plates; Video plays the Sonne music video (a labelled browser transcode); Audio lists the disc's eleven track entries; Connect shows the original web links; Help/Prefs shows the extracted manual and the player's credits. The original Windows program and the untranscoded MPEG-1 are downloads.",
+      "controls": ["Mouse (click)"],
+      "status": "Partial — data session preserved and previewed; the original Windows player is not run in the browser",
+      "notes": "The disc identifies itself in AUTORUN.INF as Mutter / Universal Records, selection 314549639-2, matching the US limited edition (Discogs release 614817, released 2 April 2001); that documented release supplies the year. The 41.4 MB Sonne.MPG is the original MPEG-1 video; the preview plays a documented H.264/AAC transcode. Universal Media Player 0.30 (Thinking Pictures Inc., © 1997) requires Windows 95 and QuickTime or Media Player for video and was not executed. The disc's audio tracks belong to the CD audio session and are not part of this data archive; its umusic.com/rock.com links are historical and not restored. Mutter.CDQ preserves album and track metadata alongside an embedded 'Enhanced CD' picture. See PROVENANCE.md and VERIFICATION.md.",
+      "galleryTitle": "Extracted disc files",
+      "galleryHint": "Original files from the disc's data session next to labelled derivations; the preview above uses the same files.",
+      "downloads": [
+        {
+          "label": "Sonne music video — original MPEG-1",
+          "url": "originals/2001-mutter-enhanced-cd/Movies/Sonne.MPG",
+          "meta": "41.4 MB · 352×240, 4:00, as supplied on the disc"
+        },
+        {
+          "label": "Sonne music video — browser preview",
+          "url": "assets/cards/2001-mutter-enhanced-cd/sonne-preview.mp4",
+          "meta": "11.4 MB · H.264/AAC transcode used by the preview player"
+        },
+        {
+          "label": "Universal Media Player — ump.exe",
+          "url": "assets/cards/2001-mutter-enhanced-cd/ump.exe",
+          "meta": "627 KB · 0.30, extracted from data1.cab"
+        },
+        {
+          "label": "Original installer — SETUP.EXE",
+          "url": "originals/2001-mutter-enhanced-cd/SETUP.EXE",
+          "meta": "59.4 KB · InstallShield 5 setup stub"
+        },
+        {
+          "label": "Player manual — ReadThis.WRI",
+          "url": "originals/2001-mutter-enhanced-cd/ReadThis.WRI",
+          "meta": "244 KB · Windows Write manual as supplied"
+        },
+        {
+          "label": "Player manual — text extraction",
+          "url": "assets/cards/2001-mutter-enhanced-cd/readthis.txt",
+          "meta": "10.3 KB · derived from ReadThis.WRI"
+        },
+        {
+          "label": "Presentation data — Mutter.CDQ",
+          "url": "originals/2001-mutter-enhanced-cd/Mutter.CDQ",
+          "meta": "17.6 KB · album/track metadata and embedded picture"
+        },
+        {
+          "label": "Disc metadata — AUTORUN.INF",
+          "url": "originals/2001-mutter-enhanced-cd/AUTORUN.INF",
+          "meta": "3.75 KB · identification, track list, links and UMP setup"
+        }
+      ],
+      "gallery": [
+        {
+          "url": "originals/2001-mutter-enhanced-cd/Images/FrontLg.jpg",
+          "caption": "Album front cover as supplied on the disc (Images/FrontLg.jpg)."
+        },
+        {
+          "url": "originals/2001-mutter-enhanced-cd/PICTURES/JACKET01.00J",
+          "caption": "The 'Enhanced CD' plate from PICTURES/ (a JPEG on the disc)."
+        },
+        {
+          "url": "originals/2001-mutter-enhanced-cd/PICTURES/JACKET01.00S",
+          "caption": "The 'CD Extra' plate; the disc stores this mark as a one-frame MPEG-1 video."
+        },
+        {
+          "url": "assets/cards/2001-mutter-enhanced-cd/ump-toolbar.png",
+          "caption": "The Universal Media Player toolbar rendered from a bitmap inside ump.exe: Audio, Video, Connect, Media, Help/Prefs, Last Image, Next Image."
+        },
+        {
+          "url": "assets/cards/2001-mutter-enhanced-cd/ump-about.png",
+          "caption": "About screen from ump.exe naming Thinking Pictures Incorporated, New York."
+        },
+        {
+          "url": "assets/cards/2001-mutter-enhanced-cd/ump-icon.png",
+          "caption": "The disc's ump.ico application icon (a 32×32 4-bit bitmap stored in data1.cab)."
+        },
+        {
+          "url": "assets/cards/2001-mutter-enhanced-cd/setup-banner.png",
+          "caption": "The installer's banner: 'This disc requires the Universal Media Player (UMP)...'."
+        }
+      ]
+    },
+    {
       "id": "2003-lichtspielhaus",
       "title": "Lichtspielhaus",
       "swf": "assets/cards/2003-lichtspielhaus/player.swf",
@@ -226,6 +315,8 @@
       ],
       "status": "Partial — Director 6 movie preserved and all sprites extracted; no browser Director runtime",
       "notes": "RST_saver.exe is the 32-bit Director 6 MacroMix projector carved from the installer; its protected movie source_4.dir was rebuilt from the scattered chunk map and decompiled with ProjectorRays 0.2.1. All 103 8-bit BITD bitmaps were decoded with ScummVM's Director decoder and rendered with the movie's built-in system palette. The original has no sound. It requires Windows 95/98/NT4.0; the installer itself is a 16-bit NE program. See PROVENANCE.md and VERIFICATION.md for hashes and extraction evidence.",
+      "galleryTitle": "Extracted sprites",
+      "galleryHint": "The movie's 103 original bitmaps were decoded byte-for-byte; the preview above and the complete download bundle use the same PNG files.",
       "downloads": [
         {
           "label": "Original archive — RST_screensaver.zip",

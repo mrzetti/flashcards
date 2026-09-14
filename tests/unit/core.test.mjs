@@ -196,10 +196,14 @@ test('artifact cards keep downloads and gallery but never need a SWF', () => {
       { url: 'assets/cards/a/sprites/one.png', caption: 'One' },
       { caption: 'no url' },
     ],
+    galleryTitle: 'Extracted sprites',
+    galleryHint: 'Decoded byte-for-byte.',
   });
   assert.equal(card.kind, 'artifact');
   assert.equal(card.fileMissing, false);
   assert.equal(card.preview, 'screensaver.html');
+  assert.equal(card.galleryTitle, 'Extracted sprites');
+  assert.equal(card.galleryHint, 'Decoded byte-for-byte.');
   assert.deepEqual(card.downloads.map((entry) => entry.label), ['Original archive']);
   assert.equal(card.downloads[0].meta, '1 MB');
   assert.deepEqual(card.gallery, [{ url: 'assets/cards/a/sprites/one.png', caption: 'One' }]);
@@ -208,6 +212,8 @@ test('artifact cards keep downloads and gallery but never need a SWF', () => {
   // An unknown kind falls back to the Flash behaviour.
   assert.equal(core.sanitizeCard({ id: 'x', kind: 'something' }).kind, 'flash');
   assert.equal(core.sanitizeCard({ id: 'x' }).fileMissing, true);
+  assert.equal(core.sanitizeCard({ id: 'x' }).galleryTitle, '');
+  assert.equal(core.sanitizeCard({ id: 'x' }).galleryHint, '');
 });
 
 test('embed cards keep their game URL and never need a SWF', () => {

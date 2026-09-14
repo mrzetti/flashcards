@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="A browser rebuild of the Universal Media Player shell from the 2001 Mutter Enhanced CD, with the disc's Sonne video, artwork, track list and manual.">
+  <title>Mutter Enhanced CD — Universal Media Player preview</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="mutter-ecd.js" defer></script>
+</head>
+<body class="mutter-ecd-page">
+  <header class="mutter-ecd-header">
+    <h1>Mutter — Enhanced CD</h1>
+    <span class="mutter-ecd-year">2001 · Universal Media Player preview</span>
+  </header>
+
+  <main class="mutter-ecd-main">
+    <div class="ump-window" id="ump-window">
+      <div class="ump-titlebar">
+        <img class="ump-titlebar-icon" src="assets/cards/2001-mutter-enhanced-cd/ump-icon.png" width="16" height="16" alt="">
+        <span class="ump-titlebar-title">Universal Media Player</span>
+        <span class="ump-titlebar-disc">Mutter · Universal Records</span>
+      </div>
+
+      <div class="ump-toolbar" role="toolbar" aria-label="Universal Media Player buttons">
+        <button type="button" class="ump-tool" data-panel="audio" aria-pressed="false">
+          <span class="ump-tool-icon ump-tool-icon--audio" aria-hidden="true"></span>
+          <span class="ump-tool-label">Audio</span>
+        </button>
+        <button type="button" class="ump-tool" data-panel="video" aria-pressed="false">
+          <span class="ump-tool-icon ump-tool-icon--video" aria-hidden="true"></span>
+          <span class="ump-tool-label">Video</span>
+        </button>
+        <button type="button" class="ump-tool" data-panel="connect" aria-pressed="false">
+          <span class="ump-tool-icon ump-tool-icon--connect" aria-hidden="true"></span>
+          <span class="ump-tool-label">Connect</span>
+        </button>
+        <button type="button" class="ump-tool" data-panel="media" aria-pressed="true">
+          <span class="ump-tool-icon ump-tool-icon--media" aria-hidden="true"></span>
+          <span class="ump-tool-label">Media</span>
+        </button>
+        <button type="button" class="ump-tool" data-panel="help" aria-pressed="false">
+          <span class="ump-tool-icon ump-tool-icon--help" aria-hidden="true"></span>
+          <span class="ump-tool-label">Help/Prefs</span>
+        </button>
+        <span class="ump-toolbar-separator" aria-hidden="true"></span>
+        <button type="button" class="ump-tool ump-tool--image" data-image="prev">
+          <span class="ump-tool-icon ump-tool-icon--prev" aria-hidden="true"></span>
+          <span class="ump-tool-label">Last image</span>
+        </button>
+        <button type="button" class="ump-tool ump-tool--image" data-image="next">
+          <span class="ump-tool-icon ump-tool-icon--next" aria-hidden="true"></span>
+          <span class="ump-tool-label">Next image</span>
+        </button>
+      </div>
+
+      <div class="ump-body">
+        <section class="ump-panel" data-panel-view="media" aria-label="Disc artwork">
+          <figure class="ump-figure">
+            <div class="ump-image-stage">
+              <img id="ump-image" class="ump-image" alt="">
+            </div>
+            <figcaption id="ump-image-caption" class="ump-figure-caption"></figcaption>
+          </figure>
+        </section>
+
+        <section class="ump-panel" data-panel-view="audio" aria-label="Audio track list" hidden>
+          <h2 class="ump-panel-title">Audio</h2>
+          <p class="ump-panel-intro">
+            The disc lists eleven album tracks in its own <code>AUTORUN.INF</code>. It is an
+            Enhanced CD (CD Extra): the songs play from the audio session of the CD, which a data
+            archive cannot contain. No audio files are shipped with this card.
+          </p>
+          <ol id="ump-tracks" class="ump-tracks"></ol>
+        </section>
+
+        <section class="ump-panel" data-panel-view="video" aria-label="Video" hidden>
+          <h2 class="ump-panel-title">Video</h2>
+          <figure class="ump-figure">
+            <video id="ump-video" class="ump-video" controls preload="none"
+                   poster="assets/cards/2001-mutter-enhanced-cd/sonne-poster.jpg"
+                   width="352" height="240">
+              <source src="assets/cards/2001-mutter-enhanced-cd/sonne-preview.mp4" type="video/mp4">
+              Your browser cannot play the preview video. The original MPEG-1 file is a download on the card.
+            </video>
+            <figcaption class="ump-figure-caption">
+              <strong>Sonne</strong> — the music video supplied as <code>Movies/Sonne.MPG</code>
+              (MPEG-1, 352×240, 4:00). The player above uses a labelled H.264/AAC transcode for the
+              browser; the original file is one of the card downloads.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="ump-panel" data-panel-view="connect" aria-label="Connect" hidden>
+          <h2 class="ump-panel-title">Connect</h2>
+          <p class="ump-panel-intro">
+            The disc's <code>AUTORUN.INF</code> lists three historical web addresses. They belong to
+            2001 and were not archived or checked: this preview shows them exactly as the disc
+            stored them and does not open them.
+          </p>
+          <ul id="ump-links" class="ump-links"></ul>
+        </section>
+
+        <section class="ump-panel" data-panel-view="help" aria-label="Help and preferences" hidden>
+          <h2 class="ump-panel-title">Help/Prefs</h2>
+          <div class="ump-help">
+            <img class="ump-help-about" src="assets/cards/2001-mutter-enhanced-cd/ump-about.png"
+                 alt="About screen from the Universal Media Player executable: Thinking Pictures Incorporated, New York, with the credits for software, GUI, graphics and ECD authoring automation.">
+            <div class="ump-help-text">
+              <p>
+                The Universal Media Player 0.30 was written by <strong>Thinking Pictures,
+                Incorporated</strong> of New York (© 1997) for Universal Music's Enhanced CDs. It
+                requires Windows 95 and a separate QuickTime or Media Player for video. It is
+                preserved here as a download and is <em>not</em> run in the browser; this page is a
+                rebuild of its window from the disc's own bitmaps and metadata.
+              </p>
+            </div>
+          </div>
+          <p class="ump-panel-intro">The player's generic manual, extracted from <code>ReadThis.WRI</code>:</p>
+          <div class="ump-manual" id="ump-manual" tabindex="0">Loading the extracted manual…</div>
+        </section>
+      </div>
+
+      <div class="ump-statusbar">
+        <span id="ump-status" role="status">*Loading CD*</span>
+        <span class="ump-statusbar-disc">Enhanced CD · 2001</span>
+      </div>
+    </div>
+
+    <p class="mutter-ecd-note">
+      This page is not the original program. It rebuilds the Universal Media Player window from
+      the disc's own files — the album artwork, the toolbar and credits bitmaps taken from
+      <code>ump.exe</code>, the track list from <code>AUTORUN.INF</code> and the manual from
+      <code>ReadThis.WRI</code>. The original Windows program and the untranscoded Sonne video are
+      among the card's downloads.
+    </p>
+  </main>
+</body>
+</html>

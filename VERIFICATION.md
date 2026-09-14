@@ -37,6 +37,7 @@ Historical mailing lists and competition entries were not submitted.
 | Völkerball | Gallery/menu hotspots reveal concert locations, LIVE DVD, world-tour and edition views. Website/shop prompts, audio, mute, volume, restart and fullscreen checked. | Password-preview, send and wallpaper-download services depend on missing historical files/endpoints. |
 | LIFAD | Animated artwork/intro reaches the album screen; ZUR WEBSITE produces the Rammstein URL prompt. Volume control, restart and fullscreen checked. A separate compatibility copy restores the wordmark masks and readable lettering. | No audio signal was observed in the exercised screens. The external website is not archived here. See `qa/LIFAD-RENDERING.md` for the rendering fix. |
 | RAMMSTEIN Screensaver (artifact) | The files window, download list and gallery render; the sprite preview loads `scene.json` and runs three sprite sequences (flames, green sparks, red crosses) over the original frame. Automated checks assert the preview reports ready and that launching the card never creates a Ruffle player. | The original Director 6 projector is **not run in the browser** and was not executed at all (16/32-bit Windows only). The preview is a rebuild from the extracted sprites, not a Director emulator; film-loop frame ordering was not recovered. See `PROVENANCE.md` section 13. |
+| Mutter — Enhanced CD (artifact) | The files window lists 8 downloads and 7 gallery images. The rebuilt Universal Media Player window loads the disc's `AUTORUN.INF` (album *Mutter*, artist Rammstein, 11 track entries, 3 historical links), pages the disc artwork with Last/Next image, plays the labelled Sonne transcode in Chromium (240.2 s, video past 1 s, preserved 352×240/SAR aspect) and loads the `ReadThis.WRI` extraction in Help/Prefs. Launching never creates a Ruffle player; the 390×844 preview has no horizontal overflow. | The original Windows 95-era player was **not executed** and the card does not emulate it; the preview is a rebuild from the preserved files. The CD audio tracks and the Mac/QuickTime installers referenced by `AUTORUN.INF` are not in the supplied archive. Historical links were not opened; the browser video is a labelled H.264 transcode of the original MPEG-1. See `PROVENANCE.md` section 16. |
 
 Additional card results and Benzin's dedicated gameplay check are recorded in
 `qa/WORKER-VERIFICATION.md` and `qa/BENZIN-VERIFICATION.md`.
@@ -63,11 +64,12 @@ and mobile-emulated layouts:
 - The narrow layout has no horizontal page overflow; Benzin receives four
   card-specific touch keys.
 
-The **62-test unit/mock-browser suite** additionally exercises loading failures, unsupported
+The **64-test unit/mock-browser suite** additionally exercises loading failures, unsupported
 runtime states, message validation, delayed loads while minimized, held-key
-release, restart, focus, the standalone Start gate, filtering, artifact cards,
-browser-game embed cards and window state. Mocked tests validate wrapper
-behavior; they do not prove game compatibility.
+release, restart, focus, the standalone Start gate, filtering, artifact
+cards, browser-game embed cards, the Mutter Enhanced CD preview and window
+state. Mocked tests validate wrapper behavior; they do not prove game
+compatibility.
 
 ## Screensaver artifact
 
@@ -93,6 +95,44 @@ colour-faithful reproduction of the 1999 display pipeline. The browser preview
 is a rebuild from extracted sprites, not a Director runtime; `PROVENANCE.md`
 section 13 lists the exact derived artifacts and hashes.
 
+## Mutter Enhanced CD artifact
+
+The 2001 Mutter Enhanced CD card was verified on 14 September 2026 with the
+same headless Chromium build, against the local preview server (real
+`catalog.json` and real assets):
+
+- The deep link selects the card without creating a player; **Open files &
+  preview** opens one artifact window with 8 downloads, 7 gallery images and
+  the per-card “Extracted disc files” heading.
+- `mutter-ecd.html` reports `window.__mutterEcdPreview.ready` and parses
+  `originals/2001-mutter-enhanced-cd/AUTORUN.INF` in the browser: album
+  *Mutter*, artist Rammstein, 11 track entries and 3 links.
+- Media shows the disc artwork and Last/Next image pages through it;
+  Help/Prefs loads the text extracted from `ReadThis.WRI`, including the
+  Thinking Pictures credit.
+- The Video panel loads the labelled `sonne-preview.mp4` and plays in
+  Chromium past one second; the element reports a 240.2 s duration at the
+  preserved 352×240 (SAR 200:219) display aspect. This proves the derived
+  transcode decodes in a real browser; the page does not play the original
+  MPEG-1.
+- Launching the artifact never creates a Ruffle player, the 390×844 emulated
+  layout has no horizontal overflow, and the run produced no page errors or
+  failed requests.
+- `python3 qa/validate_catalog.py` validates the artifact entry and all 227
+  preserved/derived hashes (32 disc files in `originals/SHA256SUMS`, the
+  derived files in `assets/cards/SHA256SUMS`).
+- `tests/browser/mutter-ecd.test.mjs` repeats the panel/metadata flow and the
+  phone-layout check against fixtures with the mock Ruffle runtime, and
+  `qa/mutter-ecd-verify.cjs` is the real-runtime reproduction script.
+
+Selected screenshots: `qa/evidence/mutter-ecd-preview.png` (files window with
+the rebuilt player) and `qa/evidence/mutter-ecd-mobile.png`.
+
+Not verified: execution of the original Universal Media Player (Windows 95
+plus QuickTime or Media Player), the CD audio session (not in the archive),
+the historical `umusic.com`/`rock.com` addresses, and the QuickTime/Mac
+installers that `AUTORUN.INF` references but the archive does not contain.
+
 ## Desktop theme
 
 On 14 September 2026 the launcher was reskinned from the earlier Windows
@@ -102,7 +142,7 @@ player, the artifact preview and all touch controls were kept as they were; the
 change is CSS plus launcher wording and the `assets/brand/rammwiki-wordmark.svg`
 brand asset.
 
-- The full **62-test unit/mock-browser suite** passed against the theme alone,
+- The full unit/mock-browser suite passed against the theme alone,
   and the real-catalog pages render without page errors.
 - Desktop, Start menu, Help, standalone player (mocked Ruffle), screensaver
   preview, mobile 390×844 and the empty wallpaper were captured headlessly and
@@ -173,6 +213,7 @@ npm ci
 npx playwright install --with-deps chromium
 node capture.cjs 2001-mutter 2001-ich-will 2002-mutter 2005-rosenrot-single 2009-pussy
 node launcher.cjs
+FLASHCARDS_URL=http://127.0.0.1:4173/ node mutter-ecd-verify.cjs
 ```
 
 Set `FLASHCARDS_URL` to a local HTTP or deployed HTTPS root ending in `/` to test

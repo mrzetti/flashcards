@@ -46,3 +46,19 @@ World download. The game executable, runtime DLLs, audio, artwork and emulator
 files remain the property of their respective owners and are not copied into
 this repository; only a derived title-screen thumbnail is stored here. Boxedwine
 and Wine licensing is documented in that project. See `PROVENANCE.md` section 15.
+
+## Mutter Enhanced CD (2001)
+
+The `2001-mutter-enhanced-cd` artifact card preserves the data session of an
+Enhanced CD: the Sonne music video, the album artwork, track metadata, the
+Universal Media Player 0.30 shell and its InstallShield installer. The music,
+video, artwork and the “Enhanced CD” / “CD Extra” marks remain the property of
+their owners (Rammstein / Universal Records, 2001); preservation does not imply
+a new license or transfer of rights. The player was written by **Thinking
+Pictures, Incorporated**, New York (© 1997), as credited in its own About
+screen; its historical support addresses (`info@thinkpix.com`, `rock.com/ecd`)
+are preserved for documentation only. The browser preview is an independent
+rebuild from the disc's own files; the MP4 playable in the preview is a
+documented H.264/AAC transcode, while the original MPEG-1 ships untouched. The
+InstallShield setup, the LocalAutorun startup stub and the cabinet payloads are
+preserved as archived Windows software and are not executed.

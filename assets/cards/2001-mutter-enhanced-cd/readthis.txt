@@ -1,0 +1,101 @@
+Please Read Me!
+
+This file serves as the user's manual for the Universal Media Player (UMP). UMP is a simple program, similiar to your Audio CD player program or desk accessory. It gives you easy access to all the enhanced features and content on this CD.
+
+This document is generic. It applies to all discs using Universal Media Player, not specifically this one.
+
+If you are an experienced computer enthusiast, you can just experiment with the UMP and figure it out pretty quickly, but for best results we suggest you read the stuff below.
+
+Suggested minimum system: You need a Windows-95 computer with a Pentium processor or better, at least 8 megabytes of RAM, a double-speed CD-ROM drive (or better), color monitor capable of displaying thousands of colors, a Windows-95 compatible sound card and stereo speakers.
+
+You need a few other things to use this disc.
+
+1) UMP. (You probably have it installed already, or are in the process of installing it right now.)
+
+2) An account with an Internet Service Provider (ISP) or online service, and a functioning Email program and World Wide Web browser (or both functions in one program).
+
+3) If there are videos on this disc you will need Apple's Quicktime software. (They will appear by name in the "Video" menu, under the filmstrip icon). If there are videos on the disc and you don't yet have it, you can install Quicktime 3 and Quicktime 2.1.2 from this disc. Just click the Install Quicktime button in UMP's prefs dialog box.. The installer will automatically give you BOTH versions (3.0.1 and 2.1.2). The two versions can co-exist harmlessly on one computer. The older version is required for compatibility with a lot of older multimedia software.
+
+Installation:
+
+The first time you insert this disc, the installer for the Universal Media Player will automatically run. It will also run if you have an older version of UMP installed, in order to give you the new one. It's a very fast, simple installation, and UMP will be available in the Windows-95 Start->Programs menu once its complete. UMP will start running automatically every time you insert an UMP-compatible Enhanced CD into the drive.
+
+How to use UMP:
+
+UMP will start up with a small window, with five buttons across the top, and a small album graphic. (To see the pictures on the disc, click the "Maximize" button on the (top) menu bar of the UMP window).
+
+The buttons look like this, and here's what they do:
+
+All buttons are "rollovers". That means that you just let your cursor sit on them for a second, and without clicking, they present their menus to you. They also present a little hint window above each button, if you wait a bit longer. You use the buttons by clicking them with the mouse.
+
+If a button appears to be "greyed out", that means there's no content of that type on this CD.
+
+Audio Button: Gives access to audio stuff. The "Play CD" menu item will start your CD player program. Please be sure to quit the CD player program before using other features of this disc!
+
+Video Button: Gives access to "movies", if there are any on this disc. These usually need Quicktime or Microsoft's Media Player to play.
+
+Connect Button: Shows links to Web pages and or Email addresses. Clicking on one of these will start up your Web browser or Email program.
+
+Media Button: Gives access to multimedia applications or other software, if any is included on the disc.
+
+Help/Prefs Button: Lets you set your preferences, or view the disc's ReadMe file (what you're reading now).
+
+Last Image/Next Image (Arrow Icons): You'll only see these if your UMP window is set to something larger than the minimum size. They are used to page through the pictures ("electronic booklet pages") on the disc (if there are more than one).
+
+RESTARTING THE PROGRAM: If you quit the Universal Media Player and want to run it again, it can be found in the "Programs" section of your "Start" menu. You can also double-click the CD icon on either your desktop or in the "My Computer" window or alternatively eject and re-insert the disc.
+
+BEFORE YOU RUN
+
+QUIT ALL OTHER APPLICATIONS - It is recommended that you quit all other applications before running this Enhanced CD. Microsoft's audio player does not allow other programs to control the audio while it is running.
+
+IMPORTANT: You cannot play the additional material while your audio CD-controller application is running. In order to use the multimedia, videos, or Internet links on this disc, you must close (not "minimize") your audio CD-player beforehand. If you fail to do so, no harm will be done, but you may see strange error messages from the multimedia application. If this happens, simply quit the program and your audio CD-player application. You can then restart the Enhanced CD program as described below. Please note that when you click on the Harp ("Audio") icon in the Universal Media Player, your CD-player application will automatically be started (though it might only be visible in the Windows Taskbar), and will still need to be manually closed before you access the multimedia portions of the disc. In general, it is recommended that you quit all other applications before running this Enhanced CD.
+
+PERFORMANCE
+
+There are many factors that can effect the performance of this CD. At times you may notice hesitation or stuttering in some of the audio or video playback. Items such as the speed of the computer, available memory, video cards, CD-ROM drive and the various drivers that each of these components need all combine to create the performance profile of your computer.
+
+Unfortunately, some brands and versions of driver software may cause a performance problem or incompatibility. Some brands and versions of driver software or system components may not work at all. You should always try to keep current with the latest driver versions for your system components for the best chance of maintaining a properly working system.
+
+Remember that it is recommended that you quit all other applications and background tasks such as network connections
+
+MIXING CD AUDIO WITH COMPUTER AUDIO - This CD uses both the audio from the CD-Audio tracks on the CD as well as audio that is generated from the computer. Because the audio is from two different sources you should use the CD Audio sound mixer control panel to balance the volume between the two sound sources. Check the troubleshooting section below for more information about how to work with different sound configurations.
+
+TROUBLESHOOTING GUIDE
+
+GENERAL USE QUESTIONS -
+
+Q: My computer is fairly new and powerful, so why aren't the videos playing properly?
+
+A: You need to use the right player application to play videos. This can be trickier than it sounds. MPEG video files require Microsoft's Media Player (QuickTime cannot play MPEG files yet on Windows), other movie types will usually play better using QuickTime's MoviePlayer application. If your computer has trouble locating the correct application you need to play movies, your system's preferences might be set up incorrectly. This can happen especially if you've installed any major Microsoft programs lately, like Internet Explorer. (Microsoft programs often change your system preferences without either asking or telling you - beware!) In these cases, your system might try to open a video file using the wrong program. You can manually open the files (they're always in the "Movies" folder of the CD by starting either Media Player or MoviePlayer yourself (from the Start menu), then using the File->Open command. In general, files ending in the extension ".mov" should be played by QuickTime's MoviePlayer, not by Microsoft's Media Player.
+
+Q: Why won't the CD mount on my computer?
+
+A: Check to make sure you have installed compatible drivers for your CD-ROM drive.
+
+Q: Where do I get updated CD-ROM drivers?
+
+A: You can get driver software from the CD-ROM drive manufacturer. Windows 95 contains some updated driver software and new features designed especially for Enhanced Audio CDs.
+
+Q: Why do the colors look so horrible?
+
+A: You're playing the disc on a 256 color monitor. You need to use your Display control panel to change the number of colors to greater than 256. If your computer cannot display greater than 256 colors, you can still use the disc, but colors will look pretty weird.
+
+AUDIO RELATED QUESTIONS -
+
+Q: How do I adjust the overall volume and balance of my CD audio and computer audio?
+
+A: On Windows 95, use the built-in Volume Control. You can access this application quickly by double clicking on the small speaker icon on the far right side of the Taskbar, or alternatively, navigate to the application by following the Taskbar menu convention - [ START | PROGRAMS | ACCESSORIES | MULTIMEDIA | VOLUME CONTROL ].
+
+Q: I have a CD-ROM drive that is connected external to my computer. How can I make it so I hear the CD audio and computer audio through the same speakers?
+
+A1: The most common method of mixing the sound from an external CD-ROM drive into the computer is to use the LINE-IN input jack on the back of your Sound Blaster (or compatible) card. This necessitates the use of an audio cable that connects the audio outputs of your CD drive (RCA female connectors) to the LINE-IN input jack (1/8 stereo male connector). 12 Point Master Plan cannot directly control the volume of a CD connected through the LINE-IN jack on the sound card, so you will need to use the software mixer to control the initial levels (see previous question).
+
+A2: The highest quality approach is to use an external mixer that can combine at least 2 sources of audio together into one output. If you already have an external mixer, we will assume you know how to use it. If you wish to purchase a quality external audio mixer, we would suggest visiting your local musical equipment store.
+
+WHEN ALL ELSE FAILS
+
+Restart your computer and try again. This seems to help more often than you
+
+might think.
+
+The Universal Media Player was created by Thinking Pictures, Inc. in New York City. Check out their website at: http://www.thinkpix.com. Rock on!

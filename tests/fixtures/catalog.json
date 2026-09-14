@@ -123,6 +123,27 @@
       ]
     },
     {
+      "id": "ecd",
+      "title": "Mutter Enhanced CD",
+      "kind": "artifact",
+      "thumbnail": "thumbs/card.svg",
+      "preview": "mutter-ecd.html",
+      "width": 640,
+      "height": 480,
+      "year": 2001,
+      "description": "A fixture artifact for the Universal Media Player preview.",
+      "instructions": "Open the files window and use the preview toolbar.",
+      "controls": ["Mouse (click)"],
+      "status": "Partial — fixture artifact",
+      "notes": "Exercises the Mutter Enhanced CD preview in the browser tests.",
+      "downloads": [
+        { "label": "Fixture bundle", "url": "originals/fixture.zip", "meta": "1 KB · fixture" }
+      ],
+      "gallery": [
+        { "url": "thumbs/card.svg", "caption": "Fixture gallery image" }
+      ]
+    },
+    {
       "id": "embed",
       "title": "Embedded Game",
       "kind": "embed",

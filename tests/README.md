@@ -34,7 +34,7 @@ Unit tests (`tests/unit/`):
   text is preserved for the details pane
 - search matching and per-category filters
 - catalog sanitising (defaults, duplicate ids, invalid entries, optional
-  per-card `base` directory)
+  per-card `base` directory and optional `galleryTitle`/`galleryHint`)
 - asset URL resolution with and without a `base` override (no `javascript:`)
 - controls parsing: arrow groups, single keys, letters, digits, mouse-only and
   unknown entries; the app and player copies are compared against the same
@@ -75,6 +75,12 @@ Browser tests (`tests/browser/`, Playwright + mock Ruffle):
 - embed cards: one browser-game window, click-to-load fixture frame, switching
   cards replaces the previous document, closing releases the frame, deep links
   select without launching, and Ruffle/player frames are never created
+- artifact cards: the files window renders the preview iframe, downloads and
+  gallery (with the per-card gallery heading); the screensaver sprite preview
+  runs from its `scene.json`; the Mutter Enhanced CD preview parses the disc's
+  `AUTORUN.INF`, pages the artwork, exposes the Sonne transcode source, loads
+  the extracted manual, has no phone-layout overflow and never creates a
+  Ruffle player
 
 ## Mock Ruffle
 
@@ -94,8 +100,8 @@ run lived outside the repository under `/tmp/opencode`.
 ## Files
 
 - `server.mjs` – static server with fixture overrides (preview mode included)
-- `fixtures/catalog.json` – seven cards covering verified, partial, unverified,
-  unsupported, unknown, missing-file and broken cases
+- `fixtures/catalog.json` – eleven cards covering verified, partial, unverified,
+  unsupported, unknown, missing-file, artifact and browser-game cases
 - `fixtures/mock-ruffle.js` – API-compatible mock with per-card personalities
 - `fixtures/thumbs/card.svg` – thumbnail; one fixture card intentionally points
   at a missing file

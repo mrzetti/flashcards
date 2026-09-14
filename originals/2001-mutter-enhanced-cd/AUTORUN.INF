@@ -1,0 +1,170 @@
+[autorun]
+open=startup.exe
+
+[LocalAutorun]
+LocalAutorun=TRUE
+
+[Platforms]
+Mac=Mac
+PowerMac=PowerMac
+Windows95=Win32
+WindowsNT=Win32
+
+[Win32] 
+MediaRoot=CDRoot
+ReadMe=CDRoot/ReadThis.WRI
+ProgramSection=Win32Programs
+ServicesSection=Win32Services
+AssetsSection=Win32Assets
+
+[Mac]	
+MediaRoot=CDRoot/CD Extra
+ReadMe=CDRoot/Read This!
+ProgramSection=MacPrograms
+ServicesSection=MacServices
+AssetsSection=MacAssets
+
+[PowerMac]	
+MediaRoot=CDRoot/CD Extra
+ReadMe=CDRoot/Read This!
+ProgramSection=MacPrograms
+ServicesSection=PowerMacServices
+AssetsSection=MacAssets
+
+[ID]
+UPC=0
+Selection#=314549639-2
+DiscName=Mutter
+Label=Universal Records
+CreationDateYMD=191010215
+
+[AlbumCredits]
+AlbumName=Mutter
+ArtistName=Rammstein
+Producer=Jacob Hellner with Rammstein
+
+[SongID]
+Mutter01=Mein Herz Brennt
+Mutter02=Links 2 3 4
+Mutter03=Sonne
+Mutter04=Ich Will
+Mutter05=Feuer Frei
+Mutter06=Mutter
+Mutter07=Spieluhr
+Mutter08=Zwitter
+Mutter09=Rein Raus
+Mutter10=Adios
+Mutter11=Nebel
+
+[SongCredits]
+[Mutter01]
+[Mutter02]
+[Mutter03]
+[Mutter04]
+[Mutter05]
+[Mutter06]
+[Mutter07]
+[Mutter08]
+[Mutter09]
+[Mutter10]
+[Mutter11]
+
+[Assets]
+
+[Video]
+Sonne (video)=MediaRoot/Movies/Sonne.mpg
+
+[HTML]
+
+[Audio]
+
+[Images]
+FrontCoverSm=MediaRoot/Images/FrontSm.JPG
+FrontCoverMed=MediaRoot/Images/FrontMed.JPG
+FrontCoverLg=MediaRoot/Images/FrontLg.JPG
+Booklet1=MediaRoot/Images/FrontLg.JPG
+
+[Links]
+Rammstein.com=http://www.umusic.com/rammstein/mutter1
+Republic Records=http://www.umusic.com/rammstein/mutter2
+Universal Records=http://www.umusic.com/rammstein/mutter3
+
+[Win32Services]
+LocalAutorun=Win32Autorun
+ISP=Win32ISP
+.mov=Win32Video
+
+[Win32Autorun]
+InstallName=Universal Media Player Installer
+InstallPath=CDRoot/setup.exe
+RegistryKey=HKEY_LOCAL_MACHINE\SOFTWARE\LocalAutorun\Media
+Version=0.30
+StaleDateYMD=19991201
+StaleMessage=Please browse to http://www.umusic.com/ecdsupport to receive the latest version of UMP.
+StaleMessageResponse=OK
+
+[Win32ISP]
+InstallName=Sprynet Installer
+InstallPath=dummy
+RegistryKey=HKEY_CURRENT_USER\RemoteAccess:(Default Value)
+Version=0.1
+StaleDateYMD=19971231
+StaleMessage=Sorry, there is no ISP software on this disc.
+StaleMessageResponse=OK
+
+[Win32Video]
+InstallName=Install Quicktime
+InstallPath=CDRoot/QT3Win/setup.exe
+RegistryKey=null
+Version=3.0.1
+StaleDateYMD=19970101
+StaleMessage=Download the latest QuickTime for free at http://www.quicktime.apple.com!
+StaleMessageResponse=OK
+
+[Win32Assets]
+
+[Win32Text]
+ReadMe!=MediaRoot/Text/Video.txt
+
+[MacServices]
+LocalAutorun=MacAutorun
+.mov=MacVideo
+
+[PowerMacServices]
+LocalAutorun=PowerMacAutorun
+.mov=MacVideo
+
+[MacAutorun]
+; for 68K autorun - only difference is RegistryKey!
+InstallName=Universal Media Player Installer
+InstallPath=CDRoot/Install UMP
+RegistryKey='ECDS':199802271753
+Version=0.30
+StaleDateYMD=19991223
+StaleMessage=Please browse to http://www.umusic.com/ecdsupport to receive the latest version of UMP.
+StaleMessageResponse=OK
+
+[PowerMacAutorun]
+; for PPC autorun - only difference is RegistryKey!
+InstallName=Universal Media Player Installer
+InstallPath=CDRoot/Install UMP
+RegistryKey='ECDS':199802271750
+Version=0.30
+StaleDateYMD=20031223
+StaleMessage=Please browse to http://www.umusic.com/ecdsupport to receive the latest version of UMP.
+StaleMessageResponse=OK
+
+[MacVideo]
+InstallName=Install Quicktime 3
+InstallPath=CDRoot/QuickTime/Installer
+RegistryKey='TVOD':199803261200
+Version=3.0
+Extension=.mov,.mpg
+StaleDateYMD=19970101
+StaleMessage=Download the latest QuickTime for free at http://www.quicktime.apple.com!
+StaleMessageResponse=OK
+
+[MacAssets]
+
+[MacText]
+ReadMe!=MediaRoot/Text/About The Video

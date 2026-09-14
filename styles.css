@@ -12,6 +12,7 @@
      7. Player page (iframe document)
      8. Responsive + reduced motion
      9. Screensaver preview page (artifact window iframe)
+    10. Mutter Enhanced CD preview page (artifact window iframe)
    ========================================================================== */
 
 :root {
@@ -2287,4 +2288,359 @@ body.screensaver-page {
   color: #9c978a;
   font-size: 11.5px;
   line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   10. Mutter Enhanced CD preview page (artifact window iframe)
+   -------------------------------------------------------------------------- */
+
+body.mutter-ecd-page {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #0d0d0b;
+  color: #d8d2c4;
+  font-family: var(--rw-font);
+  font-size: 13px;
+}
+
+.mutter-ecd-page .mutter-ecd-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  padding: 7px 12px;
+  background: linear-gradient(180deg, #2e2e28 0%, #22221e 60%, #1a1a17 100%);
+  border-bottom: 1px solid rgba(174, 157, 117, 0.5);
+  color: #f2efe7;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.mutter-ecd-page .mutter-ecd-header h1 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 13.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mutter-ecd-page .mutter-ecd-year {
+  flex: none;
+  font-size: 11.5px;
+  opacity: 0.9;
+}
+
+.mutter-ecd-page .mutter-ecd-main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  overflow: auto;
+}
+
+.mutter-ecd-page code {
+  color: var(--rw-accent-bright);
+  font-size: 0.95em;
+}
+
+.mutter-ecd-page .ump-window {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  background: #1a1a17;
+  border: 1px solid var(--rw-border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.mutter-ecd-page .ump-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: linear-gradient(180deg, #302f29 0%, #26261f 100%);
+  border-bottom: 1px solid rgba(174, 157, 117, 0.45);
+}
+
+.mutter-ecd-page .ump-titlebar-icon {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+}
+
+.mutter-ecd-page .ump-titlebar-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #f2efe7;
+}
+
+.mutter-ecd-page .ump-titlebar-disc {
+  flex: none;
+  margin-left: auto;
+  color: var(--rw-text-subtle);
+  font-size: 11.5px;
+}
+
+.mutter-ecd-page .ump-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 2px;
+  padding: 6px 8px;
+  background: #20201c;
+  border-bottom: 1px solid var(--rw-border-soft);
+}
+
+.mutter-ecd-page .ump-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 58px;
+  padding: 4px 6px 3px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: var(--rw-text-muted);
+  cursor: pointer;
+}
+
+.mutter-ecd-page .ump-tool:hover {
+  background: rgba(174, 157, 117, 0.08);
+  border-color: rgba(174, 157, 117, 0.3);
+}
+
+.mutter-ecd-page .ump-tool.is-active {
+  background: var(--rw-accent-tint);
+  border-color: var(--rw-accent);
+  color: var(--rw-text);
+}
+
+.mutter-ecd-page .ump-tool-icon {
+  width: 32px;
+  height: 16px;
+  background-image: url("assets/cards/2001-mutter-enhanced-cd/ump-icons.png");
+  background-repeat: no-repeat;
+  background-size: 224px 16px;
+  image-rendering: pixelated;
+}
+
+.mutter-ecd-page .ump-tool-icon--audio { background-position: 0 0; }
+.mutter-ecd-page .ump-tool-icon--video { background-position: -32px 0; }
+.mutter-ecd-page .ump-tool-icon--connect { background-position: -64px 0; }
+.mutter-ecd-page .ump-tool-icon--media { background-position: -96px 0; }
+.mutter-ecd-page .ump-tool-icon--help { background-position: -128px 0; }
+.mutter-ecd-page .ump-tool-icon--prev { background-position: -160px 0; }
+.mutter-ecd-page .ump-tool-icon--next { background-position: -192px 0; }
+
+.mutter-ecd-page .ump-tool-label {
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+}
+
+.mutter-ecd-page .ump-toolbar-separator {
+  width: 1px;
+  margin: 4px 6px;
+  background: var(--rw-border);
+}
+
+.mutter-ecd-page .ump-body {
+  min-height: 300px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mutter-ecd-page .ump-panel {
+  flex: 1;
+  min-height: 0;
+}
+
+.mutter-ecd-page .ump-panel[hidden] {
+  display: none;
+}
+
+.mutter-ecd-page .ump-panel-title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--rw-accent-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.mutter-ecd-page .ump-panel-intro {
+  max-width: 74ch;
+  margin: 0 0 10px;
+  color: var(--rw-text-muted);
+  line-height: 1.55;
+}
+
+.mutter-ecd-page .ump-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mutter-ecd-page .ump-image-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  background: #000;
+  border: 1px solid var(--rw-border);
+}
+
+.mutter-ecd-page .ump-image {
+  display: block;
+  max-width: 100%;
+  max-height: 420px;
+}
+
+.mutter-ecd-page .ump-figure-caption {
+  max-width: 74ch;
+  color: var(--rw-text-subtle);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+.mutter-ecd-page .ump-tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mutter-ecd-page .ump-tracks li {
+  display: flex;
+  gap: 8px;
+  padding: 3px 0;
+  border-bottom: 1px dotted var(--rw-border-soft);
+}
+
+.mutter-ecd-page .ump-track-number {
+  width: 2ch;
+  color: var(--rw-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.mutter-ecd-page .ump-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mutter-ecd-page .ump-links li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  padding: 5px 0;
+  border-bottom: 1px dotted var(--rw-border-soft);
+}
+
+.mutter-ecd-page .ump-link-name {
+  min-width: 12ch;
+  color: var(--rw-text);
+}
+
+.mutter-ecd-page .ump-link-url {
+  color: var(--rw-warning);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11.5px;
+  word-break: break-all;
+}
+
+.mutter-ecd-page .ump-video {
+  width: 100%;
+  max-width: 520px;
+  background: #000;
+  border: 1px solid var(--rw-border);
+}
+
+.mutter-ecd-page .ump-help {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.mutter-ecd-page .ump-help-about {
+  width: min(489px, 100%);
+  border: 1px solid var(--rw-border);
+}
+
+.mutter-ecd-page .ump-help-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.mutter-ecd-page .ump-help-text p {
+  margin: 0;
+  max-width: 60ch;
+  line-height: 1.55;
+  color: var(--rw-text-muted);
+}
+
+.mutter-ecd-page .ump-manual {
+  max-height: 260px;
+  overflow: auto;
+  padding: 10px 12px;
+  background: #141411;
+  border: 1px solid var(--rw-border);
+  color: var(--rw-text-muted);
+  font-family: var(--rw-font);
+  font-size: 12px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.mutter-ecd-page .ump-statusbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 10px;
+  background: #20201c;
+  border-top: 1px solid var(--rw-border-soft);
+  color: var(--rw-text-subtle);
+  font-size: 11.5px;
+}
+
+.mutter-ecd-page .ump-statusbar-disc {
+  flex: none;
+}
+
+.mutter-ecd-page .mutter-ecd-note {
+  max-width: 980px;
+  margin: 0;
+  color: #9c978a;
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+@media (max-width: 520px) {
+  .mutter-ecd-page .ump-titlebar-disc {
+    display: none;
+  }
+
+  .mutter-ecd-page .ump-tool {
+    min-width: 48px;
+  }
+
+  .mutter-ecd-page .ump-image {
+    max-height: 260px;
+  }
 }
