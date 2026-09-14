@@ -182,7 +182,9 @@ real-runtime checks:
   extracted from the original executable (downscaled luminance, mean absolute
   difference), so black loading/fade screens and level artwork cannot match:
   measured distance was 0.73 on the game-over screen and at least 25.49 on the
-  title, level and death screens.
+  title, level and death screens. The screen must stay game-over for several
+  seconds before anything is shown, and if it changes before the countdown ends
+  the restart is cancelled — verified with a simulated transient match.
 - The 2009 Pussy Flash card still reached `player.status === 'playing'` under
   the new headers, so cross-origin isolation did not regress Ruffle playback.
 - `qa/check_deployment.py` verifies the deployed files, the embed thumbnail and
