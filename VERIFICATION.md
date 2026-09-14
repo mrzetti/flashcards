@@ -178,8 +178,11 @@ real-runtime checks:
 - Losing the last life on the first platform showed the wrapper's own **Game
   over** overlay inside the embedded window; after its countdown the emulator
   reloaded automatically and the title screen returned without a click. The
-  title screen is not misdetected: the detector requires a mostly black frame
-  with red lettering in the centre band and no bright artwork elsewhere.
+  detector compares every sampled frame with the exact game-over bitmap
+  extracted from the original executable (downscaled luminance, mean absolute
+  difference), so black loading/fade screens and level artwork cannot match:
+  measured distance was 0.73 on the game-over screen and at least 25.49 on the
+  title, level and death screens.
 - The 2009 Pussy Flash card still reached `player.status === 'playing'` under
   the new headers, so cross-origin isolation did not regress Ruffle playback.
 - `qa/check_deployment.py` verifies the deployed files, the embed thumbnail and
